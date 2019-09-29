@@ -61,11 +61,15 @@ I use time series analysis with my clients to analyse trends in weight data. The
 
 What happens when we use more advanced techniques to forecast future weight based on past weight data?
 
-Here's a regression model I fitted to real client data using the last week of weight measurements to forecast future weight.
+Here's a regression model I fitted to real client data using the past week of weight measurements to predict future weight.
 
 ![](/images/model.png)
 
 Look how closely the predicted values are to the actual weight data.
+
+The model has no knowledge of calorie intake or macronutrients, but it still makes accurate predictions.
+
+**Your past weight is the strongest predictor of future weight.**
 
 You can do this yourself using the scikit-learn library in Python.
 
