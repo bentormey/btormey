@@ -10,9 +10,9 @@ Introduction...
 
 
 
-### Take daily weight measurements, but ignore the noise
+### Take daily weight measurements, but filter out the noise
 
-If you've ever dieted before, you'll know that the scale does weird things. You'll wake up looking leaner but the scale says you haven't lost any weight. Or you'll check the scale and you're suddenly heavier even though you've been doing everything right.
+If you've ever dieted before, you'll know that the scale does weird things. You'll wake up looking leaner but the scale says you haven't lost any weight. Or you're suddenly heavier even though you've been doing everything right.
 
 Your weight data is _noisy_ and we want the _signal_.
 
@@ -40,7 +40,7 @@ That's why I recommend taking daily weight measurements.
 
 There are two key benefits:
 
-1. Helps form a strong habit and diminishes the emotional impression of the scale.
+1. Forms a strong habit and diminishes the emotional impression of the scale.
 2. Allows you to smooth out the noise and see a clear trend.
 
 Here's a comparison of daily weight measurement data in black compared with a moving average in red.
@@ -50,6 +50,8 @@ Here's a comparison of daily weight measurement data in black compared with a mo
 Notice how the measurement data moves up and down a lot but the moving average trends down consistently?
 
 I like to use a window of 14 days for my moving average, but you're free to experiment.
+
+I built a tracking spreadsheet that does all this for you. Contact me if you want a copy.
 
 ### What you did last week predicts your progress this week
 
