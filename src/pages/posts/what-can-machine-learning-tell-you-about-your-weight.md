@@ -49,21 +49,17 @@ Here's a comparison of daily weight measurement data in black compared with a mo
 
 Notice how the measurement data moves up and down a lot but the moving average trends down consistently?
 
-I like to use a window of 14 days for my moving average, but you're free to experiment.
-
-I built a tracking spreadsheet that does all this for you. Contact me if you want a copy.
-
 ### What you did last week predicts your progress this week
 
-Time series analysis
+Time series analysis is often used in finance to generate trading signals based on historical trading data. I use time series analysis with all of my clients to analyse trends in weight data.
 
-What happens when we use regression techniques
+What happens when we use regression techniques to forecast future weight based on past weight data?
 
-
+Here's a ridge regression model fitted to sample data.
 
 ![](/images/model.png)
 
-You can do ridge regression using the scikit-learn library in Python.
+You can do this yourself using the scikit-learn library in Python.
 
 ```
 # Import raw CSV from Google Sheets
@@ -100,8 +96,8 @@ Feature extraction
 
 Key habits predict success
 
-## How to take action
+## How to take action on this
 
-1. Sample your weight measurement daily at the same time.
+1. Sample your weight measurement at the same time every day.
 2. Use a moving average to assess progress _not_ the raw data.
 3. Be _consistent_ in habits like tracking, planning your nutrition, and getting good sleep.
