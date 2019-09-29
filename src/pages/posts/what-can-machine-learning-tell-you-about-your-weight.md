@@ -42,6 +42,14 @@ Model fitting
 
 ![](/images/model.png)
 
+```
+# Import raw CSV from Google Sheets client data
+```
+
+```
+df = pd.read_csv('raw.csv', parse_dates=['Date'])
+```
+
 ### Basic habits correlate with progress
 
 Feature extraction
