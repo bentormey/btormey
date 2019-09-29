@@ -6,21 +6,23 @@ template: post
 ---
 ## An experiment with data
 
-Introduction
+Introduction...
+
+
 
 ### Ignore daily weight measurements, look at the trend
 
-If you've ever dieted before, you'll know that the scale does weird things. You'll wake up looking leaner and the scale says you haven't lost any weight.
+If you've ever dieted before, you'll know that the scale does weird things. You'll wake up looking leaner but the scale says you haven't lost any weight. Or you'll check the scale and you're suddenly heavier even though you've been doing everything right.
 
 Your weight data is _noisy_.
 
 Here are some common factors affecting your weight:
 
-1. When you last went to the bathroom
-2. How much food is in your digestive system
-3. The amount of sodium in your food
-4. How much water you drink
-5. The amount of carbohydrate you consume
+1. When you last went to the bathroom.
+2. How much food is in your digestive system.
+3. The amount of sodium in your food.
+4. How much water you drink.
+5. The amount of carbohydrate you consume.
 
 __Track your weight daily and you don't have to worry about any of that.__
 
@@ -30,11 +32,11 @@ Let's imagine your weight is a signal, varying continuously over time. Every tim
 
 In the same way that streaming music services compress audio by sampling it, you're compressing your continous weight data.
 
-If you don't take enough samples, you lose important information. And because bodyweight measurements introduce error, you aren't getting accurate data if you only take one measurement per week.
+If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to reconstruct weekly weight variation.
 
-The Nyquist-Shannon theorem suggest that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to reconstruct weekly weight variation.
+There's observation error too, which happens even if you do take your measurements on the same scale at the same time consistently.
 
-But that's not 
+
 
 Habit forming.
 
@@ -82,6 +84,6 @@ Feature extraction
 
 ## How to take action
 
-1. Sample your weight measurement _at least_ twice per week.
-2. Use the moving average to guage progress _not_ the raw weight data.
+1. Sample your weight measurement daily at the same time.
+2. Use a moving average to assess progress _not_ the raw data.
 3. Be _consistent_ in habits like tracking, planning your nutrition, and getting good sleep.
