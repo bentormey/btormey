@@ -10,8 +10,8 @@ sections:
       rebuild my body, and find freedom from depression.
 
 
-      Here's what I've learned from 10 years of experiments in nutrition and
-      training.
+      I write about what I've learned from 10 years of experiments in nutrition,
+      training, and living.
     section_id: intro
     title: Intro
     type: intro
