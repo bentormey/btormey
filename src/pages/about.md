@@ -8,22 +8,25 @@ menus:
     weight: 2
 template: page
 ---
-__Hey, I'm Benjamin Tormey (the one on the right, in case you're wondering). I quit a mathematics PhD to rebalance my life, rebuild my body, and find freedom from depression.__
+![](/images/copy-of-untitled.png)
+
+**Hey, I'm Benjamin Tormey (the one on the right, in case you're wondering). I quit a mathematics PhD to rebalance my life, rebuild my body, and find freedom from depression.**
 
 If you're feeling stuck and asking yourself:
 
-- "How do I stop overthinking everything?"
-- "How do I take take my emotions out of the process?"
-- "I know what I should be doing, so why can't I get results?"
-- "Maybe I have bad genetics?"
-- "Maybe I'm just missing something!?"
+* "How do I stop overthinking everything?"
+* "How do I take take my emotions out of the process?"
+* "I know what I should be doing, so why can't I get results?"
+* "Maybe I have bad genetics?"
+* "Maybe I'm just missing something!?"
 
-__I'm here to help you filter out all the noise and focus on the stuff that matters.__
+**I'm here to help you filter out all the noise and focus on the stuff that matters.**
 
 It's not about:
-- Trying to optimise your macronutrient ratios.
-- Reading all the latest studies but never applying basic principles.
-- Spending more time thinking about your workouts than actually doing them.
+
+* Trying to optimise your macronutrient ratios.
+* Reading all the latest studies but never applying basic principles.
+* Spending more time thinking about your workouts than actually doing them.
 
 It's about removing mental, emotional, and physical junk from your life.
 
