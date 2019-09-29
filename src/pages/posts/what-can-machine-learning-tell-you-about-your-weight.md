@@ -30,6 +30,8 @@ If you don't take enough samples, you lose important information. And because bo
 
 The Nyquist-Shannon theorem tells us that we need a sample rate of at least two measurements per week (a sample rate of 2/7) to reconstruct the weekly weight variation.
 
+But that's not 
+
 Habit forming.
 
 ### What you did last week predicts your progress this week
@@ -41,3 +43,7 @@ Model fitting
 Feature extraction
 
 ## Call to action
+
+1. Sample your weight measurement _at least_ twice per week
+2. Use the moving average to guage progress _not_ the raw weight data
+3. 
