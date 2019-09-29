@@ -43,7 +43,7 @@ Model fitting
 ![](/images/model.png)
 
 
-If you're interested in the technical details...
+You can do ridge regression using the scikit-learn library in Python.
 
 ```
 # Import raw CSV from Google Sheets
