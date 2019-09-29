@@ -57,7 +57,7 @@ Do you notice how the measurement data moves up and down a lot but the moving av
 
 Time series analysis is often used in finance to generate trading signals based on historical trading data.
 
-I use time series analysis with my clients to analyse trends in weight data. The moving average is one simple way to analyse the trend, but it's not as reliable forecasting.
+You can use time series analysis techniques to understand your weight data too. The moving average is a simple way to analyse the trend, but it's not as reliable forecasting.
 
 What happens when we use more advanced techniques to forecast future weight based on past weight data?
 
