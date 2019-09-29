@@ -1,20 +1,40 @@
 ---
-title: About Me
-subtitle: This is a short page about me and my work
-img_path: images/about.jpg
+title: About
+subtitle: ''
+img_path: ''
 menus:
   main:
-    title: About
+    title: ''
     weight: 2
 template: page
 ---
+__Hey, I'm Benjamin Tormey (the one on the right, in case you're wondering). I quit a mathematics PhD to rebalance my life, rebuild my body, and find freedom from depression.__
 
-**John Doe** is a Senior Art Director from [Stockholm](https://en.wikipedia.org/wiki/Stockholm), Sweden. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.
+If you're feeling stuck and asking yourself:
 
-His work has been recognized by Communication Arts, Print, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. Graphic Design USA named him a person to watch in 2019.
+- "How do I stop overthinking everything?"
+- "How do I take take my emotions out of the process?"
+- "I know what I should be doing, so why can't I get results?"
+- "Maybe I have bad genetics?"
+- "Maybe I'm just missing something!?"
 
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
+__I'm here to help you filter out all the noise and focus on the stuff that matters.__
 
-As a hobby, John Doe authors the most influential design blog in Sweden with over 100,000 page views a month. He lives in Stockholm with his beautiful wife and two boys.
+It's not about:
+- Trying to optimise your macronutrient ratios.
+- Reading all the latest studies but never applying basic principles.
+- Spending more time thinking about your workouts than actually doing them.
 
-*Thank You for reading!*
+It's about removing mental, emotional, and physical junk from your life.
+
+Join my free newsletter and you'll get proven frameworks and strategies to master your mind, body, and impact every area of your life.
+
+You'll get an email from me every week with my latest posts. No spam, ever.
+
+<form name="subscribeForm" method="POST" netlifyhoneypot="bot-field" id="subscribe-form" class="subscribe-form"><div class="screen-reader-text"><label>Don't fill this out if you're human: <input name="bot-field"></label></div><div class="form-row"><label><span class="screen-reader-text">Email address</span><input type="email" class="subscribe-email" name="email" placeholder="Your email address..."></label></div><input type="hidden" name="form-name" value="subscribeForm"><button class="button" type="submit">Join now</button></form>
+
+You'll learn how to filter out the knowledge that doesn’t help you right now.
+
+You'll create structure in your life that frees up your mental resources instead of restricting you.
+
+And you'll spend less time thinking about small details that don’t matter - more time getting the important stuff done.
