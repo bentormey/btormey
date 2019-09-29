@@ -42,7 +42,7 @@ Model fitting
 
 Feature extraction
 
-## Call to action
+## How to take action
 
 1. Sample your weight measurement _at least_ twice per week
 2. Use the moving average to guage progress _not_ the raw weight data
