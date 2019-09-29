@@ -10,14 +10,14 @@ Interesting hook...
 
 Your weight data is noisy.
 
-
+Sometimes it looks like you're gaining weight while you're dieting.
 
 Here are some common factors affecting your weight:
 1. When you last went to the bathroom
 2. How much food is in your digestive system
 3. The amount of sodium in your food
 4. How much water you drink
-5. The amount of carbohydrates you consume
+5. The amount of carbohydrate you consume
 
 Why is it important to track weight daily?
 
