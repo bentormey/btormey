@@ -8,7 +8,14 @@ Interesting hook...
 
 ## Ignore daily weight measurements, look at the trend
 
-Your weight data is noisy
+Your weight data is noisy.
+
+Here are some common factors:
+1. When you last went to the bathroom
+2. How much food is in your digestive system
+3. The amount of sodium you consume
+4. How much water you drink
+5. Your carbohydrate intake
 
 ## What you did last week predicts your progress this week
 
