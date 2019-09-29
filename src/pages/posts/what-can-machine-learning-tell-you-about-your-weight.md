@@ -10,7 +10,7 @@ template: post
 
 Your weight data is noisy.
 
-Sometimes it looks like you're gaining weight while you're dieting.
+If you've ever dieted before, you'll know that the scale does weird things. You'll wake up looking leaner and the scale says you haven't lost any weight.
 
 Here are some common factors affecting your weight:
 1. When you last went to the bathroom
