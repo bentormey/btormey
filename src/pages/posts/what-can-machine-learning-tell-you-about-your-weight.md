@@ -43,7 +43,7 @@ Model fitting
 ![](/images/model.png)
 
 ```
-# Import raw CSV from Google Sheets client data
+# Import raw CSV from Google Sheets
 df = pd.read_csv('raw.csv', parse_dates=['Date'])
 
 # Drop missing entries
@@ -60,7 +60,7 @@ for i in range(1, 7):
 y = data.dropna().Weight
 X = data.dropna().drop(['Weight'], axis=1)
 
-# reserve 30% of data for testing
+# Reserve 30% of data for testing
 X_train, X_test, y_train, y_test = timeseries_train_test_split(X, y, test_size=0.3)
 
 from sklearn.linear_model import LassoCV, RidgeCV
@@ -70,6 +70,9 @@ scaler = StandardScaler()
 
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
+
+ridge = RidgeCV(cv=tscv)
+ridge.fit(X_train_scaled, y_train)
 ```
 
 ### Basic habits correlate with progress
