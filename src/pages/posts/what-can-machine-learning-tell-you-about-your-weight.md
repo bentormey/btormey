@@ -42,6 +42,9 @@ Model fitting
 
 ![](/images/model.png)
 
+
+If you're interested in the technical details...
+
 ```
 # Import raw CSV from Google Sheets
 df = pd.read_csv('raw.csv', parse_dates=['Date'])
@@ -63,9 +66,6 @@ X = data.dropna().drop(['Weight'], axis=1)
 # Reserve 30% of data for testing
 X_train, X_test, y_train, y_test = timeseries_train_test_split(X, y, test_size=0.3)
 
-from sklearn.linear_model import LassoCV, RidgeCV
-
-from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 
 X_train_scaled = scaler.fit_transform(X_train)
