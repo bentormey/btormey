@@ -82,7 +82,7 @@ ridge = RidgeCV(cv=tscv)
 ridge.fit(X_train_scaled, y_train)
 ```
 
-### Basic habits correlate with progress
+### Basic habits are the biggest factors in success
 
 Feature extraction
 
