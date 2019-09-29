@@ -38,6 +38,8 @@ Habit forming.
 
 Model fitting
 
+![](/images/model.png)
+
 ### Basic habits correlate with progress
 
 Feature extraction
