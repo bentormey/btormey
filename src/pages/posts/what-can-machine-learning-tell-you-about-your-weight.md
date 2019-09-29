@@ -34,11 +34,15 @@ In the same way that streaming music services compress audio by sampling it, you
 
 If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to reconstruct weekly weight variation.
 
-There's observation error too, which happens even if you do take your measurements on the same scale at the same time consistently.
+There's observation error too, which happens even if you consistently take your measurements on the same scale at the same time.
 
+That's why I recommend taking daily weight measurements.
 
+There are two key benefits:
+1. Helps form a habit and diminishes the emotional impression of the scale.
+2. Allows you to smooth out the noise and see a clear trend.
 
-Habit forming.
+Here's a comparison of daily weight measurement data compared with a moving average.
 
 ### What you did last week predicts your progress this week
 
