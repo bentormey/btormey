@@ -4,9 +4,11 @@ date: 2019-09-29T11:55:28.376Z
 thumb_img_path: /images/blur-codes-coding-577585.jpg
 template: post
 ---
-## Three strategies backed by data
+## Decision frameworks backed by data
 
 Introduction...
+
+
 
 ### Take daily weight measurements, but ignore the noise
 
