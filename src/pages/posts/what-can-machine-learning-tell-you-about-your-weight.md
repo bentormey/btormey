@@ -67,7 +67,9 @@ Here's a regression model I fitted to real client data using the past week of we
 
 Look how closely the predicted values are to the actual weight data.
 
-The model has no knowledge of calorie intake or macronutrients, but it still makes accurate predictions.
+The model has no knowledge of calorie intake or macronutrients, but it still seems to understand what's happening.
+
+What does that mean?
 
 **Your past weight is a strong predictor of future weight.**
 
