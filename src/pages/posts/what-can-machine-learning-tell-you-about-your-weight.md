@@ -10,9 +10,9 @@ Introduction
 
 ### Ignore daily weight measurements, look at the trend
 
-Your weight data is noisy.
-
 If you've ever dieted before, you'll know that the scale does weird things. You'll wake up looking leaner and the scale says you haven't lost any weight.
+
+Your weight data is _noisy_.
 
 Here are some common factors affecting your weight:
 
