@@ -8,7 +8,7 @@ template: post
 
 Introduction...
 
-### Ignore daily weight measurements, look at the trend
+### Take daily weight measurements, but look at the trend
 
 If you've ever dieted before, you'll know that the scale does weird things. You'll wake up looking leaner but the scale says you haven't lost any weight. Or you'll check the scale and you're suddenly heavier even though you've been doing everything right.
 
