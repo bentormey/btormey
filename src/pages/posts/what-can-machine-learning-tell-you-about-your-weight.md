@@ -30,7 +30,7 @@ In the same way that streaming music services compress audio by sampling it, you
 
 If you don't take enough samples, you lose important information. And because bodyweight measurements introduce error, you aren't getting accurate data if you only take one measurement per week.
 
-The Nyquist-Shannon theorem suggest that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to understand the weekly change in weight.
+The Nyquist-Shannon theorem suggest that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to reconstruct weekly weight variation.
 
 But that's not 
 
@@ -80,6 +80,6 @@ Feature extraction
 
 ## How to take action
 
-1. Sample your weight measurement _at least_ twice per week
-2. Use the moving average to guage progress _not_ the raw weight data
-3. Consistency with habits like tracking, planning your nutrition, and getting good sleep correlate with success
+1. Sample your weight measurement _at least_ twice per week.
+2. Use the moving average to guage progress _not_ the raw weight data.
+3. Be consistent in habits like tracking, planning your nutrition, and getting good sleep.
