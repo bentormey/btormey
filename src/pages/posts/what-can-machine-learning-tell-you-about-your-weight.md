@@ -26,9 +26,9 @@ Here are some common factors affecting your weight:
 
 That sounds counterintuitive, right?
 
-Let's imagine your weight is a signal, varying continuously over time. Every time you step on the scale you're taking a sample, converting a continous signal into a discrete one.
+Let's imagine your weight is a signal, varying continuously over time. Every time you step on the scale you're taking a sample, converting that continous signal into a discrete one.
 
-In the same way that streaming music services compress audio by sampling it, you're compressing your continous weight data.
+In the same way that streaming music services compress audio by sampling it, you're compressing your weight data.
 
 If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to reconstruct weekly weight variation.
 
@@ -91,6 +91,8 @@ ridge.fit(X_train_scaled, y_train)
 ### Basic habits are the biggest factors in success
 
 Feature extraction
+
+Key habits predict success
 
 ## How to take action
 
