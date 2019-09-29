@@ -49,7 +49,11 @@ Notice how the measurement data moves up and down a lot but the moving average t
 
 ### What you did last week predicts your progress this week
 
-Model fitting
+Time series analysis
+
+What happens when we use regression techniques
+
+
 
 ![](/images/model.png)
 
