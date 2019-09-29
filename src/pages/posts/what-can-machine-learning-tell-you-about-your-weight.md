@@ -21,7 +21,11 @@ Here are some common factors affecting your weight:
 
 Why should you track weight daily?
 
-Let's imagine your weight is a signal, varying continuously over time. Every time you step on the scale you're taking a sample.
+Let's imagine your weight is a signal, varying continuously over time. Every time you step on the scale you're taking a sample, converting a continous signal into a discrete one.
+
+In the same way that streaming music services compress audio by sampling it, you're compressing your continous weight data.
+
+If you don't take enough samples, you lose important information.
 
 The Nyquist-Shannon theorem tells us that we need a sample rate of at least two measurements per week (a sample rate of 2/7) to reconstruct the weekly variation.
 
