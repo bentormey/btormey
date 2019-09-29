@@ -20,7 +20,7 @@ Here are some common factors affecting your weight:
 4. How much water you drink
 5. The amount of carbohydrate you consume
 
-_Why should you track weight daily?_
+__Here's why you should track weight daily.__
 
 Let's imagine your weight is a signal, varying continuously over time. Every time you step on the scale you're taking a sample, converting a continous signal into a discrete one.
 
