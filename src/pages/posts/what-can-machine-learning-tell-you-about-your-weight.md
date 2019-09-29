@@ -69,7 +69,9 @@ Look how closely the predicted values are to the actual weight data.
 
 The model has no knowledge of calorie intake or macronutrients, but it still makes accurate predictions.
 
-**Your past weight is the strongest predictor of future weight.**
+**Your past weight is a strong predictor of future weight.**
+
+...
 
 You can do this yourself using the scikit-learn library in Python.
 
