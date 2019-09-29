@@ -47,6 +47,8 @@ Here's a comparison of daily weight measurement data in black compared with a mo
 
 Notice how the measurement data moves up and down a lot but the moving average trends down consistently?
 
+I like to use a window of 14 days for my moving average, but you're free to experiment.
+
 ### What you did last week predicts your progress this week
 
 Time series analysis
