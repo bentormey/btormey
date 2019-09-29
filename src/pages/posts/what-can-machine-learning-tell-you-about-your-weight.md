@@ -8,8 +8,6 @@ template: post
 
 Introduction...
 
-
-
 ### Ignore daily weight measurements, look at the trend
 
 If you've ever dieted before, you'll know that the scale does weird things. You'll wake up looking leaner but the scale says you haven't lost any weight. Or you'll check the scale and you're suddenly heavier even though you've been doing everything right.
@@ -24,7 +22,7 @@ Here are some common factors affecting your weight:
 4. How much water you drink.
 5. The amount of carbohydrate you consume.
 
-__Track your weight daily and you don't have to worry about any of that.__
+**Track your weight daily and you don't have to worry about any of that.**
 
 That sounds counterintuitive, right?
 
@@ -39,17 +37,21 @@ There's observation error too, which happens even if you consistently take your 
 That's why I recommend taking daily weight measurements.
 
 There are two key benefits:
-1. Helps form a habit and diminishes the emotional impression of the scale.
+
+1. Helps form a strong habit and diminishes the emotional impression of the scale.
 2. Allows you to smooth out the noise and see a clear trend.
 
 Here's a comparison of daily weight measurement data compared with a moving average.
+
+![](/images/weight.png)
+
+
 
 ### What you did last week predicts your progress this week
 
 Model fitting
 
 ![](/images/model.png)
-
 
 You can do ridge regression using the scikit-learn library in Python.
 
