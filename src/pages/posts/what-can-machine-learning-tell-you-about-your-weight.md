@@ -82,4 +82,4 @@ Feature extraction
 
 1. Sample your weight measurement _at least_ twice per week.
 2. Use the moving average to guage progress _not_ the raw weight data.
-3. Be consistent in habits like tracking, planning your nutrition, and getting good sleep.
+3. Be _consistent_ in habits like tracking, planning your nutrition, and getting good sleep.
