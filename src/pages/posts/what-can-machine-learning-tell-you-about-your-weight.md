@@ -45,10 +45,8 @@ Model fitting
 ```
 # Import raw CSV from Google Sheets client data
 df = pd.read_csv('raw.csv', parse_dates=['Date'])
-
 # Drop missing entries
 df_no_missing = df.dropna()
-
 # Creating a copy of the initial datagrame to make various transformations
 data = pd.DataFrame(df.Weight.copy())
 data.columns = ["Weight"]
