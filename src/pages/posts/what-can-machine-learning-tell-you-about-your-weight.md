@@ -49,14 +49,13 @@ You can do ridge regression using the scikit-learn library in Python.
 # Import raw CSV from Google Sheets
 df = pd.read_csv('raw.csv', parse_dates=['Date'])
 
-# Drop missing entries
+# Drop any missing entries (interpolation also works)
 df_no_missing = df.dropna()
 
-# Creating a copy of the initial dataframe so we can make some transformations
 data = pd.DataFrame(df.Weight.copy())
 data.columns = ["Weight"]
 
-# Adding the lags for the weight variable
+# Add the lags for the weight variable
 for i in range(1, 7):
     data["lag_{}".format(i)] = data.Weight.shift(i)
 
