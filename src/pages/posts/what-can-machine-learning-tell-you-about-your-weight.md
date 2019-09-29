@@ -49,11 +49,11 @@ df = pd.read_csv('raw.csv', parse_dates=['Date'])
 # Drop missing entries
 df_no_missing = df.dropna()
 
-# Creating a copy of the initial datagrame to make various transformations
+# Creating a copy of the initial dataframe so we can make some transformations
 data = pd.DataFrame(df.Weight.copy())
 data.columns = ["Weight"]
 
-# Adding the lag of the target variable
+# Adding the lags for the weight variable
 for i in range(1, 7):
     data["lag_{}".format(i)] = data.Weight.shift(i)
 
@@ -61,7 +61,15 @@ y = data.dropna().Weight
 X = data.dropna().drop(['Weight'], axis=1)
 
 # reserve 30% of data for testing
-X_train, X_test, y_train, y_test = timeseries_train_test_split(X, y, test_size=0.1)
+X_train, X_test, y_train, y_test = timeseries_train_test_split(X, y, test_size=0.3)
+
+from sklearn.linear_model import LassoCV, RidgeCV
+
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
 ```
 
 ### Basic habits correlate with progress
