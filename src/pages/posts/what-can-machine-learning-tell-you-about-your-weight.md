@@ -41,9 +41,11 @@ There are two key benefits:
 1. Helps form a strong habit and diminishes the emotional impression of the scale.
 2. Allows you to smooth out the noise and see a clear trend.
 
-Here's a comparison of daily weight measurement data compared with a moving average.
+Here's a comparison of daily weight measurement data in black compared with a moving average in red.
 
 ![](/images/weight.png)
+
+Notice how the measurement data is all over the place but the moving average trends down almost linearly?
 
 
 
