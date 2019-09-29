@@ -7,4 +7,10 @@ menus:
     weight: 6
 template: contact
 ---
-Fill the form below to get in touch with me.
+You can contact me via email at bentormey@gmail.com.
+
+Or you can message me on [Twitter](https://twitter.com/BenTormey).
+
+Interested in coaching?
+
+Fill the form below to get in touch and I'll send you information on the application process.
