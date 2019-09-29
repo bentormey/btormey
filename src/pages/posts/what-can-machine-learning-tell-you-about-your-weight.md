@@ -6,22 +6,28 @@ template: post
 ---
 Interesting hook...
 
-## Ignore daily weight measurements, look at the trend
+### Ignore daily weight measurements, look at the trend
 
 Your weight data is noisy.
 
-Here are some common factors:
+
+
+Here are some common factors affecting your weight:
 1. When you last went to the bathroom
 2. How much food is in your digestive system
 3. The amount of sodium in your food
 4. How much water you drink
 5. The amount of carbohydrates you consume
 
-## What you did last week predicts your progress this week
+Why is it important to track weight daily?
+
+
+
+### What you did last week predicts your progress this week
 
 Model fitting
 
-## Basic habits correlate with progress
+### Basic habits correlate with progress
 
 Feature extraction
 
