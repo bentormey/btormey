@@ -14,7 +14,7 @@ Introduction...
 
 If you've ever dieted before, you'll know that the scale does weird things. You'll wake up looking leaner but the scale says you haven't lost any weight. Or you're suddenly heavier even though you've been doing everything right.
 
-Your weight data is _noisy_ and we want the _signal_.
+Your weight data is _noisy_ and you need the _signal_.
 
 Here are some common factors affecting your weight:
 
@@ -24,7 +24,7 @@ Here are some common factors affecting your weight:
 4. How much water you drink.
 5. The amount of carbohydrate you consume.
 
-**Track your weight daily and you don't have to worry about any of that.**
+**Track your weight daily and you don't have to worry about any of them.**
 
 That sounds counterintuitive, right?
 
@@ -32,7 +32,7 @@ Let's imagine your weight is a signal, varying continuously over time. Every tim
 
 In the same way that streaming music services compress audio by sampling it, you're compressing your weight data.
 
-If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to reconstruct weekly weight variation.
+If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to reconstruct what's happening over the weekly timescale.
 
 There's observation error too, which happens even if you consistently take your measurements on the same scale at the same time.
 
