@@ -30,7 +30,7 @@ In the same way that streaming music services compress audio by sampling it, you
 
 If you don't take enough samples, you lose important information. And because bodyweight measurements introduce error, you aren't getting accurate data if you only take one measurement per week.
 
-The Nyquist-Shannon theorem tells us that we need a sample rate of at least two measurements per week (a sample rate of 2/7) to reconstruct the weekly weight variation.
+The Nyquist-Shannon theorem suggest that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to understand the weekly change in weight.
 
 But that's not 
 
