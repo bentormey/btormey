@@ -7,5 +7,4 @@ menus:
     weight: 6
 template: contact
 ---
-
 Fill the form below to get in touch with me.
