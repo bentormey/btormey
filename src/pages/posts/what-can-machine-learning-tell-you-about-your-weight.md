@@ -43,6 +43,10 @@ There are two key benefits:
 1. Forms a strong habit and diminishes the emotional impression of the scale.
 2. Allows you to smooth out the noise and see a clear trend.
 
+Habit and emotions...
+
+Smoothing with a moving average...
+
 Here's a comparison of daily weight measurement data in black compared with a moving average in red.
 
 ![](/images/weight.png)
@@ -51,9 +55,11 @@ Do you notice how the measurement data moves up and down a lot but the moving av
 
 ### What you did last week predicts your progress this week
 
-Time series analysis is often used in finance to generate trading signals based on historical trading data. I use time series analysis with all of my clients to analyse trends in weight data. The moving average is a simple way of analysing the trend.
+Time series analysis is often used in finance to generate trading signals based on historical trading data.
 
-What happens when we use more advanced regression techniques to forecast future weight based on past weight data?
+I use time series analysis with all of my clients to analyse trends in weight data. The moving average is one simple way to analyse the trend, but it's not as reliable forecasting.
+
+What happens when we use more advanced techniques to forecast future weight based on past weight data?
 
 Here's a regression model I fitted to real client data using the last week of weight measurements to forecast future weight.
 
