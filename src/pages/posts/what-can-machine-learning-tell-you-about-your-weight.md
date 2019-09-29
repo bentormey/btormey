@@ -45,7 +45,7 @@ There are two key benefits:
 
 Habit and emotions...
 
-Smoothing with a moving average...
+Smoothing with a moving average... MA(14)
 
 Here's a comparison of daily weight measurement data in black compared with a moving average in red.
 
