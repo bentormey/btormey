@@ -74,30 +74,6 @@ The model has no knowledge of calorie intake or macronutrients, but it still mak
 You can do this yourself using the scikit-learn library in Python.
 
 ```
-# Import raw CSV from Google Sheets
-df = pd.read_csv('raw.csv', parse_dates=['Date'])
-
-# Drop any missing entries (interpolation also works)
-df_no_missing = df.dropna()
-
-data = pd.DataFrame(df.Weight.copy())
-data.columns = ["Weight"]
-
-# Add the lags for the weight variable
-for i in range(1, 7):
-    data["lag_{}".format(i)] = data.Weight.shift(i)
-
-y = data.dropna().Weight
-X = data.dropna().drop(['Weight'], axis=1)
-
-# Reserve 30% of data for testing
-X_train, X_test, y_train, y_test = timeseries_train_test_split(X, y, test_size=0.3)
-
-scaler = StandardScaler()
-
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
-
 ridge = RidgeCV(cv=tscv)
 ridge.fit(X_train_scaled, y_train)
 ```
