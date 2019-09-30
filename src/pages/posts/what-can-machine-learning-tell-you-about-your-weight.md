@@ -10,7 +10,7 @@ Introduction...
 
 ### Take daily weight measurements, but filter out the noise
 
-If you've ever dieted before, you'll know that the scale does weird things. You'll wake up looking leaner but the scale says you haven't lost any weight. Or you're suddenly heavier even though you've been doing everything right.
+If you've ever dieted before, you'll know that the scale does weird things. One day you'll wake up looking leaner but the scale says you're stuck at the same weight. Or it tells you that you're heavier even though you've been doing everything right.
 
 Your weight data is _noisy_ and you need the _signal_.
 
@@ -20,7 +20,7 @@ Here are some common factors affecting your weight:
 2. How much food is in your digestive system.
 3. The amount of sodium in your food.
 4. How much water you drink.
-5. The amount of carbohydrate you consume.
+5. The amount of carbohydrates you consume.
 
 **Track your weight daily and you don't have to worry about any of them.**
 
@@ -32,9 +32,11 @@ In the same way that streaming music services compress audio by sampling it, you
 
 If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to attempt to reconstruct what's happening over the weekly timescale.
 
-Look what happens when you only take two measurements.
+Here are two curves showing weight gain in red and weight loss in green. Look what happens when you only take two measurements.
 
 ![](/images/untitled-design.png)
+
+Both curves look the same when we sample at those points and try to extrapolate the trend.
 
 There's observation error too, which happens even if you consistently take your measurements on the same scale at the same time.
 
@@ -42,14 +44,14 @@ That's why I recommend taking daily weight measurements.
 
 There are two key benefits:
 
-1. Forms a strong habit and diminishes the emotional impression of the scale.
+1. It forms a strong habit and diminishes the emotional impression of the scale.
 2. Allows you to smooth out the noise and see a clear trend.
 
-Habit and emotions...
+Habit forming...
 
-Smoothing with a moving average... MA(14)
 
-Here's a comparison of daily weight measurement data in black compared with a moving average in red.
+
+Here's a comparison of daily weight measurement data in black compared with a smoothed out moving average in red.
 
 ![](/images/ma.png)
 
@@ -73,7 +75,7 @@ The model has no knowledge of calorie intake or macronutrients, but it still see
 
 What does that mean?
 
-**Your past weight is a strong predictor of future weight.**
+**What you did last week forecasts...**
 
 ...
 
