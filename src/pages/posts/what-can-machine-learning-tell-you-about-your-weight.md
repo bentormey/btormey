@@ -56,7 +56,9 @@ Here's a comparison of daily weight measurement data in black plotted against th
 
 ![](/images/ma.png)
 
-Notice how the measurement data moves up and down a lot but the moving average behaves much better, decreasing almost linearly.
+Notice how the measurement data moves up and down a lot but the moving average behaves much better, decreasing almost linearly over time.
+
+\[Habit formation and impressions?]
 
 It forms a strong habit and diminishes the impression of the weight...
 
