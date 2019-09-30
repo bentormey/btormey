@@ -8,8 +8,6 @@ template: post
 
 Introduction...
 
-
-
 Move bit on diminshing impressions leading to emotions here?
 
 ### Take daily weight measurements, but filter out the noise
@@ -38,7 +36,7 @@ If you don't take enough samples, you lose important information. The Nyquist-Sh
 
 Here are two curves showing weight gain in red and weight loss in green. Look what happens when you take two samples.
 
-![](/images/untitled-design-2.png)
+![](/images/untitled-design-3.png)
 
 Both curves look the same when we sample at those points and try to extrapolate the trend.
 
