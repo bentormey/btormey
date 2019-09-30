@@ -48,7 +48,7 @@ With **daily weight measurements** you have enough samples, but there's still th
 
 You can filter out the noise by taking a **moving average** of your daily weight measurements. A simple type of moving average you can use is the arithmetic mean of your past weight measurements. I like to use the last 14 days of weight data.
 
-**Example.** ...
+**Example.** W_1 + W_2 + ... + W_14 = X
 
 Think of it like a fixed window sliding along your weight data, smoothing out all the bumps and dips.
 
