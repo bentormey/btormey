@@ -10,7 +10,7 @@ Introduction...
 
 ### Take daily weight measurements, but filter out the noise
 
-The scale does weird things when you diet. One day you'll wake up looking leaner but the scale says you're stuck at the same weight. The next day it'll say that you're heavier ,even though you've been doing everything right.
+The scale does weird things when you diet. One day you'll wake up looking leaner but the scale says you're stuck at the same weight. The next day it'll say that you're heavier, even though you've been doing everything right.
 
 Your weight data is _noisy_ and you need the _signal_.
 
@@ -94,6 +94,8 @@ Feature selection to tease out the most important factors influencing weight los
 
 Classifying behaviours which influenced weight loss...
 
+Important features
+
 XGBoost
 
 ## How to take action on this
@@ -104,4 +106,4 @@ Do this...
 2. Use a moving average to assess progress _not_ the raw data.
 3. Be _consistent_ in habits like tracking, planning your nutrition, and getting good sleep.
 
-You can grab a ready to use weight tracking spreadsheet and the Python code I used to generate the regression plot [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY).
+You can grab a ready to use weight tracking spreadsheet [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY).
