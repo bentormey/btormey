@@ -8,8 +8,6 @@ template: post
 
 Introduction...
 
-
-
 ### Take daily weight measurements, but filter out the noise
 
 If you've ever dieted before, you'll know that the scale does weird things. You'll wake up looking leaner but the scale says you haven't lost any weight. Or you're suddenly heavier even though you've been doing everything right.
@@ -49,7 +47,7 @@ Smoothing with a moving average... MA(14)
 
 Here's a comparison of daily weight measurement data in black compared with a moving average in red.
 
-![](/images/weight.png)
+![](/images/ma.png)
 
 Do you notice how the measurement data moves up and down a lot but the moving average trends down consistently?
 
