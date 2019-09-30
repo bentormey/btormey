@@ -42,15 +42,17 @@ If you don't take enough samples, you lose important information. The Nyquist-Sh
 
 ![](/images/untitled-design-3.png)
 
-Both curves look the same when we sample at two points and try to extrapolate the trend line in black.
+Both curves look the same if you sample at two points and try to extrapolate the trend line in black.
 
-That's why it's important to have more samples.
+With **daily weight measurements** you have enough samples, but more noise from those factors I mentioned before.
 
-With daily weight measurements you have enough samples, but more noise from those factors I mentioned before.
+You can filter out the noise by taking a **moving average** of your daily weight measurements. A simple type of moving average you can use is the arithmetic mean of your past weight measurements.
 
-You can filter out the noise by taking a **moving average** of your daily weight measurements.
+**Example.** ...
 
-Here's a comparison of daily weight measurement data in black compared with a moving average in red.
+Think of it like a window sliding along your weight data.
+
+Here's a comparison of daily weight measurement data in black plotted against the moving average in red.
 
 ![](/images/ma.png)
 
