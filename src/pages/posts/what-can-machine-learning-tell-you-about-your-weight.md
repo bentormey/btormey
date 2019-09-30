@@ -8,6 +8,8 @@ template: post
 
 Introduction...
 
+
+
 Move bit on diminshing impressions leading to emotions here?
 
 ### Take daily weight measurements, but filter out the noise
@@ -85,7 +87,7 @@ ridge.fit(X_train_scaled, y_train)
 
 ### Basic habits are the biggest factors in success
 
-
+Behaviours
 
 Feature selection to tease out the most important factors influencing weight loss. It works by removing 
 
@@ -99,8 +101,8 @@ XGBoost
 
 Do this...
 
-1. Sample your weight measurement at the same time every day.
+1. Sample your weight measurement daily...
 2. Use a moving average to assess progress _not_ the raw data.
 3. Be _consistent_ in habits like tracking, planning your nutrition, and getting good sleep.
 
-You can grab a ready to use weight tracking spreadsheet and the Python code I used [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY).
+You can grab a ready to use weight tracking spreadsheet and the Python code I used for the machine learning stuff [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY). Contact me if you want help setting it up.
