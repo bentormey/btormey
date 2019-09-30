@@ -68,7 +68,7 @@ Here's a regression model I fitted to real client data using the past week of we
 
 Look how closely the predicted values are to the actual weight data.
 
-The model has no knowledge of calorie intake or macronutrients, but it still seems to understand what's happening.
+The model doesn't know _anything_ about calorie intake or macronutrients, but it still makes accurate forecasts.
 
 What does that mean?
 
