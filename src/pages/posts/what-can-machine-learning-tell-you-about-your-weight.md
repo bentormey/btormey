@@ -48,9 +48,9 @@ With **daily weight measurements** you have enough samples, all that's left to d
 
 You can filter out the noise by taking a **moving average** of your daily weight measurements. A simple type of moving average you can use is the arithmetic mean of your past weight measurements. I like to use the last 14 days of weight data.
 
-**Example.** W1 + W2 + ... + W14 = X
+**Example.** W1 + W2 + ... + W14 = X 
 
-Think of it like a fixed window sliding along your weight data, smoothing out all the bumps and dips. It's a 
+Think of it sliding along your weight data, smoothing out all the bumps and dips.
 
 Here's a comparison of daily weight measurement data in black plotted against the moving average in red.
 
@@ -64,9 +64,9 @@ Benefit of daily habit. It forms a strong habit and diminishes the impression of
 
 ### What you did last week predicts your progress this week
 
-The moving average is a nice way to analyse the trend, but it's not as good at forecasting.
+The moving average helps you analyse the trend, but what if you want to make predictions?
 
-What happens when you use more advanced techniques to forecast future weight based on past weight data?
+You can use more advanced techniques to forecast future weight based on past weight data.
 
 \[Regression]
 
