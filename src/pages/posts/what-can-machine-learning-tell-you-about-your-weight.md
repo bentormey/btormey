@@ -8,6 +8,8 @@ template: post
 
 Introduction...
 
+Move bit on diminshing impressions leading to emotions here?
+
 ### Take daily weight measurements, but filter out the noise
 
 The scale does weird things when you diet. One day you'll wake up looking leaner but the scale says you're stuck at the same weight. The next day it'll say that you're heavier, even though you've been doing everything right.
@@ -40,22 +42,17 @@ Both curves look the same when we sample at those points and try to extrapolate 
 
 Observation error contributes to the noise too, even if you consistently take your measurements on the same scale at the same time.
 
-That's why you should take daily weight measurements.
+Take a moving average... MA(14)
 
-There are two secondary benefits:
-
-1. It forms a strong habit and diminishes the impression of the weight...
-2. Allows you to smooth out the noise and see a clear trend.
-
-Habit forming...
-
-
+Allows you to smooth out the noise and see a clear trend.
 
 Here's a comparison of daily weight measurement data in black compared with a smoothed out moving average in red.
 
 ![](/images/ma.png)
 
 Notice how the measurement data moves up and down a lot but the moving average trends down consistently?
+
+It forms a strong habit and diminishes the impression of the weight...
 
 ### What you did last week predicts your progress this week
 
@@ -106,4 +103,4 @@ Do this...
 2. Use a moving average to assess progress _not_ the raw data.
 3. Be _consistent_ in habits like tracking, planning your nutrition, and getting good sleep.
 
-You can grab a ready to use weight tracking spreadsheet [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY).
+You can grab a ready to use weight tracking spreadsheet and the Python code I used [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY).
