@@ -30,7 +30,11 @@ Let's imagine your weight is a signal, varying continuously over time. Every tim
 
 In the same way that streaming music services compress audio by sampling it, you're compressing your weight data.
 
-If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to reconstruct what's happening over the weekly timescale.
+If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to attempt to reconstruct what's happening over the weekly timescale.
+
+Look what happens when you only take two measurements.
+
+![](/images/untitled-design.png)
 
 There's observation error too, which happens even if you consistently take your measurements on the same scale at the same time.
 
