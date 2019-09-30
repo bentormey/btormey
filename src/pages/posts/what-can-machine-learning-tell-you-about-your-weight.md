@@ -24,7 +24,9 @@ Here are some common factors affecting your weight:
 4. How much water you drink.
 5. The amount of carbohydrates you consume.
 
-**Track your weight daily and you don't have to worry about any of them.**
+You'll introduce observation error too, even if you consistently take your weight measurements at the same time and in the same state. Your scales aren't perfect.
+
+**Track your weight daily and you don't have to worry about this.**
 
 That sounds counterintuitive, right?
 
@@ -34,15 +36,13 @@ In the same way that streaming music services compress audio by sampling it, you
 
 If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to attempt to reconstruct what's happening over the weekly timescale.
 
-Here are two curves showing weight gain in red and weight loss in green. Look what happens when you take two samples.
+**Example.** Here are two curves showing weight gain in red and weight loss in green.
 
 ![](/images/untitled-design-3.png)
 
-Both curves look the same when we sample at those points and try to extrapolate the trend.
+Both curves look the same when we sample at two points and try to extrapolate the trend.
 
-Observation error contributes to the noise too, even if you consistently take your measurements on the same scale at the same time.
-
-Take a moving average... MA(14)
+That's why you should take a **moving average** of your daily weight measurements to filter out the noise.
 
 Allows you to smooth out the noise and see a clear trend.
 
