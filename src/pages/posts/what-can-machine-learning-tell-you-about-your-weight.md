@@ -66,11 +66,11 @@ Benefit of daily habit. It forms a strong habit and diminishes the impression of
 
 The moving average is a nice way to analyse the trend, but it's not as good at forecasting.
 
-What happens when we use more advanced techniques to forecast future weight based on past weight data?
+What happens when you use more advanced techniques to forecast future weight based on past weight data?
 
 \[Regression]
 
-Here's a regression model I fitted to real client data using the past week of weight measurements to predict future weight.
+Here's a regression model I fitted to real client data using scikitlearn library in Python.
 
 ![](/images/model.png)
 
@@ -78,22 +78,17 @@ Look how closely the predicted values are to the actual weight data.
 
 The model doesn't know _anything_ about calorie intake, macronutrients, or exercise. It only knows about past weight.
 
-What does that tell us?
+What does that tell you?
 
 **What you did last week forecasts...**
 
 ...
 
-You can do this yourself using the scikit-learn library in Python.
-
-```
-ridge = RidgeCV(cv=tscv)
-ridge.fit(X_train_scaled, y_train)
-```
-
 ### Basic habits are the biggest factors in success
 
-Behaviours
+XGBoost machine learning algorithm...
+
+Weight and behaviour tags in raw data.
 
 Feature selection to tease out the most important factors influencing weight loss. It works by removing 
 
