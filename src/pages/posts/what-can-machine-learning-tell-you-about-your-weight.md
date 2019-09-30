@@ -16,9 +16,7 @@ Move bit on diminshing impressions leading to emotions here?
 
 The scale does weird things when you diet. One day you'll wake up looking leaner but the scale says you're stuck at the same weight. The next day it'll say that you're heavier, even though you've been doing everything right.
 
-Your weight data is _noisy_ and you are looking for the _signal_.
-
-Here are some factors that affect your weight:
+Here are some factors that affect your weight and have nothing to do with how well you stick to your diet:
 
 1. When you last went to the bathroom.
 2. How much food is in your digestive system.
@@ -26,7 +24,9 @@ Here are some factors that affect your weight:
 4. How much water you drink.
 5. The amount of carbohydrates you consume.
 
-And you'll introduce observation error, even if you consistently take your weight measurements at the same time and in the same state.
+Your weight data is _noisy_ and you are looking for the _signal_.
+
+On top of the noise there's observation error every time you use your scale, even if you use it consistently at the same time of day and in the same state.
 
 **Track your weight daily and you don't have to worry about this.**
 
@@ -46,11 +46,11 @@ Both curves look the same if you sample at two points and try to extrapolate the
 
 With **daily weight measurements** you have enough samples, but more noise from those factors I mentioned before.
 
-You can filter out the noise by taking a **moving average** of your daily weight measurements. A simple type of moving average you can use is the arithmetic mean of your past weight measurements.
+You can filter out the noise by taking a **moving average** of your daily weight measurements. A simple type of moving average you can use is the arithmetic mean of your past weight measurements. I like to use the last 14 days of weight data.
 
 **Example.** ...
 
-Think of it like a window sliding along your weight data.
+Think of it like a fixed window sliding along your weight data, smoothing out all the bumps and dips.
 
 Here's a comparison of daily weight measurement data in black plotted against the moving average in red.
 
