@@ -55,7 +55,7 @@ Here's a comparison of daily weight measurement data in black compared with a sm
 
 ![](/images/ma.png)
 
-Do you notice how the measurement data moves up and down a lot but the moving average trends down consistently?
+Notice how the measurement data moves up and down a lot but the moving average trends down consistently?
 
 ### What you did last week predicts your progress this week
 
