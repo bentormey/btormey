@@ -12,11 +12,13 @@ Move bit on diminshing impressions leading to emotions here?
 
 ### Take daily weight measurements, but filter out the noise
 
+\[Common frustrations?]
+
 The scale does weird things when you diet. One day you'll wake up looking leaner but the scale says you're stuck at the same weight. The next day it'll say that you're heavier, even though you've been doing everything right.
 
-Your weight data is _noisy_ and you need the _signal_.
+Your weight data is _noisy_ and you are looking for the _signal_.
 
-Here are some common factors affecting your weight:
+Here are some factors that affect your weight:
 
 1. When you last went to the bathroom.
 2. How much food is in your digestive system.
@@ -24,33 +26,37 @@ Here are some common factors affecting your weight:
 4. How much water you drink.
 5. The amount of carbohydrates you consume.
 
-You'll introduce observation error too, even if you consistently take your weight measurements at the same time and in the same state. Your scales aren't perfect.
+And you'll introduce observation error, even if you consistently take your weight measurements at the same time and in the same state.
 
 **Track your weight daily and you don't have to worry about this.**
 
 That sounds counterintuitive, right?
 
-Let's imagine your weight is a signal, varying continuously over time. Every time you step on the scale you're taking a sample, converting that continous signal into a discrete one.
+Let's imagine your weight as a signal, varying continuously over time. Every time you step on the scale you're taking a sample, converting that continous signal into a discrete one.
 
-In the same way that streaming music services compress audio by sampling it, you're compressing your weight data.
+In the same way that streaming music services compress audio by sampling it, you're compressing your weight data into a format that's more manageable.
 
-If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to attempt to reconstruct what's happening over the weekly timescale.
+If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate > 2/7) to attempt to reconstruct what's happening over the weekly timescale.
 
 **Example.** Here are two curves showing weight gain in red and weight loss in green.
 
 ![](/images/untitled-design-3.png)
 
-Both curves look the same when we sample at two points and try to extrapolate the trend.
+Both curves look the same when we sample at two points and try to extrapolate the trend line in black.
 
-That's why you should take a **moving average** of your daily weight measurements to filter out the noise.
+That's why it's important to have more samples.
 
-Allows you to smooth out the noise and see a clear trend.
+With daily weight measurements you have enough samples, but more noise from those factors I mentioned before.
 
-Here's a comparison of daily weight measurement data in black compared with a smoothed out moving average in red.
+You can filter out the noise by taking a **moving average** of your daily weight measurements.
+
+Here's a comparison of daily weight measurement data in black compared with a moving average in red.
 
 ![](/images/ma.png)
 
-Notice how the measurement data moves up and down a lot but the moving average trends down consistently?
+Notice how the measurement data moves up and down a lot but the moving average goes down almost linearly.
+
+The moving average smooths everything out and helps you spot the trend.
 
 It forms a strong habit and diminishes the impression of the weight...
 
