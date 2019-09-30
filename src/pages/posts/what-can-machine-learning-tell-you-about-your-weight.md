@@ -56,9 +56,7 @@ Here's a comparison of daily weight measurement data in black plotted against th
 
 ![](/images/ma.png)
 
-Notice how the measurement data moves up and down a lot but the moving average goes down almost linearly.
-
-The moving average smooths everything out and helps you spot the trend.
+Notice how the measurement data moves up and down a lot but the moving average behaves much better, decreasing almost linearly.
 
 It forms a strong habit and diminishes the impression of the weight...
 
