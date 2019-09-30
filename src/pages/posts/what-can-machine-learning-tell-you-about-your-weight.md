@@ -32,13 +32,13 @@ In the same way that streaming music services compress audio by sampling it, you
 
 If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate >  2/7) to attempt to reconstruct what's happening over the weekly timescale.
 
-Here are two curves showing weight gain in red and weight loss in green. Look what happens when you only take two samples.
+Here are two curves showing weight gain in red and weight loss in green. Look what happens when you take two samples.
 
 ![](/images/untitled-design-2.png)
 
 Both curves look the same when we sample at those points and try to extrapolate the trend.
 
-There's observation error too, which happens even if you consistently take your measurements on the same scale at the same time.
+Observation error contributes to the noise, it happens even if you consistently take your measurements on the same scale at the same time.
 
 That's why I recommend taking daily weight measurements.
 
