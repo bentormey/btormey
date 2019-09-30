@@ -88,9 +88,13 @@ ridge.fit(X_train_scaled, y_train)
 
 ### Basic habits are the biggest factors in success
 
-Feature extraction
 
-Key habits predict success
+
+Feature selection to tease out the most important factors influencing weight loss. It works by removing 
+
+Classifying behaviours which influenced weight loss...
+
+XGBoost
 
 ## How to take action on this
 
