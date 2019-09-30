@@ -44,7 +44,7 @@ If you don't take enough samples, you lose important information. The Nyquist-Sh
 
 Both curves look the same if you sample at two points and try to extrapolate the trend line in black.
 
-With **daily weight measurements** you have enough samples, but there's still the noise left to deal with.
+With **daily weight measurements** you have enough samples, all that's left to do is handle the noise.
 
 You can filter out the noise by taking a **moving average** of your daily weight measurements. A simple type of moving average you can use is the arithmetic mean of your past weight measurements. I like to use the last 14 days of weight data.
 
