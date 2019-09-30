@@ -38,13 +38,13 @@ Here are two curves showing weight gain in red and weight loss in green. Look wh
 
 Both curves look the same when we sample at those points and try to extrapolate the trend.
 
-Observation error contributes to the noise, it happens even if you consistently take your measurements on the same scale at the same time.
+Observation error contributes to the noise too, even if you consistently take your measurements on the same scale at the same time.
 
-That's why I recommend taking daily weight measurements.
+That's why you should take daily weight measurements.
 
-There are two key benefits:
+There are two secondary benefits:
 
-1. It forms a strong habit and diminishes the emotional impression of the scale.
+1. It forms a strong habit and diminishes the impression of the weight...
 2. Allows you to smooth out the noise and see a clear trend.
 
 Habit forming...
