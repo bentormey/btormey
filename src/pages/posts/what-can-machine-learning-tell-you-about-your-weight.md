@@ -70,7 +70,7 @@ You can use more advanced techniques to forecast future weight based on past wei
 
 \[Regression]
 
-Here's a regression model I fitted to real client data using scikitlearn library in Python.
+Here's a regression model I fitted to real client data using the scikitlearn library in Python. Regression tries to find a linear relationship between 
 
 ![](/images/model.png)
 
