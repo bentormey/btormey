@@ -10,7 +10,7 @@ Introduction...
 
 ### Take daily weight measurements, but filter out the noise
 
-If you've ever dieted before, you'll know that the scale does weird things. One day you'll wake up looking leaner but the scale says you're stuck at the same weight. Or it tells you that you're heavier even though you've been doing everything right.
+The scale does weird things when you diet. One day you'll wake up looking leaner but the scale says you're stuck at the same weight. The next day it'll say that you're heavier ,even though you've been doing everything right.
 
 Your weight data is _noisy_ and you need the _signal_.
 
