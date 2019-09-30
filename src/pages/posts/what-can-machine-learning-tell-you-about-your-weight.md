@@ -94,6 +94,10 @@ Key habits predict success
 
 ## How to take action on this
 
+Do this...
+
 1. Sample your weight measurement at the same time every day.
 2. Use a moving average to assess progress _not_ the raw data.
 3. Be _consistent_ in habits like tracking, planning your nutrition, and getting good sleep.
+
+You can grab a ready to use weight tracking spreadsheet and the Python code I used to generate the regression plot [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY).
