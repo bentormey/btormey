@@ -64,11 +64,11 @@ It forms a strong habit and diminishes the impression of the weight...
 
 ### What you did last week predicts your progress this week
 
-Time series analysis is often used in finance to generate trading signals based on historical trading data.
-
-You can use time series analysis techniques to understand your weight data too. The moving average is a simple way to analyse the trend, but it's not as reliable forecasting.
+The moving average is a nice way to analyse the trend, but it's not as good at forecasting.
 
 What happens when we use more advanced techniques to forecast future weight based on past weight data?
+
+\[Regression]
 
 Here's a regression model I fitted to real client data using the past week of weight measurements to predict future weight.
 
@@ -76,7 +76,7 @@ Here's a regression model I fitted to real client data using the past week of we
 
 Look how closely the predicted values are to the actual weight data.
 
-The model doesn't know _anything_ about calorie intake, macronutrients, or exercise.
+The model doesn't know _anything_ about calorie intake, macronutrients, or exercise. It only knows about past weight.
 
 What does that tell us?
 
