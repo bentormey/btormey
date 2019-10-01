@@ -66,7 +66,9 @@ Benefit of daily habit. It forms a strong habit and diminishes the impression of
 
 ### What you did last week predicts your progress this week
 
-The moving average helps you analyse the trend, but what if you want to make predictions?
+The moving average helps you analyse the trend, but what if you want to make forecasts?
+
+You can use the moving average, but it's 
 
 You can use more advanced techniques to forecast future weight based on past weight data.
 
@@ -88,6 +90,8 @@ What does that tell you?
 
 ### Basic habits are the biggest factors in success
 
+
+
 XGBoost machine learning algorithm...
 
 Weight and behaviour tags in raw data.
@@ -102,7 +106,7 @@ XGBoost
 
 ## How to take action on this
 
-There are three things you can implement right now:
+Here are three things you can implement right now:
 
 1. Sample your weight measurement _daily_ in the same state and at the same time.
 2. Use a moving average to assess progress _not_ the raw data.
