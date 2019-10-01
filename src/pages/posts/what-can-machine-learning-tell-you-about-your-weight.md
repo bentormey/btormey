@@ -38,7 +38,7 @@ On top of the noise there's observation error every time you use your scale, eve
 
 That sounds counterintuitive, right?
 
-Let's imagine your weight as a signal, varying continuously over time. Every time you step on the scale you're taking a sample, converting that continous signal into a discrete one.
+Imagine your weight as a signal, varying continuously over time. Every time you step on the scale you're taking a sample, converting that continous signal into a discrete one.
 
 In the same way that streaming music services compress audio by sampling it, you're compressing your weight data into a format that's more manageable.
 
@@ -68,9 +68,7 @@ Notice how the measurement data moves up and down a lot but the moving average b
 
 The moving average has many applications, in finance it's often used to generate trading signals for stocks. You can use it to forecast your weight and support decision making.
 
-How can machine learning be applied to improve the accuracy of those forecasts?
-
-Regression algorithms are foundational in machine learning, they try to find a linear relationship between a independent variable (like time) and an dependent variable (like weight).
+Machine learning can be applied to improve the accuracy of your forecasts. Regression algorithms are foundational in machine learning, you use them to try and find a linear relationship between an independent variable (like time) and a dependent variable (like weight).
 
 Here is the output of a model I fitted to real weight data using ridge regression, the predictions from the model are in green and the actual values are in blue.
 
