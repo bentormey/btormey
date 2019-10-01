@@ -12,6 +12,10 @@ Importance of reducing emotional content.
 
 Move bit on controlling impressions leading to emotions here?
 
+\[Habit formation and impressions?]
+
+Benefit of daily habit. It forms a strong habit and diminishes the impression of the weight...
+
 ### Take daily weight measurements, but filter out the noise
 
 \[Common frustrations?]
@@ -60,27 +64,19 @@ Here's a comparison of daily weight measurement data in black plotted against th
 
 Notice how the measurement data moves up and down a lot but the moving average behaves much better?
 
-\[Habit formation and impressions?]
-
-Benefit of daily habit. It forms a strong habit and diminishes the impression of the weight...
-
 ### What you did last week predicts your progress this week
 
-The moving average helps you analyse the trend, but what if you want to make forecasts?
+The moving average has many applications, in finance it's often used to generate trading signals for stocks. You can use it to forecast your weight and support decision making in a similar way.
 
-You can use the moving average, but it's 
-
-You can use more advanced techniques to forecast future weight based on past weight data.
-
-\[Regression]
-
-Here's a regression model I fitted to real client data using the scikitlearn library in Python. Regression tries to find a linear relationship between 
+Machine learning can be used to improve the accuracy of those forecasts. Here are the results using regression model I fitted to real weight data, the predictions are in green and the actual values are in blue.
 
 ![](/images/model.png)
 
 Look how closely the predicted values are to the actual weight data.
 
-The model doesn't know _anything_ about calorie intake, macronutrients, or exercise. It only knows about past weight.
+Regression techniques are foundational in machine learning, they try to find a linear relationship between a independent variable (like time) and an dependent variable (like weight).
+
+The model doesn't know _anything_ about calorie intake, macronutrients, or exercise. It only knows about past weight data.
 
 What does that tell you?
 
