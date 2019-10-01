@@ -92,7 +92,7 @@ But instead of zooming in on calories and grams of protein, you should look at t
 
 You can log those behaviours daily with your weight data and use machine learning to tease out the most important factors driving weight loss.
 
-Here I used the XGBoost algorithm to classify behaviours based on how they predict weight loss, ranking them by importance.
+Here I used the XGBoost algorithm to classify behaviours based on how they influence weight, ranking them by importance. Note that the ranking doesn't discriminate between weight gain or weight loss, it only cares about how strongly those behaviours predict change in weight.
 
 ![](/images/features.png)
 
@@ -106,6 +106,6 @@ Here are three things you can implement right now:
 
 1. Sample your weight measurement _daily_ in the same state and at the same time.
 2. Use a moving average to assess progress _not_ the raw data.
-3. Be _consistent_ with behaviours like tracking, planning your nutrition, and prioritising restful sleep.
+3. Be _consistent_ with strategic behaviours like tracking your food intake, planning your nutrition, and prioritising restful sleep.
 
 You can grab a ready to use weight tracking spreadsheet and the Python code I used for the machine learning stuff [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY). Contact me if you want help setting it up.
