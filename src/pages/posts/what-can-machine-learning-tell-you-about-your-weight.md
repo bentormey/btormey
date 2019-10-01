@@ -66,11 +66,11 @@ Notice how the measurement data moves up and down a lot but the moving average b
 
 ### What you did last week predicts your progress this week
 
-The moving average has many applications, in finance it's often used to generate trading signals for stocks. You can use it to forecast your weight and support decision making.
+The moving average has many applications, in finance it's often used to generate trading signals for stocks. You can use it to predict your weight and support decision making.
 
-Machine learning can be applied to improve the accuracy of your forecasts. Regression algorithms are foundational in machine learning, you use them to try and find a linear relationship between an independent variable (like time) and a dependent variable (like weight).
+Machine learning can be applied to improve the accuracy of your predictions. Regression algorithms are foundational in machine learning, you can use them to model a relationship between an independent variable (like time) and a dependent variable (like weight).
 
-Here is the output of a model I fitted to real weight data using ridge regression, the predictions from the model are in green and the actual values are in blue.
+Here is the output of a model I fitted to real weight data using ridge regression with the scikitlearn library in Python, the predictions from the model are in green and the actual values are in blue.
 
 ![](/images/model.png)
 
@@ -82,17 +82,18 @@ If you have enough weight data, you can predict your progress without micromanag
 
 ### Basic habits are the biggest factors in success
 
-XGBoost machine learning algorithm...
+In addition to tracking weight data, you can track behaviours that influence your weight. The most popular way of doing this is by tracking food intake using an app. 
 
-Weight and behaviour tags in raw data.
+But instead of zooming in on calories and grams of protein, you can look at the top-level behaviours:
+- Did you track your food today?
+- Did you eat out?
+- Was your sleep good?
 
-Feature selection to tease out the most important factors influencing weight loss. It works by removing 
+You can log those behaviours daily with your weight data and use machine learning to tease out the most important factors influencing weight loss.
 
-Classifying behaviours which influenced weight loss...
+Here I used the XGBoost algorithm to model weight and behaviour data, selecting the features that have the most predictive power. These are the important behaviours.
 
-Important features
 
-XGBoost
 
 ## How to take action on this
 
