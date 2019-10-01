@@ -84,16 +84,21 @@ If you have enough weight data, you can predict your progress without micromanag
 
 In addition to tracking weight data, you can track behaviours that influence your weight. The most popular way of doing this is by tracking food intake using an app. 
 
-But instead of zooming in on calories and grams of protein, you can look at the top-level behaviours:
-- Did you track your food today?
-- Did you eat out?
-- Was your sleep good?
+But instead of zooming in on calories and grams of protein, you should look at the top-level behaviours:
 
-You can log those behaviours daily with your weight data and use machine learning to tease out the most important factors influencing weight loss.
+* Did you track your food today?
+* Did you eat out?
+* Was your sleep better than usual?
 
-Here I used the XGBoost algorithm to model weight and behaviour data, selecting the features that have the most predictive power. These are the important behaviours.
+You can log those behaviours daily with your weight data and use machine learning to tease out the most important factors driving weight loss.
 
+Here I used the XGBoost algorithm to classify behaviours based on how they predict weight loss, ranking them by importance.
 
+![](/images/features.png)
+
+...
+
+...
 
 ## How to take action on this
 
