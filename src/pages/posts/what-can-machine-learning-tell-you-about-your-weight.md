@@ -68,7 +68,9 @@ Notice how the measurement data moves up and down a lot but the moving average b
 
 The moving average has many applications, in finance it's often used to generate trading signals for stocks. You can use it to forecast your weight and support decision making.
 
-Machine learning can be applied to improve the accuracy of those forecasts. Regression algorithms are foundational in machine learning, they try to find a linear relationship between a independent variable (like time) and an dependent variable (like weight).
+How can machine learning be applied to improve the accuracy of those forecasts?
+
+Regression algorithms are foundational in machine learning, they try to find a linear relationship between a independent variable (like time) and an dependent variable (like weight).
 
 Here is the output of a model I fitted to real weight data using ridge regression, the predictions from the model are in green and the actual values are in blue.
 
