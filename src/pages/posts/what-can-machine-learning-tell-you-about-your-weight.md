@@ -102,10 +102,10 @@ XGBoost
 
 ## How to take action on this
 
-Do this...
+There are three things you can implement right now:
 
-1. Sample your weight measurement daily...
+1. Sample your weight measurement _daily_ in the same state and at the same time.
 2. Use a moving average to assess progress _not_ the raw data.
-3. Be _consistent_ in habits like tracking, planning your nutrition, and getting good sleep.
+3. Be _consistent_ with behaviours like tracking, planning your nutrition, and prioritising restful sleep.
 
 You can grab a ready to use weight tracking spreadsheet and the Python code I used for the machine learning stuff [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY). Contact me if you want help setting it up.
