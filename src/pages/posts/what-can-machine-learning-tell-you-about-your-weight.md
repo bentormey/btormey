@@ -68,9 +68,7 @@ Notice how the measurement data moves up and down a lot but the moving average b
 
 The moving average has many applications, in finance it's often used to generate trading signals for stocks. You can use it to forecast your weight and support decision making.
 
-Machine learning can be used to improve the accuracy of those forecasts.
-
-Regression techniques are foundational in machine learning, they try to find a linear relationship between a independent variable (like time) and an dependent variable (like weight).
+Machine learning can be applied to improve the accuracy of those forecasts. Regression algorithms are foundational in machine learning, they try to find a linear relationship between a independent variable (like time) and an dependent variable (like weight).
 
 Here is the output of a model I fitted to real weight data using ridge regression, the predictions from the model are in green and the actual values are in blue.
 
@@ -78,11 +76,13 @@ Here is the output of a model I fitted to real weight data using ridge regressio
 
 Notice how closely the predicted values are to the actual values?
 
-The model doesn't know _anything_ about calorie intake, macronutrients, or exercise. It only knows about past weight data.
+The model doesn't know _anything_ about calorie intake, macronutrients, or exercise. It only knows about the past week of weight data.
 
 What does that tell you?
 
-It means having enough 
+What you did last week predicts your progress this week.
+
+
 
 ### Basic habits are the biggest factors in success
 
