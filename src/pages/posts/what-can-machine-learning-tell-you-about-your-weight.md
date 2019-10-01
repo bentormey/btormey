@@ -4,17 +4,19 @@ date: 2019-09-29T11:55:28.376Z
 thumb_img_path: /images/blur-codes-coding-577585.jpg
 template: post
 ---
-## Decision frameworks backed by data
+## Decision frameworks driven by data, not emotion
 
 Introduction...
 
-Move bit on diminshing impressions leading to emotions here?
+Importance of reducing emotional content.
+
+Move bit on controlling impressions leading to emotions here?
 
 ### Take daily weight measurements, but filter out the noise
 
 \[Common frustrations?]
 
-The scale does weird things when you diet. One day you'll wake up looking leaner but the scale says you're stuck at the same weight. The next day it'll say that you're heavier, even though you've been doing everything right.
+The scale does weird things when you diet. You'll wake up looking leaner but the scale says you're stuck at the same weight as last week. It'll say that you're heavier even though you know you've been doing everything right.
 
 Here are some factors that affect your weight and have nothing to do with how well you stick to your diet:
 
