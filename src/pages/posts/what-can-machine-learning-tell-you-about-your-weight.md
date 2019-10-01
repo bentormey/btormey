@@ -66,23 +66,23 @@ Notice how the measurement data moves up and down a lot but the moving average b
 
 ### What you did last week predicts your progress this week
 
-The moving average has many applications, in finance it's often used to generate trading signals for stocks. You can use it to forecast your weight and support decision making in a similar way.
+The moving average has many applications, in finance it's often used to generate trading signals for stocks. You can use it to forecast your weight and support decision making.
 
-Machine learning can be used to improve the accuracy of those forecasts. Here are the results using regression model I fitted to real weight data, the predictions are in green and the actual values are in blue.
+Machine learning can be used to improve the accuracy of those forecasts.
+
+Regression techniques are foundational in machine learning, they try to find a linear relationship between a independent variable (like time) and an dependent variable (like weight).
+
+Here is the output of a model I fitted to real weight data using ridge regression, the predictions from the model are in green and the actual values are in blue.
 
 ![](/images/model.png)
 
-Look how closely the predicted values are to the actual weight data.
-
-Regression techniques are foundational in machine learning, they try to find a linear relationship between a independent variable (like time) and an dependent variable (like weight).
+Notice how closely the predicted values are to the actual values?
 
 The model doesn't know _anything_ about calorie intake, macronutrients, or exercise. It only knows about past weight data.
 
 What does that tell you?
 
-**What you did last week forecasts...**
-
-...
+It means having enough 
 
 ### Basic habits are the biggest factors in success
 
