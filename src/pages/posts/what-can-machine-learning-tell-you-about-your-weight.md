@@ -78,15 +78,9 @@ Notice how closely the predicted values are to the actual values?
 
 The model doesn't know _anything_ about calorie intake, macronutrients, or exercise. It only knows about the past week of weight data.
 
-What does that tell you?
-
-What you did last week predicts your progress this week.
-
-
+If you have enough weight data, you can predict your progress without micromanaging variables and introducing more complexity.
 
 ### Basic habits are the biggest factors in success
-
-
 
 XGBoost machine learning algorithm...
 
