@@ -98,15 +98,21 @@ Instead of zooming in on calories and grams of protein, you should look at your 
 * Did you eat out?
 * Did you stay up late and sacrifice your sleep?
 
-You can log those behaviours daily with your weight data and use machine learning to tease out the most important factors driving weight loss.
+You can log those behaviours daily with your weight data and use machine learning to understand the most important ones.
 
-Here I used the XGBoost algorithm on anonymised client data to classify behaviours based on how they influence weight, ranking them by importance. Note that the ranking doesn't discriminate between weight gain or weight loss, it only cares about how strongly those behaviours predict change in weight.
+Here I applied the XGBoost algorithm on some anonymised client data to classify behaviours based on how they influence weight, ranking them by importance. Note that the ranking doesn't discriminate between weight gain or weight loss, it only cares about how strongly those behaviours predict change in weight.
 
 ![](/images/features.png)
 
-...
+You can see the most important features of the data selected by the algorithm were:
 
-...
+1. Eating out.
+2. Tracking or not tracking macronutrients.
+3. Introducing a more aggressive calorie deficit.
+
+Intuitively it makes sense: eating out introduces a lot of variability in calorie intake, tracking consistently helps maintain a calorie deficit, and reducing calories significantly promotes weight loss.
+
+It's important to remember that your data may lead to completely different conclusions. You need a _lot_ of data for this to work properly, don't expect meaningful results if you've only been tracking for a few weeks. I recommend using this approach over longer timescales to help inform behaviour change.
 
 ## How to take action on this
 
