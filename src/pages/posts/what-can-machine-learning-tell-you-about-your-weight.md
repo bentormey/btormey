@@ -64,7 +64,7 @@ Think of it as sliding along your weight data, smoothing out all the bumps and d
 
 ### What you did last week predicts your progress this week
 
-The moving average has many applications, in finance it's often used to generate trading signals for stocks. It also helps to predict your future weight and support decision making.
+The moving average has many applications, in finance it's often used to generate trading signals for stocks. Here you are using it to support decision making and predict your future weight.
 
 The accuracy of your predictions can be improved using machine learning techniques like regression. Regression algorithms try to model a relationship between an independent variable (like time) and a dependent variable (like weight).
 
