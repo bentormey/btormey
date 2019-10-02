@@ -18,8 +18,6 @@ Benefit of daily habit. It forms a strong habit and diminishes the impression of
 
 ### Take daily weight measurements, but filter out the noise
 
-\[Common frustrations?]
-
 The scale does weird things when you diet. You'll wake up looking like you've lost fat but the scale says you're stuck at the same weight as last week. It'll say that you're heavier even though you _know_ you've been doing everything right.
 
 Here are some factors that affect your weight and have nothing to do with how well you stick to your diet:
@@ -110,7 +108,7 @@ This approach works over longer timescales, like 3-12 months, to inform behaviou
 
 ## How to take action on this
 
-Here are three things you can implement right now:
+Here are three things you can focus on right now:
 
 1. Sample your weight measurement _daily_ in the same state and at the same time.
 2. Use a moving average to assess progress _not_ the raw data.
