@@ -20,7 +20,7 @@ Benefit of daily habit. It forms a strong habit and diminishes the impression of
 
 \[Common frustrations?]
 
-The scale does weird things when you diet. You'll wake up looking leaner but the scale says you're stuck at the same weight as last week. It'll say that you're heavier even though you know you've been doing everything right.
+The scale does weird things when you diet. You'll wake up looking like you've lost fat but the scale says you're stuck at the same weight as last week. It'll say that you're heavier even though you _know_ you've been doing everything right.
 
 Here are some factors that affect your weight and have nothing to do with how well you stick to your diet:
 
@@ -32,7 +32,7 @@ Here are some factors that affect your weight and have nothing to do with how we
 
 Your weight data is _noisy_ and you are looking for the _signal_.
 
-On top of the noise there's observation error every time you use your scale, even if you use it consistently at the same time of day and in the same state.
+On top of the noise there's observation error every time you take a measurement, even if you check the scale consistently at the same time of day and in the same state.
 
 **Track your weight daily and you don't have to worry about this.**
 
@@ -42,7 +42,7 @@ Imagine your weight as a signal, varying continuously over time. Every time you 
 
 In the same way that streaming music services compress audio by sampling it, you're compressing your weight data into a format that's more manageable.
 
-If you don't take enough samples, you lose important information. The Nyquist-Shannon theorem suggests that we should use a sample rate greater than two measurements per week (a sample rate > 2/7) to attempt to reconstruct what's happening over the weekly timescale.
+If you don't take enough samples, you lose important information. A result from signal processing, Nyquist-Shannon theorem, suggests that you should use a sample rate greater than two measurements per week (a sample rate > 2/7) to attempt to reconstruct what's happening over the weekly timescale.
 
 **Example.** Here are two curves showing weight gain in red and weight loss in green.
 
@@ -52,7 +52,7 @@ Both curves look the same if you sample at two points and try to extrapolate the
 
 With **daily weight measurements** you have enough samples, all that's left to do is handle the noise.
 
-You can filter out the noise by taking a **moving average** of your daily weight measurements. A simple type of moving average you can use is the arithmetic mean of your past weight measurements. I like to use the last 14 days of weight data.
+You can filter out the noise by taking a **moving average** of your daily weight measurements. A simple type of moving average you can use is the arithmetic mean of your past weight measurements. I recommend using the last 7-14 days of weight data.
 
 **Example.** W1 + W2 + ... + W14 = X 
 
@@ -74,9 +74,9 @@ The method I use is called an exponential moving average. It gives you a better 
 
 ### What you did last week predicts your progress this week
 
-The moving average has many applications, in finance it's often used to generate trading signals for stocks. You can use it to predict your weight and support decision making.
+The moving average has many applications, in finance it's often used to generate trading signals for stocks. It also helps to predict your future weight and support decision making.
 
-Machine learning can be applied to improve the accuracy of your predictions. Regression algorithms are foundational in machine learning, you can use them to model a relationship between an independent variable (like time) and a dependent variable (like weight).
+The accuracy of your predictions can be improved using machine learning techniques like regression. Regression algorithms try to model a relationship between an independent variable (like time) and a dependent variable (like weight).
 
 Here is the output of a model I fitted to real weight data using ridge regression with the scikitlearn library in Python, the predictions from the model are in green and the actual values are in blue.
 
@@ -90,17 +90,17 @@ If you have enough weight data, you can predict your progress without micromanag
 
 ### Basic habits are the biggest factors in success
 
-In addition to tracking weight data, you can track behaviours that influence your weight. The most popular way of doing this is by tracking food intake using an app. 
+In addition to tracking weight data, you can track behaviours that influence your weight. The most popular way of doing this is to use an app to record your food intake and exercise.
 
-But instead of zooming in on calories and grams of protein, you should look at the top-level behaviours:
+Instead of zooming in on calories and grams of protein, you should look at your top-level behaviours:
 
-* Did you track your food today?
+* Did you plan and track your food today?
 * Did you eat out?
-* Was your sleep better than usual?
+* Did you stay up late and sacrifice your sleep?
 
 You can log those behaviours daily with your weight data and use machine learning to tease out the most important factors driving weight loss.
 
-Here I used the XGBoost algorithm to classify behaviours based on how they influence weight, ranking them by importance. Note that the ranking doesn't discriminate between weight gain or weight loss, it only cares about how strongly those behaviours predict change in weight.
+Here I used the XGBoost algorithm on anonymised client data to classify behaviours based on how they influence weight, ranking them by importance. Note that the ranking doesn't discriminate between weight gain or weight loss, it only cares about how strongly those behaviours predict change in weight.
 
 ![](/images/features.png)
 
