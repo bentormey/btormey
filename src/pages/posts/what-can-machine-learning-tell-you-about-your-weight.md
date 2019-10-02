@@ -52,15 +52,15 @@ With **daily weight measurements** you have enough samples, all that's left to d
 
 You can filter out the noise by taking a **moving average** of your daily weight measurements. A simple type of moving average you can use is the arithmetic mean of your past weight measurements. I recommend using the last 7-14 days of weight data.
 
-**Example.** W1 + W2 + ... + W14 = X 
+**Example.** W1 + W2 + ... + W14 = X
 
-Think of it sliding along your weight data, smoothing out all the bumps and dips.
-
-Here's a comparison of daily weight measurement data in black plotted against the moving average in red.
+Here's a comparison of real weight measurement data in black plotted against the moving average in red.
 
 ![](/images/ma.png)
 
-Notice how the measurement data moves up and down a lot but the moving average behaves much better?
+Notice how much easier it is to spot the trend by looking at the moving average?
+
+Think of it as sliding along your weight data, smoothing out all the bumps and dips.
 
 ### What you did last week predicts your progress this week
 
@@ -90,7 +90,7 @@ Instead of zooming in on calories and grams of protein, you should look at your 
 
 You can log those behaviours daily with your weight data and use machine learning to understand the most important ones.
 
-Here I applied the XGBoost algorithm on some anonymised client data to classify behaviours based on how they influence weight, ranking them by importance. Note that the ranking doesn't discriminate between weight gain or weight loss, it only cares about how strongly those behaviours predict change in weight.
+Here I applied the XGBoost algorithm on some anonymised client data to classify their behaviours based on how they influence weight, ranking them by importance. Note that the ranking doesn't discriminate between weight gain or weight loss, it only cares about how strongly those behaviours predict change in weight.
 
 ![](/images/features.png)
 
