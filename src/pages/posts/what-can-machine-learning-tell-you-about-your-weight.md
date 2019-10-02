@@ -8,27 +8,23 @@ template: post
 
 Losing weight is simple in theory: establish a calorie deficit.
 
-In practise, your success will depend on:
+There are many different diets that will do that.
 
-1. Being clear about exactly what you're trying to achieve.
-2. Understanding how that relates to what you need to change, what action needs to be taken, and acknowledging how much of that is under your control.
-3. Identifying the resources - both internal and external - that you have available, and any additional resources you need.
-
-A decision framework is _far more important_ than figuring out exactly how many calories you should be eating.
+Knowing how to adjust your diet as you progress is more important than figuring out exactly how many calories you should be eating at the start.
 
 **Your path is what matters, not your starting point.**
-
-You should always try to use data to reduce the emotional content of your decisions, because that path should never be dictated by how you feel.
-
-That doesn't mean you need to quantify _everything_.
-
-For example, using a sleep tracker to optimise your sleep may promote "orthosomnia" by overwhelming you with unreliable data that you can't properly interpret.
 
 Any data you collect should help you do three things:
 
 1. Make accurate judgements.
 2. Refine your process.
 3. Take action.
+
+You should always use data to reduce the emotional content of your decisions.
+
+That doesn't mean you need to quantify _everything_.
+
+For example, using a sleep tracker to optimise your sleep may promote "orthosomnia" by overwhelming you with unreliable data that you can't properly interpret.
 
 That's why you need a proper framework for your decisions _before_ you try to optimise anything.
 
