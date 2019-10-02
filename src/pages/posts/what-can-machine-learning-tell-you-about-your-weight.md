@@ -64,6 +64,14 @@ Here's a comparison of daily weight measurement data in black plotted against th
 
 Notice how the measurement data moves up and down a lot but the moving average behaves much better?
 
+...
+
+A slightly more sophisticated method is to say that new measurements should contribute more than old measurements. You can weight each measurement such that you still get an average, but it's more sensitive to recent changes.
+
+The method I use is called an exponential moving average. It gives you a better forecast of future weight measurements. And it gives you a clearer picture of the underlying behaviour of the weight measurements over time.
+
+...
+
 ### What you did last week predicts your progress this week
 
 The moving average has many applications, in finance it's often used to generate trading signals for stocks. You can use it to predict your weight and support decision making.
