@@ -12,11 +12,17 @@ That doesn't mean you need to quantify _everything_.
 
 For example, using a sleep tracker to optimise your sleep may promote "orthosomnia" by overwhelming you with unreliable data that you can't properly interpret.
 
-With weight loss you need to understand...
+Any data you collect should help you:
 
-Benefit of daily habit. It forms a strong habit and diminishes the impression of the weight...
+1. Make accurate judgements.
+2. Refine your process.
+3. Take action.
 
-...The goal is to distance yourself from your impressions of what's happening and rely on your...
+That's why you need a proper framework for your decisions before you try to optimise.
+
+With weight loss...
+
+\*\*Benefit of daily habit. It forms a strong habit and diminishes the impression of the weight. The goal is to distance yourself from your impressions of what's happening and rely on your\*\*
 
 ### Take daily weight measurements, but filter out the noise
 
