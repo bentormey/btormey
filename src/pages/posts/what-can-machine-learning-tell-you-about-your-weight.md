@@ -18,7 +18,7 @@ Any data you collect should help you:
 2. Refine your process.
 3. Take action.
 
-That's why you need a proper framework for your decisions before you try to optimise.
+That's why you need a proper framework for your decisions _before_ you try to optimise anything.
 
 With weight loss...
 
