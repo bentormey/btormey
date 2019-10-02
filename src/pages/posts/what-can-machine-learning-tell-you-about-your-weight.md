@@ -6,15 +6,17 @@ template: post
 ---
 ## Decision frameworks driven by data, not emotion
 
-Introduction...
+You should always try to use data to reduce the emotional content of your decisions.
 
-Importance of reducing emotional content.
+That doesn't mean you need to quantify _everything_.
 
-Move bit on controlling impressions leading to emotions here?
+For example, using a sleep tracker to optimise your sleep may promote "orthosomnia" by overwhelming you with unreliable data that you can't properly interpret.
 
-\[Habit formation and impressions?]
+With weight loss you need to understand...
 
 Benefit of daily habit. It forms a strong habit and diminishes the impression of the weight...
+
+...The goal is to distance yourself from your impressions of what's happening and rely on your...
 
 ### Take daily weight measurements, but filter out the noise
 
