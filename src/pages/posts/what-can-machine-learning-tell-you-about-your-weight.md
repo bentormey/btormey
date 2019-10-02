@@ -20,10 +20,6 @@ Any data you collect should help you:
 
 That's why you need a proper framework for your decisions _before_ you try to optimise anything.
 
-With weight loss...
-
-\*\*Benefit of daily habit. It forms a strong habit and diminishes the impression of the weight. The goal is to distance yourself from your impressions of what's happening and rely on your\*\*
-
 ### Take daily weight measurements, but filter out the noise
 
 The scale does weird things when you diet. You'll wake up looking like you've lost fat but the scale says you're stuck at the same weight as last week. It'll say that you're heavier even though you _know_ you've been doing everything right.
