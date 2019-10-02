@@ -52,7 +52,7 @@ With **daily weight measurements** you have enough samples, all that's left to d
 
 You can filter out the noise by taking a **moving average** of your daily weight measurements. A simple type of moving average you can use is the arithmetic mean of your past weight measurements. I recommend using the last 7-14 days of weight data.
 
-**Example.** W1 + W2 + ... + W14 = X
+**Example.** Suppose you want to take a 3-day moving average and your last 3 weight measurements were 81kg, 80.7kg, and 81.3kg. Then your moving average is (81 + 80.7 + 81.3)/3 = 81kg, which you can use as a prediction for your next weight measurement.
 
 Here's a comparison of real weight measurement data in black plotted against the moving average in red.
 
