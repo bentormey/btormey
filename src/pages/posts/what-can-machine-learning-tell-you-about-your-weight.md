@@ -6,9 +6,7 @@ template: post
 ---
 ## Decision frameworks driven by data, not emotion
 
-Losing weight is simple in theory: establish a calorie deficit.
-
-There are many different diets that will do that.
+All weight loss diets work if you follow this principle: eat fewer calories than you burn.
 
 Knowing how to adjust your diet as you progress is more important than figuring out exactly how many calories you should be eating at the start.
 
@@ -16,11 +14,9 @@ Knowing how to adjust your diet as you progress is more important than figuring 
 
 Any data you collect should help you do three things:
 
-1. Make accurate judgements.
+1. Make accurate judgements that aren't dependent on how you feel.
 2. Refine your process.
 3. Take action.
-
-You should always use data to reduce the emotional content of your decisions.
 
 That doesn't mean you need to quantify _everything_.
 
