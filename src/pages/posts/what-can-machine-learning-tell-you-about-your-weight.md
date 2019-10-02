@@ -6,15 +6,27 @@ template: post
 ---
 ## Decision frameworks driven by data, not emotion
 
+Losing weight is simple in theory: establish a calorie deficit.
+
+How you choose to do that is up to you, but your success will depend on:
+
+1. Being clear about exactly what you're trying to achieve.
+2. Understanding how that relates to what you need to change, what action needs to be taken, and acknowledging how much of that is under your control.
+3. Identifying the resources - both internal and external - that you have available, and any additional resources you need.
+
+
+
+**Your trajectory is what matters, not your starting point.**
+
+A decision framework is more important than figuring out exactly how many calories you should be eating.
+
 You should always try to use data to reduce the emotional content of your decisions.
-
-
 
 That doesn't mean you need to quantify _everything_.
 
 For example, using a sleep tracker to optimise your sleep may promote "orthosomnia" by overwhelming you with unreliable data that you can't properly interpret.
 
-Any data you collect should help you:
+Any data you collect should help you do three things:
 
 1. Make accurate judgements.
 2. Refine your process.
@@ -80,11 +92,11 @@ Here is the output of a model I fitted to real weight data using ridge regressio
 
 Notice how closely the predicted values are to the actual values?
 
-The model doesn't know _anything_ about calorie intake, macronutrients, or exercise. It only knows about the past week of weight data.
+The model doesn't know _anything_ about calorie intake, macronutrients, or exercise; it only knows about the past week of weight data.
 
 If you have enough weight data, you can predict your progress without micromanaging variables and introducing more complexity.
 
-### Basic habits are the biggest factors in success
+### Behaviours are what influence your success
 
 In addition to tracking weight data, you can track behaviours that influence your weight. The most popular way of doing this is to use an app to record your food intake and exercise.
 
@@ -94,7 +106,7 @@ Instead of zooming in on calories and grams of protein, you should look at your 
 * Did you eat out a lot?
 * Did you stay up late last night?
 
-You can log those behaviours daily with your weight data and use machine learning to understand the most important ones.
+You can log those behaviours daily with your weight data and use machine learning to identify the most important ones.
 
 Here I applied the XGBoost algorithm on some anonymised client data to classify their behaviours based on how they influence weight, ranking them by importance. Note that the ranking doesn't discriminate between weight gain or weight loss, it only cares about how strongly those behaviours predict change in weight.
 
@@ -107,6 +119,8 @@ You can see the most important features of the data selected by the algorithm we
 3. Introducing a more aggressive calorie deficit.
 
 Intuitively it makes sense: eating out introduces a lot of variability in calorie intake, tracking consistently helps maintain a calorie deficit, and reducing calories significantly promotes weight loss.
+
+**Your behaviours are what influence your success, not the specific details of how you set up your diet.**
 
 It's important to remember that your data may lead to completely different conclusions. You need a _lot_ of data for this to work properly, don't expect meaningful results if you've only been tracking for a few weeks.
 
