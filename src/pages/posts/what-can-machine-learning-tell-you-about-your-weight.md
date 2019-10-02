@@ -112,7 +112,9 @@ You can see the most important features of the data selected by the algorithm we
 
 Intuitively it makes sense: eating out introduces a lot of variability in calorie intake, tracking consistently helps maintain a calorie deficit, and reducing calories significantly promotes weight loss.
 
-It's important to remember that your data may lead to completely different conclusions. You need a _lot_ of data for this to work properly, don't expect meaningful results if you've only been tracking for a few weeks. I recommend using this approach over longer timescales to help inform behaviour change.
+It's important to remember that your data may lead to completely different conclusions. You need a _lot_ of data for this to work properly, don't expect meaningful results if you've only been tracking for a few weeks.
+
+I recommend this approach over longer timescales, like 3-12 months, to inform behaviour change and support sustainable weight loss or weight maintenance, not to optimise short term weight loss.
 
 ## How to take action on this
 
