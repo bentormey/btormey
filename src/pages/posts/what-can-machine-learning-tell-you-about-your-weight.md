@@ -8,19 +8,17 @@ template: post
 
 Losing weight is simple in theory: establish a calorie deficit.
 
-How you choose to do that is up to you, but your success will depend on:
+In practise, your success will depend on:
 
 1. Being clear about exactly what you're trying to achieve.
 2. Understanding how that relates to what you need to change, what action needs to be taken, and acknowledging how much of that is under your control.
 3. Identifying the resources - both internal and external - that you have available, and any additional resources you need.
 
+A decision framework is _far more important_ than figuring out exactly how many calories you should be eating.
 
+**Your path is what matters, not your starting point.**
 
-**Your trajectory is what matters, not your starting point.**
-
-A decision framework is more important than figuring out exactly how many calories you should be eating.
-
-You should always try to use data to reduce the emotional content of your decisions.
+You should always try to use data to reduce the emotional content of your decisions, because that path should never be dictated by how you feel.
 
 That doesn't mean you need to quantify _everything_.
 
