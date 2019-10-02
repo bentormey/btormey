@@ -95,8 +95,8 @@ In addition to tracking weight data, you can track behaviours that influence you
 Instead of zooming in on calories and grams of protein, you should look at your top-level behaviours:
 
 * Did you plan and track your food today?
-* Did you eat out?
-* Did you stay up late and sacrifice your sleep?
+* Did you eat out a lot?
+* Did you stay up late last night?
 
 You can log those behaviours daily with your weight data and use machine learning to understand the most important ones.
 
@@ -114,7 +114,7 @@ Intuitively it makes sense: eating out introduces a lot of variability in calori
 
 It's important to remember that your data may lead to completely different conclusions. You need a _lot_ of data for this to work properly, don't expect meaningful results if you've only been tracking for a few weeks.
 
-I recommend this approach over longer timescales, like 3-12 months, to inform behaviour change and support sustainable weight loss or weight maintenance, not to optimise short term weight loss.
+This approach works over longer timescales, like 3-12 months, to inform behaviour change and support sustainable weight loss or weight maintenance, not to optimise short term diets.
 
 ## How to take action on this
 
@@ -122,6 +122,6 @@ Here are three things you can implement right now:
 
 1. Sample your weight measurement _daily_ in the same state and at the same time.
 2. Use a moving average to assess progress _not_ the raw data.
-3. Be _consistent_ with strategic behaviours like tracking your food intake, planning your nutrition, and prioritising restful sleep.
+3. Be _consistent_ with strategic behaviours like tracking your food intake, preparing your meals, and prioritising restful sleep.
 
 You can grab a ready to use weight tracking spreadsheet and the Python code I used for the machine learning stuff [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY). Contact me if you want help setting it up.
