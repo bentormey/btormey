@@ -6,7 +6,7 @@ template: post
 ---
 ## Decisions driven by data, not emotion
 
-All weight loss diets work if you follow this principle: eat fewer calories than you burn.
+All weight loss diets work by obeying this principle: eat fewer calories than you burn.
 
 Knowing how to adjust your diet as you progress is more important than figuring out exactly how many calories you should be eating at the start.
 
