@@ -24,7 +24,7 @@ That's why you need a proper framework for your decisions _before_ you try to op
 
 ### Take daily weight measurements, but filter out the noise
 
-The scale does weird things when you diet. You'll wake up looking like you've lost fat but the scale says you're stuck at the same weight as last week. It'll say that you're heavier even though you _know_ you've been doing everything right.
+The scale does weird things when you diet. You'll wake up one day looking like you've lost fat but the scale says you're stuck at the same weight as the day before. It'll say that you're heavier even though you _know_ you've been doing everything right.
 
 Here are some factors that affect your weight and have nothing to do with how well you stick to your diet:
 
