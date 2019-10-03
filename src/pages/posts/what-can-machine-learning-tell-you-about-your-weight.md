@@ -6,9 +6,7 @@ template: post
 ---
 ## Decisions driven by data, not emotion
 
-All weight loss diets work by obeying this principle: eat fewer calories than you burn.
-
-Knowing how to adjust your diet as you progress is more important than figuring out exactly how many calories you should be eating at the start.
+Knowing how to adjust your diet based on your progress is more important than figuring out exactly how many calories you should be eating at the start.
 
 **Your path is what matters, not your starting point.**
 
