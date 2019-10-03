@@ -4,7 +4,7 @@ date: 2019-09-29T11:55:28.376Z
 thumb_img_path: /images/blur-codes-coding-577585.jpg
 template: post
 ---
-## Decision frameworks driven by data, not emotion
+## Decisions driven by data, not emotion
 
 All weight loss diets work if you follow this principle: eat fewer calories than you burn.
 
