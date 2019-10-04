@@ -122,4 +122,4 @@ Here are three things you can focus on right now:
 2. Use a moving average to assess progress _not_ the raw data.
 3. Be _consistent_ with strategic behaviours like tracking your food intake, preparing your meals, and prioritising restful sleep.
 
-You can grab a ready to use weight tracking spreadsheet and the Python code I used for the machine learning stuff [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY). Contact me if you want help setting it up.
+You can grab a weight tracking spreadsheet and the Python code I used for the machine learning stuff [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY). Contact me if you want help setting it up.
