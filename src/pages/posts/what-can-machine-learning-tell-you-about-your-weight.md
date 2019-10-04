@@ -78,7 +78,7 @@ Here is the output of a model I fitted to real weight data using ridge regressio
 
 ![](/images/model.png)
 
-Notice how closely the predicted values are to the actual values?
+Notice how close the predicted values are to the actual values?
 
 The model doesn't know _anything_ about calorie intake, macronutrients, or exercise; it only knows about the past week of weight data.
 
