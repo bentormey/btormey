@@ -16,7 +16,7 @@ Any data you collect should help you do three things:
 2. Refine your process.
 3. Take action.
 
-That doesn't mean you need to quantify _everything_.
+But you don't need to quantify _everything_.
 
 For example, using a sleep tracker to optimise your sleep may promote "orthosomnia" by overwhelming you with unreliable data that you can't properly interpret.
 
