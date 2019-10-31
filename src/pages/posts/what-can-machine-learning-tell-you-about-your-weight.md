@@ -4,7 +4,7 @@ date: 2019-09-29T11:55:28.376Z
 thumb_img_path: /images/blur-codes-coding-577585.jpg
 template: post
 ---
-## Decisions driven by data, not emotion
+## Make decisions using data, not emotion
 
 Knowing how to adjust your diet based on your progress is more important than figuring out exactly how many calories you should be eating at the start.
 
@@ -46,7 +46,7 @@ Imagine your weight as a signal, varying continuously over time. Every time you 
 
 In the same way that streaming music services compress audio by sampling it, you're compressing your weight data into a format that's more manageable.
 
-If you don't take enough samples, you lose important information. A result from signal processing, Nyquist-Shannon theorem, suggests that you should use a sample rate greater than two measurements per week (a sample rate > 2/7) to attempt to reconstruct what's happening over the weekly timescale.
+If you don't take enough samples, you lose important information. A result from signal processing (called the Nyquist-Shannon theorem) suggests that you should use a sample rate greater than two measurements per week (a sample rate > 2/7) to attempt to reconstruct what's happening over the weekly timescale.
 
 **Example.** Here are two curves showing weight gain in red and weight loss in green.
 
@@ -122,4 +122,4 @@ Here are three things you can focus on right now:
 2. Use a moving average to assess progress _not_ the raw data.
 3. Be _consistent_ with strategic behaviours like tracking your food intake, preparing your meals, and prioritising restful sleep.
 
-You can grab a weight tracking spreadsheet and the Python code I used for the machine learning stuff [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY). Contact me if you want help setting it up.
+You can grab a weight tracking spreadsheet and the exact Python code I used for the machine learning stuff [here](https://drive.google.com/open?id=1pTS0x-9m8XKafIuUMQi7fvN1gglt9jLY). Contact me if you want help setting it up.
