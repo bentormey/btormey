@@ -4,8 +4,6 @@ date: 2019-11-01T11:55:28.376Z
 thumb_img_path: /images/blur-codes-coding-577585.jpg
 template: post
 ---
-## Make decisions using data, not emotion
-
 Most people spend too much time trying to figure out how many calories they should be eating to lose weight, or how many grams of protein they need, or which foods they think they should avoid.
 
 The reality is that **your path is what matters, not your starting point.**
