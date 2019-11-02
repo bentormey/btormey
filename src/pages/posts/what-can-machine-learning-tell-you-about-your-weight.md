@@ -2,6 +2,7 @@
 title: What can machine learning tell you about your weight?
 date: 2019-11-01T11:55:28.376Z
 thumb_img_path: /images/blur-codes-coding-577585.jpg
+content_img_path: /images/blur-codes-coding-577585.jpg
 template: post
 ---
 Most people spend too much time trying to figure out how many calories they should be eating to lose weight, or how many grams of protein they need, or which foods they think they should avoid.
