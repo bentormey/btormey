@@ -1,26 +1,24 @@
 ---
 title: What can machine learning tell you about your weight?
-date: 2019-09-29T11:55:28.376Z
+date: 2019-11-01T11:55:28.376Z
 thumb_img_path: /images/blur-codes-coding-577585.jpg
 template: post
 ---
 ## Make decisions using data, not emotion
 
-Knowing how to adjust your diet based on your progress is more important than figuring out exactly how many calories you should be eating at the start.
+Most people spend too much time trying to figure out how many calories they should be eating to lose weight, or how many grams of protein they need, or which foods they think they should avoid.
 
-**Your path is what matters, not your starting point.**
+The reality is that **your path is what matters, not your starting point.**
 
-Any data you collect should help you do three things:
+Knowing how to adjust your diet based on your progress is far more important than figuring out exactly how to set it up at the start.
 
-1. Make accurate judgements that aren't dependent on how you feel.
-2. Refine your process.
-3. Take action.
+That's why you need a proper framework for your decisions _before_ you try to change anything.
 
-But you don't need to quantify _everything_.
+I've spent years collecting and analysing weight data from my clients to build my framework.
 
-For example, using a sleep tracker to optimise your sleep may promote "orthosomnia" by overwhelming you with unreliable data that you can't properly interpret.
+Here you're going to learn three principles I've distilled from that data. These principles help you visualise your progress and make accurate judgements that are independent of how you feel.
 
-That's why you need a proper framework for your decisions _before_ you try to optimise anything.
+Most importantly they will help you take action
 
 ### Take daily weight measurements, but filter out the noise
 
@@ -84,7 +82,7 @@ The model doesn't know _anything_ about calorie intake, macronutrients, or exerc
 
 If you have enough weight data, you can predict your progress without micromanaging variables and introducing more complexity.
 
-### Behaviours are what influence your success
+### Your behaviours are what influence your success
 
 In addition to tracking weight data, you can track behaviours that influence your weight. The most popular way of doing this is to use an app to record your food intake and exercise.
 
@@ -116,7 +114,7 @@ This approach works over longer timescales, like 3-12 months, to inform behaviou
 
 ## How to take action on this
 
-Here are three things you can focus on right now:
+Here are the three things you can focus on right now:
 
 1. Sample your weight measurement _daily_ in the same state and at the same time.
 2. Use a moving average to assess progress _not_ the raw data.
