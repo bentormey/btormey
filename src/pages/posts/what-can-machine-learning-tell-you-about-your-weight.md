@@ -17,7 +17,7 @@ I've spent years collecting and analysing weight data from my clients to build m
 
 Here you're going to learn three principles I've distilled from that data. These principles help you visualise your progress and make accurate judgements that are independent of how you feel.
 
-Most importantly they will help you take action
+Most importantly they will help you take action.
 
 ### Take daily weight measurements, but filter out the noise
 
