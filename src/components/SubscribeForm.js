@@ -15,7 +15,7 @@ export default class SubscribeForm extends React.Component {
                 </label>
               </div>
               <input type="hidden" name="form-name" value="subscribeForm" />
-              <button className="button" type="submit">Subscribe</button>
+              <button className="button" type="submit">Join Now</button>
             </form>
         );
     }
