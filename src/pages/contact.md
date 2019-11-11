@@ -7,8 +7,6 @@ menus:
     weight: 6
 template: contact
 ---
-You can contact me via email at [bentormey@gmail.com](mailto:bentormey@gmail.com).
+You can email at <mailto:bentormey@gmail.com> and you can message me on [Twitter](https://twitter.com/BenTormey).
 
-Or you can message me on [Twitter](https://twitter.com/BenTormey).
-
-And you can fill the form out below.
+Or you can fill the form out below.
