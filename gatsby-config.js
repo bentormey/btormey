@@ -37,6 +37,8 @@ module.exports = {
                 pageContextProperty: `menus`,
                 menus: require('./src/data/menus.json'),
             }
-        }
+        },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`
     ]
 };
