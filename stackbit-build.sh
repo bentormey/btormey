@@ -10,4 +10,4 @@ else
     npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/5d9099e367575c0010174984 
 fi
 gatsby build
-./inject-netlify-identity-widget.js public
+#./inject-netlify-identity-widget.js public
