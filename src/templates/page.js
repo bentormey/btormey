@@ -1,8 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
 
-import Img from 'gatsby-image';
-
 import {Layout} from '../components/index';
 import {htmlToReact, safePrefix} from '../utils';
 
