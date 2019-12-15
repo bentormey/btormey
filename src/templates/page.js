@@ -21,7 +21,7 @@ export default class Page extends React.Component {
                 }
                 {_.get(this.props, 'pageContext.frontmatter.img_path') && 
                 <div className="post-thumbnail">
-                  <Img className="thumbnail" fixed={safePrefix(_.get(this.props, 'pageContext.frontmatter.img_path'))} alt={_.get(this.props, 'pageContext.frontmatter.title')} />
+                  <img className="thumbnail" src={safePrefix(_.get(this.props, 'pageContext.frontmatter.img_path'))} alt={_.get(this.props, 'pageContext.frontmatter.title')} />
                 </div>
                 }
                 <div className="post-content">
