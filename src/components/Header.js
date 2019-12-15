@@ -1,6 +1,8 @@
 import React from 'react';
 import _ from 'lodash';
 
+import Img from 'gatsby-image';
+
 import {Link, safePrefix} from '../utils';
 
 export default class Header extends React.Component {
@@ -12,7 +14,7 @@ export default class Header extends React.Component {
                   <div className="site-branding">
                     {_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img') && 
                     <p className="site-logo">
-                      <Link to={safePrefix('/')}><img src={safePrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img'))}
+                      <Link to={safePrefix('/')}><Img fixed={safePrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img'))}
                           alt="Logo" /></Link>
                     </p>
                     }
