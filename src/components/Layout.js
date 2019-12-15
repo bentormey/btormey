@@ -18,7 +18,7 @@ export default class Body extends React.Component {
                     <meta charSet="utf-8"/>
                     <meta name="viewport" content="width=device-width, initialScale=1.0" />
                     <meta name="google" content="notranslate" />
-                    <link rel="preload" href={safePrefix('assets/css/main.css')} as="style" onload="this.rel='stylesheet'">
+                    <link rel="stylesheet" href={safePrefix('assets/css/main.css')} />
                 </Helmet>
                   <div id="page" className={'site layout-' + _.get(this.props, 'pageContext.site.siteMetadata.layout_style') + ' palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette')}>
                     <Header {...this.props} />
