@@ -2,6 +2,8 @@ import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
 
+import Img from 'gatsby-image';
+
 import {Layout} from '../components/index';
 import {htmlToReact, safePrefix} from '../utils';
 
@@ -24,7 +26,7 @@ export default class Post extends React.Component {
                 }
                 {_.get(this.props, 'pageContext.frontmatter.content_img_path') && 
                 <div className="post-thumbnail">
-                  <img className="thumbnail" src={safePrefix(_.get(this.props, 'pageContext.frontmatter.content_img_path'))} alt={_.get(this.props, 'pageContext.frontmatter.title')} />
+                  <Img className="thumbnail" fixed={safePrefix(_.get(this.props, 'pageContext.frontmatter.content_img_path'))} alt={_.get(this.props, 'pageContext.frontmatter.title')} />
                 </div>
                 }
                 <div className="post-content">
