@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Understanding your weight</title>
+  <title>KJ - Weight Visualisation</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -28,12 +28,11 @@
     <div class="row justify-content-center">
       <div class="col">
         <div class="alert alert-info alert-dismissible fade show" role="alert">
-          <p>Welcome! This is an interactive plot to support the original Instagram post. You can explore the following visualisations:</p>
+          <p>You can explore the following visualisations:</p>
           <p><strong>Weight Only</strong>: Show the weight measurement data only.</p>
           <p><strong>Weight + &sigma;</strong>: Show the 7-day moving average and the area one standard deviation away from it, which should contain 68% of weight measurements.</p>
           <p><strong>Show All</strong>: Show the the area two standard deviations away from the moving average, which should contain 95% of weight measurements.</p>
           <p>Note that since the moving average and standard deviation calculations are based on the last 7 days of data, the first week is shaded out.</p>
-          <p>Want more resources like this? Join my <a href="../about/">newsletter</a>.</p>
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
