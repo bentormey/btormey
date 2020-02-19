@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>APRE Progression</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha256-u/J1Urdrk3nCYFefpoeTMgI5viU1ujCDu2fXXoSJjhg=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+      <img src="https://d33wubrfki0l68.cloudfront.net/be8a7a96685247d244f3552a3c4623d4d49fb9ac/cf234/images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Duncan: APRE Progression
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.benjamintormey.com">BenjaminTormey.com <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <p>Hey! This is an interactive plot showing the progression of your 6RM on key movements.</p>
+          <p><strong>Show All</strong>: Show the 6RM data from weeks 1 to 6.</p>
+          <p><strong>Week X</strong>: Show the 6RM progression up to week X.</p>
+          <p>Want more resources like this? Join my <a href="../about/">newsletter</a>.</p>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center pt-2">
+      <div class="col">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="radio" name="options" id="showall" checked> Show All
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="week1"> Week 1
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="week2"> Week 2
+          </label>
+					<label class="btn btn-secondary">
+            <input type="radio" name="options" id="week3"> Week 3
+          </label>
+					<label class="btn btn-secondary">
+            <input type="radio" name="options" id="week4"> Week 4
+          </label>
+					<label class="btn btn-secondary">
+            <input type="radio" name="options" id="week5"> Week 5
+          </label>
+					<label class="btn btn-secondary">
+            <input type="radio" name="options" id="week6"> Week 6
+          </label>
+        </div>
+        <button id="save" type="button" class="btn btn-link">Save as PNG</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+	<script>
+		var presets = {
+			red: 'rgb(255, 99, 132)',
+			orange: 'rgb(255, 159, 64)',
+			yellow: 'rgb(255, 205, 86)',
+			green: 'rgb(75, 192, 192)',
+			blue: 'rgb(54, 162, 235)',
+			purple: 'rgb(153, 102, 255)',
+			grey: 'rgb(201, 203, 207)'
+		};
+
+		function transparentize(color, opacity) {
+			var alpha = opacity === undefined ? 0.5 : 1 - opacity;
+			return Color(color).alpha(alpha).rgbString();
+		}
+
+		var data = {
+			labels: ['Bench Press', 'RDL', 'Pendlay Row', 'Back Squat'],
+			datasets: [{
+				backgroundColor: transparentize(presets.red),
+				borderColor: presets.red,
+				data: [80, 110, 70, 100],
+				label: 'Week 1'
+			}, {
+				backgroundColor: transparentize(presets.orange),
+				borderColor: presets.orange,
+				data: [82.5, 115, 72.5, 102.5],
+				label: 'Week 2',
+				fill: '-1'
+			}, {
+				backgroundColor: transparentize(presets.yellow),
+				borderColor: presets.yellow,
+				data: [85, 120, 80, 105],
+				label: 'Week 3',
+				fill: 1
+			}, {
+				backgroundColor: transparentize(presets.green),
+				borderColor: presets.green,
+				data: [85, 125, 82.5, 105],
+				label: 'Week 4'
+				//fill: false
+			}, {
+				backgroundColor: transparentize(presets.blue),
+				borderColor: presets.blue,
+				data: [85, 130, 85, 105],
+				label: 'Week 5',
+				fill: '-1'
+			}, {
+				backgroundColor: transparentize(presets.purple),
+				borderColor: presets.purple,
+				data: [85, 132.5, 87.5, 107.5],
+				label: 'Week 6',
+				fill: '-1'
+			}]
+		};
+
+		var options = {
+			maintainAspectRatio: true,
+			spanGaps: false,
+			elements: {
+				line: {
+					tension: true ? 0.4 : 0.000001
+				}
+			}
+		};
+
+		var ctx = document.getElementById("myChart").getContext("2d");
+
+		var myChart = new Chart(ctx, {
+			type: 'radar',
+			data: data,
+			options: options
+		});
+	</script>
+
+  <script>
+  var canvas = $("#myChart").get(0);
+
+  $("#save").click(function() {
+    canvas.toBlob(function(blob) {
+      saveAs(blob, "chart.png");
+    });
+  });
+  </script>
+
+	<script>
+		function showOnly(week) {
+			//var index = week - 1;
+			for (var i = 0; i < 6; i++) {
+				myChart.getDatasetMeta(i).hidden = week <= i ? true : false;
+			}
+		}
+
+    $("#showall").click(function() {
+			myChart.getDatasetMeta(0).hidden = false;
+      myChart.getDatasetMeta(1).hidden = false;
+      myChart.getDatasetMeta(2).hidden = false;
+      myChart.getDatasetMeta(3).hidden = false;
+      myChart.getDatasetMeta(4).hidden = false;
+      myChart.getDatasetMeta(5).hidden = false;
+      myChart.update();
+    });
+    $("#week1").click(function() {
+			showOnly(1);
+      myChart.update();
+    });
+		$("#week2").click(function() {
+			showOnly(2);
+			myChart.update();
+		});
+		$("#week3").click(function() {
+			showOnly(3);
+      myChart.update();
+    });
+		$("#week4").click(function() {
+			showOnly(4);
+      myChart.update();
+    });
+		$("#week5").click(function() {
+			showOnly(5);
+      myChart.update();
+    });
+		$("#week6").click(function() {
+			showOnly(6);
+      myChart.update();
+    });
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script>
+   WebFont.load({
+      google: {
+        families: ['PT+Sans:400,400i,700,700i', 'CPT+Serif:400,700']
+      }
+    });
+  </script>
+
+</body>
+
+</html>
