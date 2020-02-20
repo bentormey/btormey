@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>APRE Progression</title>
+  <title>Duncan: APRE Progression</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -36,6 +36,20 @@
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row justify-content-center pt-2">
+      <div class="col">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="radio" name="options" id="percent" checked> Percentages
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="value"> Values
+          </label>
         </div>
       </div>
     </div>
@@ -77,6 +91,8 @@
   </div>
 
 	<script>
+    var displayPercent = true
+
 		var presets = {
 			red: 'rgb(255, 99, 132)',
 			orange: 'rgb(255, 159, 64)',
@@ -92,41 +108,61 @@
 			return Color(color).alpha(alpha).rgbString();
 		}
 
+    function scale(values) {
+      var result = values
+
+      if (displayPercent) {
+        const factors = weeks[0]
+        result = values.map(function(x, i) { return 100 * x / factors[i] - 100})
+      }
+
+      return result.map(function(x, i) { return (Math.round(x * 100) / 100).toFixed(2) })
+    }
+
+    const weeks = [
+      [80, 110, 70, 100],
+      [82.5, 115, 72.5, 102.5],
+      [85, 120, 80, 105],
+      [85, 125, 82.5, 105],
+      [85, 130, 85, 105],
+      [85, 132.5, 87.5, 107.5]
+    ]
+
 		var data = {
 			labels: ['Bench Press', 'RDL', 'Pendlay Row', 'Back Squat'],
 			datasets: [{
 				backgroundColor: transparentize(presets.red),
 				borderColor: presets.red,
-				data: [80, 110, 70, 100],
+				data: scale(weeks[0]),
 				label: 'Week 1'
 			}, {
 				backgroundColor: transparentize(presets.orange),
 				borderColor: presets.orange,
-				data: [82.5, 115, 72.5, 102.5],
+				data: scale(weeks[1]),
 				label: 'Week 2',
 				fill: '-1'
 			}, {
 				backgroundColor: transparentize(presets.yellow),
 				borderColor: presets.yellow,
-				data: [85, 120, 80, 105],
+				data: scale(weeks[2]),
 				label: 'Week 3',
 				fill: 1
 			}, {
 				backgroundColor: transparentize(presets.green),
 				borderColor: presets.green,
-				data: [85, 125, 82.5, 105],
+				data: scale(weeks[3]),
 				label: 'Week 4'
 				//fill: false
 			}, {
 				backgroundColor: transparentize(presets.blue),
 				borderColor: presets.blue,
-				data: [85, 130, 85, 105],
+				data: scale(weeks[4]),
 				label: 'Week 5',
 				fill: '-1'
 			}, {
 				backgroundColor: transparentize(presets.purple),
 				borderColor: presets.purple,
-				data: [85, 132.5, 87.5, 107.5],
+				data: scale(weeks[5]),
 				label: 'Week 6',
 				fill: '-1'
 			}]
@@ -139,7 +175,12 @@
 				line: {
 					tension: true ? 0.4 : 0.000001
 				}
-			}
+			},
+      scale: {
+        ticks: {
+            callback: (d) => d + '%'
+        }
+      }
 		};
 
 		var ctx = document.getElementById("myChart").getContext("2d");
@@ -202,17 +243,28 @@
 			showOnly(6);
       myChart.update();
     });
-  </script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-  <script>
-   WebFont.load({
-      google: {
-        families: ['PT+Sans:400,400i,700,700i', 'CPT+Serif:400,700']
+    $("#percent").click(function() {
+      for (var i = 0; i < 6; i++) {
+        myChart.data.datasets[i].data = scale(weeks[i])
       }
+      myChart.update();
+    });
+    $("#value").click(function() {
+			for (var i = 0; i < 6; i++) {
+        myChart.data.datasets[i].data = weeks[i]
+      }
+      myChart.update();
     });
   </script>
 
-</body>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+<script>
+ WebFont.load({
+    google: {
+      families: ['PT+Sans:400,400i,700,700i', 'CPT+Serif:400,700']
+    }
+  });
+</script></body>
 
 </html>
