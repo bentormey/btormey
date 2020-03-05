@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jonny</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha256-u/J1Urdrk3nCYFefpoeTMgI5viU1ujCDu2fXXoSJjhg=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+      <img src="https://d33wubrfki0l68.cloudfront.net/be8a7a96685247d244f3552a3c4623d4d49fb9ac/cf234/images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Jonny
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.benjamintormey.com">BenjaminTormey.com <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <p>You can explore the following visualisations:</p>
+          <p><strong>Weight Only</strong>: Show the weight measurement data only.</p>
+          <p><strong>Weight + &sigma;</strong>: Show the 7-day moving average and the area one standard deviation away from it, which should contain 68% of weight measurements.</p>
+          <p><strong>Show All</strong>: Show the the area two standard deviations away from the moving average, which should contain 95% of weight measurements.</p>
+          <p>Note that since the moving average and standard deviation calculations are based on the last 7 days of data, the first week is shaded out.</p>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center pt-2">
+      <div class="col">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="radio" name="options" id="showall" checked> Show All
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="hideall"> Weight Only
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="onesigma"> Weight + &sigma;
+          </label>
+        </div>
+        <button id="save" type="button" class="btn btn-link">Save as PNG</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col">
+        <canvas id="myChart0"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var ctx = document.getElementById("myChart0").getContext("2d");
+
+    var backgroundColor = "white";
+    Chart.plugins.register({
+      beforeDraw: function(c) {
+        var ctx = c.chart.ctx;
+        ctx.fillStyle = backgroundColor;
+        ctx.fillRect(0, 0, c.chart.width, c.chart.height);
+      }
+    });
+
+    function standardDeviation(values) {
+      var avg = average(values);
+
+      var squareDiffs = values.map(function(value) {
+        var diff = value - avg;
+        var sqrDiff = diff * diff;
+        return sqrDiff;
+      });
+
+      var avgSquareDiff = average(squareDiffs);
+
+      var stdDev = Math.sqrt(avgSquareDiff);
+      return stdDev;
+    }
+
+    function average(data) {
+      var sum = data.reduce(function(sum, value) {
+        return sum + value;
+      }, 0);
+
+      var avg = sum / data.length;
+      return avg;
+    }
+
+    const raw = {
+      "6/1":	105.4,
+      "7/1":	104.6,
+      "9/1":	103.8,
+      "10/1":	103.5,
+      "11/1":	103.3,
+      "12/1":	104.2,
+      "13/1":	104.1,
+      "14/1":	104.2,
+      "15/1":	103.2,
+      "16/1":	103,
+      "17/1":	102.7,
+      "18/1":	102.3,
+      "19/1":	103.6,
+      "20/1":	103.7,
+      "21/1":	103.6,
+      "22/1":	103,
+      "23/1":	103,
+      "24/1":	102.6,
+      "25/1":	102.5,
+      "26/1":	103.4,
+      "27/1":	103.1,
+      "28/1":	102.6,
+      "29/1":	102.3,
+      "30/1":	103,
+      "31/1":	102.6,
+      "1/2":	102.4,
+      "2/2":	102.9,
+      "3/2":	103.6,
+      "4/2":	103.1,
+      "5/2":	102.5,
+      "6/2":	102.9,
+      "7/2":	103.1,
+      "8/2":	102.6,
+      "10/2":	103.5,
+      "11/2":	102.5,
+      "12/2":	102.1,
+      "13/2":	102.3,
+      "14/2":	102,
+      "15/2":	102.4,
+      "16/2":	103.5,
+      "17/2":	102.8,
+      "18/2":	102.7,
+      "19/2":	102.3,
+      "20/2":	102.5,
+      "21/2":	102.1,
+      "22/2":	101.9,
+      "23/2":	103.2,
+      "24/2":	102.8,
+      "25/2":	102.5,
+      "26/2":	102.2,
+      "27/2":	102.6,
+      "28/2":	101.6,
+      "29/2":	100.9,
+      "1/3":	102.8,
+      "2/3":	103.3,
+      "3/3":	103.2,
+      "4/3":	102.4,
+      "5/3":	101.9,
+    };
+    
+    var labels = [];
+    var weight = [];
+
+    for (var key in raw) {
+      labels.push(key);
+      weight.push(raw[key]);
+    }
+
+    var MA = [];
+    var oneSigmaBelow = [];
+    var oneSigmaAbove = [];
+    var twoSigmaBelow = [];
+    var twoSigmaAbove = [];
+    for (var i = 1; i < 7; i++) {
+      MA.push(null);
+      oneSigmaBelow.push(null);
+      oneSigmaAbove.push(null);
+      twoSigmaBelow.push(null);
+      twoSigmaAbove.push(null);
+    }
+    for (var i = 7; i < weight.length; i++) {
+      var mean = weight.slice(i - 7, i).reduce((a,b) => a + b) / 7.0;
+      MA.push(mean);
+
+      var sigma = standardDeviation(weight.slice(i - 7, i));
+      oneSigmaBelow.push(mean - sigma);
+      oneSigmaAbove.push(mean + sigma);
+      twoSigmaBelow.push(mean - 2.0 * sigma);
+      twoSigmaAbove.push(mean + 2.0 * sigma);
+    }
+
+    var myChart0 = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: "First week of diet",
+            data: new Array(7).fill(103),
+            fill: true,
+            backgroundColor: pattern.draw('ring', 'rgb(255,105,97,0.7)'),
+            borderColor: "rgba(0, 0, 0, 0.0)",
+            borderWidth: 1,
+            pointRadius: 0
+          },
+          {
+            label: "-2\u03C3",
+            data: twoSigmaBelow,
+            fill: false,
+            backgroundColor: "rgba(55, 173, 221, 0.3)",
+            borderColor: "rgba(55, 173, 221, 0)",
+            borderWidth: 1,
+            pointRadius: 0
+          },
+          {
+            label: "-\u03C3",
+            data: oneSigmaBelow,
+            fill: "-1",
+            backgroundColor: "rgba(55, 173, 221, 0.3)",
+            borderColor: "rgba(55, 173, 221, 0)",
+            borderWidth: 1,
+            pointRadius: 0
+          },
+          {
+            label: "MA(7)",
+            data: MA,
+            fill: "-1",
+            backgroundColor: "rgba(55, 173, 221, 0.6)",
+            borderColor: "rgba(255, 255, 255, 0.6)",
+            borderWidth: 3,
+            pointRadius: 0
+          },
+          {
+            label: "+\u03C3",
+            data: oneSigmaAbove,
+            fill: "-1",
+            backgroundColor: "rgba(55, 173, 221, 0.6)",
+            borderColor: "rgba(55, 173, 221, 0)",
+            borderWidth: 1,
+            pointRadius: 0
+          },
+          {
+            label: "+2\u03C3",
+            data: twoSigmaAbove,
+            fill: "-1",
+            backgroundColor: "rgba(55, 173, 221, 0.3)",
+            borderColor: "rgba(55, 173, 221, 0)",
+            borderWidth: 1,
+            pointRadius: 0
+          },
+          {
+            label: "Weight (kg)",
+            data: weight,
+            fill: false,
+            borderColor: "#000000",
+            backgroundColor: "#000000",
+            borderWidth: 3
+          }
+        ]
+      },
+      options: {
+        responsive: true, // Instruct chart js to respond nicely.
+        maintainAspectRatio: true,
+        scales: {
+          xAxes: [
+            {
+              ticks: {
+                display: false
+              },
+              gridLines: {
+                display: false
+              }
+            }
+          ],
+          yAxes: [
+            {
+              gridLines: {
+                display: false
+              }
+            }
+          ]
+        }
+      }
+    });
+  </script>
+
+  <script>
+    $("#showall").click(function() {
+      myChart0.getDatasetMeta(2).hidden = false;
+      myChart0.getDatasetMeta(3).hidden = false;
+      myChart0.getDatasetMeta(4).hidden = false;
+      myChart0.getDatasetMeta(5).hidden = false;
+      myChart0.getDatasetMeta(6).hidden = false;
+      myChart0.update();
+    });
+    $("#hideall").click(function() {
+      myChart0.getDatasetMeta(2).hidden = true;
+      myChart0.getDatasetMeta(3).hidden = true;
+      myChart0.getDatasetMeta(4).hidden = true;
+      myChart0.getDatasetMeta(5).hidden = true;
+      myChart0.getDatasetMeta(6).hidden = true;
+      myChart0.update();
+    });
+    $("#onesigma").click(function() {
+      myChart0.getDatasetMeta(2).hidden = true;
+      myChart0.getDatasetMeta(3).hidden = false;
+      myChart0.getDatasetMeta(4).hidden = false;
+      myChart0.getDatasetMeta(5).hidden = false;
+      myChart0.getDatasetMeta(6).hidden = true;
+      myChart0.update();
+    });
+  </script>
+
+  <script>
+  var canvas = $("#myChart0").get(0);
+
+  $("#save").click(function() {
+    canvas.toBlob(function(blob) {
+      saveAs(blob, "chart.png");
+    });
+  });
+  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+<script>
+ WebFont.load({
+    google: {
+      families: ['PT+Sans:400,400i,700,700i', 'CPT+Serif:400,700']
+    }
+  });
+</script></body>
+
+</html>
