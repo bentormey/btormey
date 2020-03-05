@@ -290,27 +290,27 @@
 
   <script>
     $("#showall").click(function() {
-      myChart0.getDatasetMeta(2).hidden = false;
-      myChart0.getDatasetMeta(3).hidden = false;
-      myChart0.getDatasetMeta(4).hidden = false;
-      myChart0.getDatasetMeta(5).hidden = false;
-      myChart0.getDatasetMeta(6).hidden = false;
+      myChart0.getDatasetMeta(2-1).hidden = false;
+      myChart0.getDatasetMeta(3-1).hidden = false;
+      myChart0.getDatasetMeta(4-1).hidden = false;
+      myChart0.getDatasetMeta(5-1).hidden = false;
+      myChart0.getDatasetMeta(6-1).hidden = false;
       myChart0.update();
     });
     $("#hideall").click(function() {
-      myChart0.getDatasetMeta(2).hidden = true;
-      myChart0.getDatasetMeta(3).hidden = true;
-      myChart0.getDatasetMeta(4).hidden = true;
-      myChart0.getDatasetMeta(5).hidden = true;
-      myChart0.getDatasetMeta(6).hidden = true;
+      myChart0.getDatasetMeta(2-1).hidden = true;
+      myChart0.getDatasetMeta(3-1).hidden = true;
+      myChart0.getDatasetMeta(4-1).hidden = true;
+      myChart0.getDatasetMeta(5-1).hidden = true;
+      myChart0.getDatasetMeta(6-1).hidden = true;
       myChart0.update();
     });
     $("#onesigma").click(function() {
-      myChart0.getDatasetMeta(2).hidden = true;
-      myChart0.getDatasetMeta(3).hidden = false;
-      myChart0.getDatasetMeta(4).hidden = false;
-      myChart0.getDatasetMeta(5).hidden = false;
-      myChart0.getDatasetMeta(6).hidden = true;
+      myChart0.getDatasetMeta(2-1).hidden = true;
+      myChart0.getDatasetMeta(3-1).hidden = false;
+      myChart0.getDatasetMeta(4-1).hidden = false;
+      myChart0.getDatasetMeta(5-1).hidden = false;
+      myChart0.getDatasetMeta(6-1).hidden = true;
       myChart0.update();
     });
   </script>
