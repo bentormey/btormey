@@ -145,103 +145,100 @@
     <main role="main" class="inner cover">
       <h1 class="cover-heading">Start online coaching.</h1>
       <p class="lead">Choose either monthly (1500AED/month) or save 20% and pay for 3 months upfront (3600AED):</p>
+      
+      <!--
       <button
         class="btn btn-lg btn-secondary"
         id="checkout-button-plan_G66Q5KwwBBdnbw"
         role="link"
       >
         Start now
-      </button>
+      </button>-->
+      
+      <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+      <div class="btn-group" role="group" aria-label="Options">
+          <button
+            class="btn btn-secondary"
+            
+            id="checkout-button-plan_GsuJDD8mPbJvI5"
+            role="link"
+            >
+            Monthly
+          </button>
+          <button
+            class="btn btn-primary"
+            style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+            id="checkout-button-sku_GsuFUcNQe5eaTN"
+            role="link"
+          >
+            Upfront
+          </button>
+      </div>
 
       <div id="error-message"></div>
     </main>
-    
-    <!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
 
-<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<div class="btn-group" role="group" aria-label="Options">
-    <button
-      class="btn btn-secondary"
-      style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-      id="checkout-button-plan_GsuJDD8mPbJvI5"
-      role="link"
-      >
-      Monthly
-    </button>
-    <button
-      class="btn btn-primary"
-      style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-      id="checkout-button-sku_GsuFUcNQe5eaTN"
-      role="link"
-    >
-      Upfront
-    </button>
-</div>
+    <script>
+    (function() {
+      var stripe = Stripe('pk_live_RenJHIAGvZ0JTk3DKEN3diCz');
 
-<div id="error-message"></div>
+      var checkoutButton = document.getElementById('checkout-button-sku_GsuFUcNQe5eaTN');
+      checkoutButton.addEventListener('click', function () {
+        // When the customer clicks on the button, redirect
+        // them to Checkout.
+        stripe.redirectToCheckout({
+          items: [{sku: 'sku_GsuFUcNQe5eaTN', quantity: 1}],
 
-<script>
-(function() {
-  var stripe = Stripe('pk_live_RenJHIAGvZ0JTk3DKEN3diCz');
+          // Do not rely on the redirect to the successUrl for fulfilling
+          // purchases, customers may not always reach the success_url after
+          // a successful payment.
+          // Instead use one of the strategies described in
+          // https://stripe.com/docs/payments/checkout/fulfillment
+          successUrl: 'https://benjamintormey.com/success',
+          cancelUrl: 'https://benjamintormey.com/canceled',
+        })
+        .then(function (result) {
+          if (result.error) {
+            // If `redirectToCheckout` fails due to a browser or network
+            // error, display the localized error message to your customer.
+            var displayError = document.getElementById('error-message');
+            displayError.textContent = result.error.message;
+          }
+        });
+      });
+    })();
+    </script>
 
-  var checkoutButton = document.getElementById('checkout-button-sku_GsuFUcNQe5eaTN');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{sku: 'sku_GsuFUcNQe5eaTN', quantity: 1}],
+    <script>
+    (function() {
+      var stripe = Stripe('pk_live_RenJHIAGvZ0JTk3DKEN3diCz');
 
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://benjamintormey.com/success',
-      cancelUrl: 'https://benjamintormey.com/canceled',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
-    
-<script>
-(function() {
-  var stripe = Stripe('pk_live_RenJHIAGvZ0JTk3DKEN3diCz');
+      var checkoutButton = document.getElementById('checkout-button-plan_GsuJDD8mPbJvI5');
+      checkoutButton.addEventListener('click', function () {
+        // When the customer clicks on the button, redirect
+        // them to Checkout.
+        stripe.redirectToCheckout({
+          items: [{plan: 'plan_GsuJDD8mPbJvI5', quantity: 1}],
 
-  var checkoutButton = document.getElementById('checkout-button-plan_GsuJDD8mPbJvI5');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{plan: 'plan_GsuJDD8mPbJvI5', quantity: 1}],
-
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://benjamintormey.com/success',
-      cancelUrl: 'https://benjamintormey.com/canceled',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
+          // Do not rely on the redirect to the successUrl for fulfilling
+          // purchases, customers may not always reach the success_url after
+          // a successful payment.
+          // Instead use one of the strategies described in
+          // https://stripe.com/docs/payments/checkout/fulfillment
+          successUrl: 'https://benjamintormey.com/success',
+          cancelUrl: 'https://benjamintormey.com/canceled',
+        })
+        .then(function (result) {
+          if (result.error) {
+            // If `redirectToCheckout` fails due to a browser or network
+            // error, display the localized error message to your customer.
+            var displayError = document.getElementById('error-message');
+            displayError.textContent = result.error.message;
+          }
+        });
+      });
+    })();
+    </script>
 
     <footer class="mastfoot mt-auto">
       <div class="inner">
