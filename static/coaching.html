@@ -145,7 +145,7 @@
 
     <main role="main" class="inner cover">
       <h1 class="cover-heading">Start online coaching.</h1>
-      <p class="lead">Choose either monthly (1500AED/month) or save 20% and pay for 3 months upfront (3600AED):</p>
+      <p class="lead">Choose either monthly (200USD/month) or save 20% and pay for 3 months upfront (480USD):</p>
       
       <!--
       <button
@@ -187,7 +187,8 @@
         // When the customer clicks on the button, redirect
         // them to Checkout.
         stripe.redirectToCheckout({
-          items: [{sku: 'sku_GsuFUcNQe5eaTN', quantity: 1}],
+          lineItems: [{price: 'plan_H17iaZXrOxOmfp', quantity: 1}],
+          mode: 'subscription',
 
           // Do not rely on the redirect to the successUrl for fulfilling
           // purchases, customers may not always reach the success_url after
@@ -218,7 +219,8 @@
         // When the customer clicks on the button, redirect
         // them to Checkout.
         stripe.redirectToCheckout({
-          items: [{plan: 'plan_GsuJDD8mPbJvI5', quantity: 1}],
+          lineItems: [{price: 'plan_HJ0TSjXiMBItzC', quantity: 1}],
+          mode: 'subscription',
 
           // Do not rely on the redirect to the successUrl for fulfilling
           // purchases, customers may not always reach the success_url after
