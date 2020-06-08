@@ -34,7 +34,9 @@ Spending time picking apart all of the logical inconsistencies in someone else's
 
 This particular example was shared by a friend and I think it's instructive.
 
-![](/images/b46a3257-1d97-42d4-84a6-26e4ef2c6a1c.jpg "Sounds clever, right?")
+![](/images/b46a3257-1d97-42d4-84a6-26e4ef2c6a1c.jpg)
+
+Sounds clever, right?
 
 This kind of thinking is popular now, exemplified by books like Atomic Habits.
 
@@ -58,7 +60,9 @@ Here's my response to that post.
 
 ![](/images/a0012a51-cc92-473f-87f8-1a763af528fd.jpg)
 
-Yes, I do have a lot of free time. Now to explain why I brought up this example.
+Yes, I do have a lot of free time.
+
+Now to explain why I brought up this example.
 
 While having a low time preference is good because it enables you to reap greater future rewards, it's not the whole picture.
 
@@ -88,7 +92,9 @@ That brings me to my final point, illustrated by this next post.
 
 ![](/images/a4ed9f89-69a1-4f52-a2e4-5f05947bd002.jpg)
 
-Profound insight or tautology? Let's pause and think about this for a moment, using weight loss as an illustrative example.
+Profound insight or tautology?
+
+Let's pause and think about this for a moment, using weight loss as an illustrative example.
 
 We know that a calorie deficit is the only way to achieve weight loss due to the laws of thermodynamics.
 
