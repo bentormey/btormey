@@ -1,6 +1,6 @@
 ---
 title: Handling anxiety
-date: 2020-06-08T10:40:03.996Z
+date: 2020-01-03T10:40:03.996Z
 thumb_img_path: /images/finn-njupv3aop-u-unsplash-2-2.jpg
 template: post
 ---
