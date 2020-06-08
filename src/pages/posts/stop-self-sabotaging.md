@@ -1,6 +1,7 @@
 ---
 title: Stop self-sabotaging
 date: 2020-06-08T11:15:24.217Z
+thumb_img_path: /images/56e1bdd7dd0895f80b8b4589-2.jpeg
 template: post
 ---
 When I was younger I spent a lot of time playing games.
