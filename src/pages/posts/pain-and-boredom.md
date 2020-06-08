@@ -1,6 +1,7 @@
 ---
 title: Break the cycle
 date: 2020-02-09T10:59:05.258Z
+thumb_img_path: /images/tine-ivanic-u2d0bpzfxoy-unsplash-2-2.jpg
 template: post
 ---
 I was reading about 19th century philosopher Schopenhauer recently and was struck by his pessimism.
