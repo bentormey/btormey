@@ -1,6 +1,7 @@
 ---
 title: Three things more important than your workout
 date: 2020-03-08T11:35:30.322Z
+thumb_img_path: /images/valeriia-bugaiova-kd3bsvlguio-unsplash-2.jpg
 template: post
 ---
 There are three things that are more important than your workouts or your nutrition.
