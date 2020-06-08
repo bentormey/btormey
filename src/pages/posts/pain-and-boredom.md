@@ -1,5 +1,5 @@
 ---
-title: Pain and boredom
+title: Break the cycle
 date: 2020-02-09T10:59:05.258Z
 template: post
 ---
