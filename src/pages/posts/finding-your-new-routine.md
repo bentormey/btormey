@@ -1,6 +1,7 @@
 ---
 title: Finding your new routine
 date: 2020-03-29T10:48:17.873Z
+thumb_img_path: /images/priscilla-du-preez-7jqqzdsaetk-unsplash-2-2.jpg
 template: post
 ---
 On a coaching call recently, one of my clients asked me about how to handle working and exercising from home with limited space. Like many people I work with, he doesn't spend a lot of time at home normally and it's tough to establish a new routine.
