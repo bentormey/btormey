@@ -39,17 +39,17 @@ With that said, I want to offer you a different perspective on routine now.
 In "A Time to Keep Silence" the author Patrick Leigh Fermor describes his experiences at the Abbey of St. Wandrille, a Benedictine monastery in France:
 
 > “After initial spells of insomnia, nightmare and falling asleep by day, I found that my capacity for sleep was becoming more and more remarkable: till the hours I spent in or on my bed vastly outnumbered the hours I spent awake; and my sleep was so profound that I might have been under the influence of some hypnotic drug.
-
+>
 > For two days, meals and the offices in the church — Mass, Vespers and Compline — were almost my only lucid moments.
-
+>
 > Then began an extraordinary transformation: this extreme lassitude dwindled to nothing; night shrank to five hours of light, dreamless and perfect sleep, followed by awakenings full of energy and limpid freshness.
-
+>
 > The explanation is simple enough: the desire for talk, movements and nervous expression that I had transported from Paris found, in this silent place, no response or foil, evoked no single echo; after miserably gesticulating for a while in a vacuum, it languished and finally died for lack of any stimulus or nourishment.
-
+>
 > Then the tremendous accumulation of tiredness, which must be the common property of all our contemporaries, broke loose and swamped everything.
-
+>
 > No demands, once I had emerged from that flood of sleep, were made upon my nervous energy: there were no automatic drains, such as conversation at meals, small talk, catching trains, or the hundred anxious trivialities that poison everyday life.
-
+>
 > Even the major causes of guilt and anxiety had slid away into some distant limbo and not only failed to emerge in the small hours as tormentors but appeared to have lost their dragonish validity.”
 
 Working from home certainly doesn't resemble a sojourn to a monastery, but you're going to experience a similar transition.
