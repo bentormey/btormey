@@ -1,5 +1,5 @@
 ---
-title: Handling anxiety
+title: How to handle anxiety
 date: 2020-01-03T10:40:03.996Z
 thumb_img_path: /images/finn-njupv3aop-u-unsplash-2-2.jpg
 template: post
