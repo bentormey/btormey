@@ -1,5 +1,5 @@
 ---
-title: Navigating uncertainty
+title: Navigate uncertainty
 date: 2020-01-22T10:55:32.262Z
 thumb_img_path: /images/honey-yanibel-minaya-cruz-6gsyekq4pvg-unsplash-2-2.jpg
 template: post
