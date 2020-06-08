@@ -1,5 +1,5 @@
 ---
-title: Finding your new routine
+title: Find your new routine
 date: 2020-03-29T10:48:17.873Z
 thumb_img_path: /images/priscilla-du-preez-7jqqzdsaetk-unsplash-2-2.jpg
 template: post
