@@ -1,4 +1,5 @@
-import fetch from "node-fetch";
+const fetch = require("node-fetch");
+const Papa = require('papaparse');
 
 const KEY = '2PACX-1vTYv2MZvIEjsa_jqJtxBrgSCdxhk16naCqSxBvExlTrNJS8ZbJi4e5N3F5_mdCnoGGBSSBz39c0DKhz';
 
