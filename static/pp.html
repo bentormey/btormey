@@ -84,7 +84,6 @@
         // data comes through as a simple array since simpleSheet is turned on
         alert("Successfully loaded " + data.length + " rows of live weight data!")
         data.forEach(addData);
-        console.log(data);
         drawChart();
       }
       
@@ -139,6 +138,7 @@
       for (var key in raw) {
         labels.push(key);
         weight.push(raw[key]);
+        console.log(raw[key]);
       }
 
       var MA = [];
