@@ -82,7 +82,7 @@
       function showInfo(results) {
         var data = results.data
         // data comes through as a simple array since simpleSheet is turned on
-        alert("Successfully processed " + data.length + " rows!")
+        alert("Successfully loaded " + data.length + " rows of live weight data!")
         data.forEach(addData);
         console.log(data);
         drawChart();
