@@ -118,6 +118,8 @@
       return avg;
     }
       
+    var myChart0;
+      
     function drawChart() {
       var ctx = document.getElementById("myChart0").getContext("2d");
 
@@ -162,7 +164,7 @@
         twoSigmaAbove.push(mean + 2.0 * sigma);
       }
 
-      var myChart0 = new Chart(ctx, {
+      myChart0 = new Chart(ctx, {
         type: "line",
         data: {
           labels: labels,
