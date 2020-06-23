@@ -138,8 +138,10 @@
       for (var key in raw) {
         labels.push(key);
         weight.push(raw[key]);
-        console.log(raw[key]);
       }
+      
+      console.log(labels);
+      console.log(weight);
 
       var MA = [];
       var oneSigmaBelow = [];
@@ -164,6 +166,10 @@
         twoSigmaAbove.push(mean + 2.0 * sigma);
       }
 
+      console.log(oneSigmaBelow);
+      console.log(oneSigmaAbove);
+      console.log(twoSigmaBelow);
+      console.log(twoSigmaAbove);
       
       var maxFirstWeek = Math.max.apply(null, weight.slice(1,7));
       
