@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha256-u/J1Urdrk3nCYFefpoeTMgI5viU1ujCDu2fXXoSJjhg=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -63,6 +64,13 @@
         <canvas id="myChart0"></canvas>
       </div>
     </div>
+    
+    <div class="row justify-content-center">
+      <div class="col">
+        <div id = "slider"></div>
+      </div>
+    </div>
+    
   </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
@@ -118,7 +126,8 @@
     }
       
     var myChart0;
-      
+    var labels = [];
+    var weight = [];
     function drawChart() {
       var ctx = document.getElementById("myChart0").getContext("2d");
 
@@ -131,9 +140,6 @@
           ctx.fillRect(0, 0, c.chart.width, c.chart.height);
         }
       });
-
-      var labels = [];
-      var weight = [];
 
       for (var key in raw) {
         labels.push(key);
@@ -307,6 +313,22 @@
       saveAs(blob, "chart.png");
     });
   });
+  </script>
+  
+  <script>
+    $("#slider").slider({
+      range: true,
+      min: myChart0.axisX[0].get("minimum"),
+      max: myChart0.axisX[0].get("maximum"),
+      values: [ 0, weight.length ], //Defalt zoom state
+      slide: function( event, ui ) {
+        chart1.axisX[0].set("viewportMinimum", ui.values[0], false);
+        chart1.axisX[0].set("viewportMaximum", ui.values[1]);    
+      }
+    });
+
+    myChart0.axisX[0].set("viewportMinimum", $("#slider1").slider("values", 0), false);
+    myChart0.axisX[0].set("viewportMaximum", $("#slider1").slider("values", 1));
   </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
