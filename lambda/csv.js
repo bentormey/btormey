@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
   
   return {
     statusCode: 200,
-    body: csv//Papa.parse(csv).data
+    body: Papa.parse(csv).data
   };
   
   //const parsed = Papa.parse(csv).data
