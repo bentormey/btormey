@@ -164,6 +164,9 @@
         twoSigmaAbove.push(mean + 2.0 * sigma);
       }
 
+      
+      var maxFirstWeek = Math.max.apply(null, raw.slice(1,7));
+      
       myChart0 = new Chart(ctx, {
         type: "line",
         data: {
@@ -171,7 +174,7 @@
           datasets: [
             {
               label: "First week of data",
-              data: new Array(7).fill(Math.max(raw.slice(1,7))),
+              data: new Array(7).fill(maxFirstWeek),
               fill: true,
               backgroundColor: pattern.draw('ring', 'rgb(255,105,97,0.7)'),
               borderColor: "rgba(0, 0, 0, 0.0)",
