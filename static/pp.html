@@ -10,6 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha256-u/J1Urdrk3nCYFefpoeTMgI5viU1ujCDu2fXXoSJjhg=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js" integrity="sha256-Z639rJO57BiZzQDlWsGyF+EJ3Fs3nD4pQPkfimTy3S8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" integrity="sha256-g7HgoMySZyonuPwHTORf+uGHEeOm7VRI2kfXWXlJnco=" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -67,7 +68,9 @@
     
     <div class="row justify-content-center">
       <div class="col">
-        <input id="slider1" type="text" name="" value="" class="irs-hidden-input" />
+        <div class="range-slider">
+          <input type="text" class="js-range-slider" value="" />
+        </div>
       </div>
     </div>
     
@@ -305,14 +308,13 @@
   </script>
   
   <script>
-    $("#slider1").ionRangeSlider({
+    $(".js-range-slider").ionRangeSlider({
         type: "double",
-        grid: true,
         min: 0,
         max: 1000,
         from: 200,
-        to: 800,
-        prefix: "$"
+        to: 500,
+        grid: true
     });
   </script>
 
