@@ -171,7 +171,7 @@
           datasets: [
             {
               label: "First week of data",
-              data: new Array(7).fill(66.5),
+              data: new Array(7).fill(Math.max(...raw)),
               fill: true,
               backgroundColor: pattern.draw('ring', 'rgb(255,105,97,0.7)'),
               borderColor: "rgba(0, 0, 0, 0.0)",
