@@ -89,7 +89,9 @@
       }
       
       function addData(item, index) {
-        raw[item.Date] = item.Weight;
+        if (item.Weight !== "NaN") {
+          raw[item.Date] = item.Weight;
+        }
       }
 
     function standardDeviation(values) {
