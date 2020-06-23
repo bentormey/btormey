@@ -67,7 +67,7 @@
     
     <div class="row justify-content-center">
       <div class="col">
-        <div id = "slider"></div>
+        <div id="slider-range"></div>
       </div>
     </div>
     
@@ -145,9 +145,6 @@
         labels.push(key);
         weight.push(parseFloat(raw[key]));
       }
-      
-      console.log(labels);
-      console.log(weight);
 
       var MA = [];
       var oneSigmaBelow = [];
@@ -165,20 +162,12 @@
         var mean = weight.slice(i - 7, i).reduce((a,b) => a + b) / 7.0;
         MA.push(mean);
         
-        console.log(mean);
-
         var sigma = standardDeviation(weight.slice(i - 7, i));
         oneSigmaBelow.push(mean - sigma);
         oneSigmaAbove.push(mean + sigma);
         twoSigmaBelow.push(mean - 2.0 * sigma);
         twoSigmaAbove.push(mean + 2.0 * sigma);
       }
-
-      console.log(MA);
-      console.log(oneSigmaBelow);
-      console.log(oneSigmaAbove);
-      console.log(twoSigmaBelow);
-      console.log(twoSigmaAbove);
       
       var maxFirstWeek = Math.max.apply(null, weight.slice(1,7));
       
@@ -316,19 +305,19 @@
   </script>
   
   <script>
-    $("#slider").slider({
-      range: true,
-      min: myChart0.axisX[0].get("minimum"),
-      max: myChart0.axisX[0].get("maximum"),
-      values: [ 0, weight.length ], //Defalt zoom state
-      slide: function( event, ui ) {
-        chart1.axisX[0].set("viewportMinimum", ui.values[0], false);
-        chart1.axisX[0].set("viewportMaximum", ui.values[1]);    
-      }
-    });
-
-    myChart0.axisX[0].set("viewportMinimum", $("#slider1").slider("values", 0), false);
-    myChart0.axisX[0].set("viewportMaximum", $("#slider1").slider("values", 1));
+    $( function() {
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [ 75, 300 ],
+        slide: function( event, ui ) {
+          $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        }
+      });
+      $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+     } );
   </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
