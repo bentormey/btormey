@@ -137,7 +137,7 @@
 
       for (var key in raw) {
         labels.push(key);
-        weight.push(raw[key]);
+        weight.push(parseFloat(raw[key]));
       }
       
       console.log(labels);
