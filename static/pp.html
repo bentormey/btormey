@@ -89,10 +89,7 @@
       }
       
       function addData(item, index) {
-        raw.push({
-          key: item.Date,
-          value: item.Weight
-        });
+        raw[item.Date] = item.Weight;
       }
 
     function standardDeviation(values) {
