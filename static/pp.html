@@ -96,6 +96,7 @@
         alert("Successfully loaded " + data.length + " rows of live weight data!")
         data.forEach(addData);
         drawChart();
+        loadSlider();
       }
       
       function addData(item, index) {
@@ -308,14 +309,16 @@
   </script>
   
   <script>
-    $(".js-range-slider").ionRangeSlider({
-        type: "double",
-        min: 0,
-        max: weight.length,
-        from: weight.length-28,
-        to: weight.length,
-        grid: true
-    });
+    function loadSlider() {
+      $(".js-range-slider").ionRangeSlider({
+          type: "double",
+          min: 0,
+          max: weight.length,
+          from: weight.length-28,
+          to: weight.length,
+          grid: true
+      });
+    }
   </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
