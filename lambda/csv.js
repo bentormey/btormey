@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
     .then(response => response.text())
     .then(data => ({
       statusCode: 200,
-      body: Papa.parse(data).data
+      body: data
     }))
     .catch(error => ({ statusCode: 422, body: String(error) }));
 };
