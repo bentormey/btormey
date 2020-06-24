@@ -309,14 +309,28 @@
   </script>
   
   <script>
+    var maxRange = weight.length;
+    
     function loadSlider() {
       $(".js-range-slider").ionRangeSlider({
           type: "double",
           min: 0,
-          max: weight.length,
-          from: weight.length-28,
-          to: weight.length,
-          grid: true
+          max: maxRange,
+          from: Math.round(maxRange/2),
+          to: maxRange,
+          grid: true,
+          onStart: function(data) {
+            console.log("onStart");
+          },
+          onChange: function(data) {
+              console.log("onChange");
+          },
+          onFinish: function(data) {
+              console.log("onFinish");
+          },
+          onUpdate: function(data) {
+              console.log("onUpdate");
+          }
       });
     }
   </script>
