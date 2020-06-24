@@ -283,7 +283,7 @@ const data = [
 <script>
 d3.csv('https://benjamintormey.com/.netlify/functions/csv', function(d) {
   return {
-    Date: new Date(+d.Date, 0, 1), // convert "Year" column to Date
+    Date: new Date(d.Date),
     Weight: +d.Weight
   };
 }).then(function(data) {
