@@ -3,6 +3,10 @@
   "description": "Stackbit Ampersand Theme",
   "version": "0.0.1",
   "license": "MIT",
+  "scripts": {
+    "prebuild" : "cd functions && npm i",
+    "build" : "npm build"
+  },
   "dependencies": {
     "node-fetch": "^2.6.0"
   }
