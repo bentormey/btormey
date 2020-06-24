@@ -2,13 +2,16 @@
 <html>
 <head>
   <title>Shama</title>
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha256-u/J1Urdrk3nCYFefpoeTMgI5viU1ujCDu2fXXoSJjhg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.2.0/papaparse.min.js" integrity="sha256-avg9BR9RTe3PbtSicrUm27/1o3Qc4s7cYETPF+TDwIo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -63,190 +66,180 @@
         <canvas id="myChart0"></canvas>
       </div>
     </div>
+    
   </div>
 
-  <script>
-    var ctx = document.getElementById("myChart0").getContext("2d");
-
-    var backgroundColor = "white";
-    Chart.plugins.register({
-      beforeDraw: function(c) {
-        var ctx = c.chart.ctx;
-        ctx.fillStyle = backgroundColor;
-        ctx.fillRect(0, 0, c.chart.width, c.chart.height);
+  
+    <script type="text/javascript">
+      var raw = {};
+      var key = '2PACX-1vTfmLvRp9FG0_bb0GDlP1F-9CuyHgtstJIETY1mADPx0TvAEIBH3-rwIKMMG5magKgreF1hOME_nLHZ';
+      
+      function init() {
+        Papa.parse(`https://clients.benjamintormey.com/.netlify/functions/csv?key=${key}`, {
+          download: true,
+          header: true,
+          complete: showInfo
+        })
       }
-    });
 
-    function standardDeviation(values) {
-      var avg = average(values);
+      window.addEventListener('DOMContentLoaded', init);
 
-      var squareDiffs = values.map(function(value) {
-        var diff = value - avg;
-        var sqrDiff = diff * diff;
-        return sqrDiff;
-      });
-
-      var avgSquareDiff = average(squareDiffs);
-
-      var stdDev = Math.sqrt(avgSquareDiff);
-      return stdDev;
-    }
-
-    function average(data) {
-      var sum = data.reduce(function(sum, value) {
-        return sum + value;
-      }, 0);
-
-      var avg = sum / data.length;
-      return avg;
-    }
-
-    const raw = {
-      "26/5":	69.1,
-      "30/5":	67.9,
-      "31/5":	67.4,
-      "1/6":	68,
-      "2/6":	67.4,
-      "3/6":	67.7,
-      "4/6":	68,
-      "5/6":	67.7,
-      "6/6":	68.3,
-      "7/6":	69.3,
-      "8/6":	68.3,
-      "9/6":	68.6,
-      "10/6":	68.6,
-      "11/6":	68.4,
-      "12/6":	68.4,
-      "13/6":	67.9,
-      "14/6":	67.6,
-      "15/6":	67.6,
-      "16/6":	67.6,
-    };
-    
-    var labels = [];
-    var weight = [];
-
-    for (var key in raw) {
-      labels.push(key);
-      weight.push(raw[key]);
-    }
-
-    var MA = [];
-    var oneSigmaBelow = [];
-    var oneSigmaAbove = [];
-    var twoSigmaBelow = [];
-    var twoSigmaAbove = [];
-    for (var i = 1; i < 7; i++) {
-      MA.push(null);
-      oneSigmaBelow.push(null);
-      oneSigmaAbove.push(null);
-      twoSigmaBelow.push(null);
-      twoSigmaAbove.push(null);
-    }
-    for (var i = 7; i < weight.length; i++) {
-      var mean = weight.slice(i - 7, i).reduce((a,b) => a + b) / 7.0;
-      MA.push(mean);
-
-      var sigma = standardDeviation(weight.slice(i - 7, i));
-      oneSigmaBelow.push(mean - sigma);
-      oneSigmaAbove.push(mean + sigma);
-      twoSigmaBelow.push(mean - 2.0 * sigma);
-      twoSigmaAbove.push(mean + 2.0 * sigma);
-    }
-
-    var myChart0 = new Chart(ctx, {
-      type: "line",
-      data: {
-        labels: labels,
-        datasets: [
-          {
-            label: "First week of data",
-            data: new Array(7).fill(70),
-            fill: true,
-            backgroundColor: pattern.draw('ring', 'rgb(255,105,97,0.7)'),
-            borderColor: "rgba(0, 0, 0, 0.0)",
-            borderWidth: 1,
-            pointRadius: 0
-          },
-          {
-            label: "-2\u03C3",
-            data: twoSigmaBelow,
-            fill: false,
-            backgroundColor: "rgba(55, 173, 221, 0.3)",
-            borderColor: "rgba(55, 173, 221, 0)",
-            borderWidth: 1,
-            pointRadius: 0
-          },
-          {
-            label: "-\u03C3",
-            data: oneSigmaBelow,
-            fill: "-1",
-            backgroundColor: "rgba(55, 173, 221, 0.3)",
-            borderColor: "rgba(55, 173, 221, 0)",
-            borderWidth: 1,
-            pointRadius: 0
-          },
-          {
-            label: "MA(7)",
-            data: MA,
-            fill: "-1",
-            backgroundColor: "rgba(55, 173, 221, 0.6)",
-            borderColor: "rgba(255, 255, 255, 0.6)",
-            borderWidth: 3,
-            pointRadius: 0
-          },
-          {
-            label: "+\u03C3",
-            data: oneSigmaAbove,
-            fill: "-1",
-            backgroundColor: "rgba(55, 173, 221, 0.6)",
-            borderColor: "rgba(55, 173, 221, 0)",
-            borderWidth: 1,
-            pointRadius: 0
-          },
-          {
-            label: "+2\u03C3",
-            data: twoSigmaAbove,
-            fill: "-1",
-            backgroundColor: "rgba(55, 173, 221, 0.3)",
-            borderColor: "rgba(55, 173, 221, 0)",
-            borderWidth: 1,
-            pointRadius: 0
-          },
-          {
-            label: "Weight (kg)",
-            data: weight,
-            fill: false,
-            borderColor: "#000000",
-            backgroundColor: "#000000",
-            borderWidth: 3
-          }
-        ]
-      },
-      options: {
-        responsive: true, // Instruct chart js to respond nicely.
-        maintainAspectRatio: true,
-        scales: {
-          xAxes: [
-            {
-              ticks: {
-                display: false
-              },
-              gridLines: {
-                display: false
-              }
-            }
-          ],
-          yAxes: [
-            {
-              gridLines: {
-                display: false
-              }
-            }
-          ]
+      function showInfo(results) {
+        var data = results.data
+        // data comes through as a simple array since simpleSheet is turned on
+        alert("Successfully loaded " + data.length + " rows of live weight data!")
+        data.forEach(addData);
+        drawChart();
+      }
+      
+      function addData(item, index) {
+        if (item.Weight !== "NaN") {
+          raw[item.Date] = item.Weight;
         }
       }
-    });
+      
+    var myChart0;
+    var labels = [];
+    var weight = [];
+    function drawChart() {
+      var ctx = document.getElementById("myChart0").getContext("2d");
+
+      var backgroundColor = "white";
+      
+      Chart.plugins.register({
+        beforeDraw: function(c) {
+          var ctx = c.chart.ctx;
+          ctx.fillStyle = backgroundColor;
+          ctx.fillRect(0, 0, c.chart.width, c.chart.height);
+        }
+      });
+
+      for (var key in raw) {
+        labels.push(key);
+        weight.push(parseFloat(raw[key]));
+      }
+      
+      function bollinger(values, N, K) {
+        let i = 0;
+        let sum = 0;
+        let sum2 = 0;
+        const bands = K.map(() => new Float64Array(values.length).fill(NaN));
+        for (let n = Math.min(N - 1, values.length); i < n; ++i) {
+          const value = values[i];
+          sum += value, sum2 += value ** 2;
+        }
+        for (let n = values.length, m = bands.length; i < n; ++i) {
+          const value = values[i];
+          sum += value, sum2 += value ** 2;
+          const mean = sum / N;
+          const deviation = Math.sqrt((sum2 - sum ** 2 / N) / (N - 1));
+          for (let j = 0; j < K.length; ++j) {
+            bands[j][i] = mean + deviation * K[j];
+          }
+          const value0 = values[i - N + 1];
+          sum -= value0, sum2 -= value0 ** 2;
+        }
+        return bands;
+      }
+      
+      var bands = bollinger(weight, 7, [-2, -1, 0, +1, +2]);
+      
+      var maxFirstWeek = Math.max.apply(null, weight.slice(1,7));
+      
+      myChart0 = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: "First week of data",
+              data: new Array(7).fill(maxFirstWeek),
+              fill: true,
+              backgroundColor: pattern.draw('ring', 'rgb(255,105,97,0.7)'),
+              borderColor: "rgba(0, 0, 0, 0.0)",
+              borderWidth: 1,
+              pointRadius: 0
+            },
+            {
+              label: "-2\u03C3",
+              data: bands[0],
+              fill: false,
+              backgroundColor: "rgba(55, 173, 221, 0.3)",
+              borderColor: "rgba(55, 173, 221, 0)",
+              borderWidth: 1,
+              pointRadius: 0
+            },
+            {
+              label: "-\u03C3",
+              data: bands[1],
+              fill: "-1",
+              backgroundColor: "rgba(55, 173, 221, 0.3)",
+              borderColor: "rgba(55, 173, 221, 0)",
+              borderWidth: 1,
+              pointRadius: 0
+            },
+            {
+              label: "MA(7)",
+              data: bands[2],
+              fill: "-1",
+              backgroundColor: "rgba(55, 173, 221, 0.6)",
+              borderColor: "rgba(255, 255, 255, 0.6)",
+              borderWidth: 3,
+              pointRadius: 0
+            },
+            {
+              label: "+\u03C3",
+              data: bands[3],
+              fill: "-1",
+              backgroundColor: "rgba(55, 173, 221, 0.6)",
+              borderColor: "rgba(55, 173, 221, 0)",
+              borderWidth: 1,
+              pointRadius: 0
+            },
+            {
+              label: "+2\u03C3",
+              data: bands[4],
+              fill: "-1",
+              backgroundColor: "rgba(55, 173, 221, 0.3)",
+              borderColor: "rgba(55, 173, 221, 0)",
+              borderWidth: 1,
+              pointRadius: 0
+            },
+            {
+              label: "Weight (kg)",
+              data: weight,
+              fill: false,
+              borderColor: "#000000",
+              backgroundColor: "#000000",
+              borderWidth: 3
+            }
+          ]
+        },
+        options: {
+          responsive: true, // Instruct chart js to respond nicely.
+          maintainAspectRatio: true,
+          scales: {
+            xAxes: [
+              {
+                ticks: {
+                  display: false
+                },
+                gridLines: {
+                  display: false
+                }
+              }
+            ],
+            yAxes: [
+              {
+                gridLines: {
+                  display: false
+                }
+              }
+            ]
+          }
+        }
+      });
+    }
   </script>
 
   <script>
