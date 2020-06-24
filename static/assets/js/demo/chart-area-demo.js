@@ -83,15 +83,6 @@ Chart.defaults.global.defaultFontColor = '#858796';
           labels: labels,
           datasets: [
             {
-              label: "First week of data",
-              data: new Array(7).fill(maxFirstWeek),
-              fill: true,
-              backgroundColor: "rgba(55, 173, 221, 0.3)",
-              borderColor: "rgba(0, 0, 0, 0.0)",
-              borderWidth: 1,
-              pointRadius: 0
-            },
-            {
               label: "-2\u03C3",
               data: bands[0],
               fill: false,
