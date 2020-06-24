@@ -75,7 +75,7 @@
       var key = '2PACX-1vTSHE3T_xQQ-2H6-_UEiFI9NrZNe-92H-BQDVclUdijjIOFzJRq-9ySbuNPhYrVbp3KqR7S3_qixCyD';
       
       function init() {
-        Papa.parse(`https://clients.benjamintormey.com/.netlify/functions/csv?key=${key}`, {
+        Papa.parse(`https://clients.benjamintormey.com/.netlify/functions/getclientdata?key=${key}`, {
           download: true,
           header: true,
           complete: showInfo
