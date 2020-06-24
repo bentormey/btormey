@@ -3,17 +3,7 @@
   "description": "Stackbit Ampersand Theme",
   "version": "0.0.1",
   "license": "MIT",
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "build": "gatsby build --prefix-paths",
-    "serve": "gatsby serve"
-  },
   "dependencies": {
-    "papaparse": "^5.2.0",
-    "moment": "^2.23.0",
-    "moment-strftime": "^0.5.0",
-    "node-sass": "^4.11.0",
-    "node-sass-utils": "^1.1.2"
+    "node-fetch": "^2.6.0"
   }
 }
