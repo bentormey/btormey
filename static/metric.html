@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js" integrity="sha256-Xb6SSzhH3wEPC4Vy3W70Lqh9Y3Du/3KxPqI2JHQSpTw=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/2.15.6/metricsgraphics.min.js" integrity="sha256-QFwUntQpro6H+h/btQ+8nVVDqeZnVQSuqsTTUGz2o44=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/2.15.6/metricsgraphics.min.css" integrity="sha256-H83YjkVzXEyHSdZ/5aVRoW2QfqeJ7gIWduA7aCy9tWY=" crossorigin="anonymous" />
@@ -280,7 +281,21 @@ const data = [
 </script>
 
 <script>
-MG.data_graphic({
+  d3.csv('https://benjamintormey.com/.netlify/functions/csv', function(data) {
+    data = MG.convert.date(data, 'date');
+    MG.data_graphic({
+        title: "Line Chart",
+        description: "This is a simple line chart. You can remove the area portion by adding area: false to the arguments list.",
+        data: data,
+        width: 600,
+        height: 200,
+        right: 40,
+        target: document.getElementById('fake_users1'),
+        x_accessor: 'date',
+        y_accessor: 'value'
+    });
+  });
+/**MG.data_graphic({
     title: "Downloads",
     description: "This graphic shows a time-series of downloads.",
     data: [{'date':new Date('2014-11-01'),'value':12},
@@ -290,7 +305,7 @@ MG.data_graphic({
     target: '#chart',
     x_accessor: 'date',
     y_accessor: 'value',
-})
+})*/
 </script>
 
 </body>
