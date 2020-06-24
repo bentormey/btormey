@@ -25,6 +25,7 @@ d3.csv('https://benjamintormey.com/.netlify/functions/csv', function(d) {
         width: 600,
         height: 200,
         right: 40,
+        min_y_from_data: true,
         target: document.getElementById('chart'),
         x_accessor: 'Date',
         y_accessor: 'Weight'
