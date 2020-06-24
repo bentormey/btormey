@@ -188,7 +188,7 @@
         return bands;
       }
       
-      var bands = bollinger(weight, 7, 2);
+      var bands = bollinger(weight, 7, [-1, 0, +1]);
       
       var maxFirstWeek = Math.max.apply(null, weight.slice(1,7));
       
