@@ -3,7 +3,7 @@ Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,Bli
 Chart.defaults.global.defaultFontColor = '#858796';
 
       var raw = {};
-      var key = '2PACX-1vTSHE3T_xQQ-2H6-_UEiFI9NrZNe-92H-BQDVclUdijjIOFzJRq-9ySbuNPhYrVbp3KqR7S3_qixCyD';
+      var key = '2PACX-1vTYv2MZvIEjsa_jqJtxBrgSCdxhk16naCqSxBvExlTrNJS8ZbJi4e5N3F5_mdCnoGGBSSBz39c0DKhz';
       
       function init() {
         Papa.parse(`https://clients.benjamintormey.com/.netlify/functions/csv?key=${key}`, {
