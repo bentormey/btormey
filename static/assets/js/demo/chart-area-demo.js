@@ -86,7 +86,7 @@ Chart.defaults.global.defaultFontColor = '#858796';
               label: "First week of data",
               data: new Array(7).fill(maxFirstWeek),
               fill: true,
-              backgroundColor: pattern.draw('ring', 'rgb(255,105,97,0.7)'),
+              backgroundColor: "rgba(55, 173, 221, 0.3)",
               borderColor: "rgba(0, 0, 0, 0.0)",
               borderWidth: 1,
               pointRadius: 0
