@@ -97,30 +97,6 @@
           raw[item.Date] = item.Weight;
         }
       }
-
-    function standardDeviation(values) {
-      var avg = average(values);
-
-      var squareDiffs = values.map(function(value) {
-        var diff = value - avg;
-        var sqrDiff = diff * diff;
-        return sqrDiff;
-      });
-
-      var avgSquareDiff = average(squareDiffs);
-
-      var stdDev = Math.sqrt(avgSquareDiff);
-      return stdDev;
-    }
-
-    function average(data) {
-      var sum = data.reduce(function(sum, value) {
-        return sum + value;
-      }, 0);
-
-      var avg = sum / data.length;
-      return avg;
-    }
       
     var myChart0;
     var labels = [];
@@ -141,29 +117,6 @@
       for (var key in raw) {
         labels.push(key);
         weight.push(parseFloat(raw[key]));
-      }
-
-      var MA = [];
-      var oneSigmaBelow = [];
-      var oneSigmaAbove = [];
-      var twoSigmaBelow = [];
-      var twoSigmaAbove = [];
-      for (var i = 1; i < 7; i++) {
-        MA.push(null);
-        oneSigmaBelow.push(null);
-        oneSigmaAbove.push(null);
-        twoSigmaBelow.push(null);
-        twoSigmaAbove.push(null);
-      }
-      for (var i = 7; i < weight.length; i++) {
-        var mean = weight.slice(i - 7, i).reduce((a,b) => a + b) / 7.0;
-        MA.push(mean);
-        
-        var sigma = standardDeviation(weight.slice(i - 7, i));
-        oneSigmaBelow.push(mean - sigma);
-        oneSigmaAbove.push(mean + sigma);
-        twoSigmaBelow.push(mean - 2.0 * sigma);
-        twoSigmaAbove.push(mean + 2.0 * sigma);
       }
       
       function bollinger(values, N, K) {
