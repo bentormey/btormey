@@ -281,17 +281,14 @@ const data = [
 </script>
 
 <script>
-  MG.data_graphic({
-        title: "Line Chart",
-        description: "This is a simple line chart. You can remove the area portion by adding area: false to the arguments list.",
-        data: data,
-        width: 600,
-        height: 200,
-        right: 40,
-        target: document.getElementById('chart'),
-        x_accessor: 'date',
-        y_accessor: 'value'
-    });
+d3.csv('https://benjamintormey.com/.netlify/functions/csv', function(d) {
+  return {
+    Date: new Date(+d.Date, 0, 1), // convert "Year" column to Date
+    Weight: +d.Weight
+  };
+}).then(function(data) {
+  console.log(data);
+});
 /**
   d3.csv('https://benjamintormey.com/.netlify/functions/csv').then(function(data) {
     data = MG.convert.date(data, 'Date');
