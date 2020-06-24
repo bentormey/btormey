@@ -281,7 +281,7 @@ const data = [
 </script>
 
 <script>
-  d3.csv('https://benjamintormey.com/.netlify/functions/csv', function(data) {
+  d3.csv('https://benjamintormey.com/.netlify/functions/csv').then(function(data) {
     data = MG.convert.date(data, 'Date');
     MG.data_graphic({
         title: "Line Chart",
