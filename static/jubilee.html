@@ -24,7 +24,6 @@
       </li>
     </ul>
   </nav>
-
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col">
@@ -63,253 +62,180 @@
         <canvas id="myChart0"></canvas>
       </div>
     </div>
+    
   </div>
 
-  <script>
-    var ctx = document.getElementById("myChart0").getContext("2d");
-
-    var backgroundColor = "white";
-    Chart.plugins.register({
-      beforeDraw: function(c) {
-        var ctx = c.chart.ctx;
-        ctx.fillStyle = backgroundColor;
-        ctx.fillRect(0, 0, c.chart.width, c.chart.height);
+  
+    <script type="text/javascript">
+      var raw = {};
+      var key = '2PACX-1vTYv2MZvIEjsa_jqJtxBrgSCdxhk16naCqSxBvExlTrNJS8ZbJi4e5N3F5_mdCnoGGBSSBz39c0DKhz';
+      
+      function init() {
+        Papa.parse(`https://benjamintormey.com/.netlify/functions/csv?key=${key}`, {
+          download: true,
+          header: true,
+          complete: showInfo
+        })
       }
-    });
 
-    function standardDeviation(values) {
-      var avg = average(values);
+      window.addEventListener('DOMContentLoaded', init);
 
-      var squareDiffs = values.map(function(value) {
-        var diff = value - avg;
-        var sqrDiff = diff * diff;
-        return sqrDiff;
-      });
-
-      var avgSquareDiff = average(squareDiffs);
-
-      var stdDev = Math.sqrt(avgSquareDiff);
-      return stdDev;
-    }
-
-    function average(data) {
-      var sum = data.reduce(function(sum, value) {
-        return sum + value;
-      }, 0);
-
-      var avg = sum / data.length;
-      return avg;
-    }
-
-    const raw = {
-      "25/3":	65.7,
-      "26/3":	65.6,
-      "27/3":	65.4,
-      "28/3":	65.5,
-      "29/3":	65.9,
-      "30/3":	65.8,
-      "31/3":	65.7,
-      "1/4":	65.6,
-      "2/4":	65.6,
-      "3/4":	66,
-      "4/4":	65.7,
-      "5/4":	65.4,
-      "6/4":	65.7,
-      "7/4":	65.7,
-      "8/4":	65.7,
-      "9/4":	65.4,
-      "10/4":	65.4,
-      "11/4":	65.2,
-      "12/4":	65.5,
-      "13/4":	65.5,
-      "14/4":	65.4,
-      "15/4":	65.6,
-      "16/4":	65.3,
-      "17/4":	65.1,
-      "18/4":	64.7,
-      "19/4":	65,
-      "20/4":	65.2,
-      "21/4":	64.8,
-      "22/4":	64.8,
-      "23/4":	64.5,
-      "24/4":	64,
-      "25/4":	65.5,
-      "26/4":	64.3,
-      "27/4":	64.4,
-      "28/4":	65,
-      "29/4":	64.8,
-      "30/4":	64.4,
-      "1/5":	64.4,
-      "3/5":	64.3,
-      "4/5":	64.8,
-      "5/5":	64.4,
-      "6/5":	64.7,
-      "7/5":	64.4,
-      "8/5":	64.2,
-      "9/5":	63.7,
-      "10/5":	64.3,
-      "11/5":	64.4,
-      "12/5":	64,
-      "18/5":	64.1,
-      "19/5":	63.4,
-      "20/5":	63.6,
-      "21/5":	63.6,
-      "22/5":	63.1,
-      "23/5":	62.9,
-      "24/5":	63.2,
-      "25/5":	63.4,
-      "26/5":	63.1,
-      "27/5":	63,
-      "28/5":	63.5,
-      "29/5":	63,
-      "30/5":	62.9,
-      "1/6":	63,
-      "2/6":	63,
-      "3/6":	62.9,
-      "4/6":	62.9,
-      "5/6":	62.7,
-      "6/6":	62.2,
-      "7/6":	62.6,
-      "8/6":	63,
-      "9/6":	62.9,
-      "10/6":	62.7,
-      "11/6":	63,
-      "12/6":	62.5,
-      "13/6":	62,
-      "14/6":	61.9,
-      "15/6":	62.4,
-      "16/6":	62.2,
-      "17/6":	62.2,
-      "18/6":	62.5,
-      "19/6":	62.1,
-      "20/6":	61.8,
-      "21/6":	62.3,
-    };
-    
-    var labels = [];
-    var weight = [];
-
-    for (var key in raw) {
-      labels.push(key);
-      weight.push(raw[key]);
-    }
-
-    var MA = [];
-    var oneSigmaBelow = [];
-    var oneSigmaAbove = [];
-    var twoSigmaBelow = [];
-    var twoSigmaAbove = [];
-    for (var i = 1; i < 7; i++) {
-      MA.push(null);
-      oneSigmaBelow.push(null);
-      oneSigmaAbove.push(null);
-      twoSigmaBelow.push(null);
-      twoSigmaAbove.push(null);
-    }
-    for (var i = 7; i < weight.length; i++) {
-      var mean = weight.slice(i - 7, i).reduce((a,b) => a + b) / 7.0;
-      MA.push(mean);
-
-      var sigma = standardDeviation(weight.slice(i - 7, i));
-      oneSigmaBelow.push(mean - sigma);
-      oneSigmaAbove.push(mean + sigma);
-      twoSigmaBelow.push(mean - 2.0 * sigma);
-      twoSigmaAbove.push(mean + 2.0 * sigma);
-    }
-
-    var myChart0 = new Chart(ctx, {
-      type: "line",
-      data: {
-        labels: labels,
-        datasets: [
-          {
-            label: "First week of data",
-            data: new Array(7).fill(66.5),
-            fill: true,
-            backgroundColor: pattern.draw('ring', 'rgb(255,105,97,0.7)'),
-            borderColor: "rgba(0, 0, 0, 0.0)",
-            borderWidth: 1,
-            pointRadius: 0
-          },
-          {
-            label: "-2\u03C3",
-            data: twoSigmaBelow,
-            fill: false,
-            backgroundColor: "rgba(55, 173, 221, 0.3)",
-            borderColor: "rgba(55, 173, 221, 0)",
-            borderWidth: 1,
-            pointRadius: 0
-          },
-          {
-            label: "-\u03C3",
-            data: oneSigmaBelow,
-            fill: "-1",
-            backgroundColor: "rgba(55, 173, 221, 0.3)",
-            borderColor: "rgba(55, 173, 221, 0)",
-            borderWidth: 1,
-            pointRadius: 0
-          },
-          {
-            label: "MA(7)",
-            data: MA,
-            fill: "-1",
-            backgroundColor: "rgba(55, 173, 221, 0.6)",
-            borderColor: "rgba(255, 255, 255, 0.6)",
-            borderWidth: 3,
-            pointRadius: 0
-          },
-          {
-            label: "+\u03C3",
-            data: oneSigmaAbove,
-            fill: "-1",
-            backgroundColor: "rgba(55, 173, 221, 0.6)",
-            borderColor: "rgba(55, 173, 221, 0)",
-            borderWidth: 1,
-            pointRadius: 0
-          },
-          {
-            label: "+2\u03C3",
-            data: twoSigmaAbove,
-            fill: "-1",
-            backgroundColor: "rgba(55, 173, 221, 0.3)",
-            borderColor: "rgba(55, 173, 221, 0)",
-            borderWidth: 1,
-            pointRadius: 0
-          },
-          {
-            label: "Weight (kg)",
-            data: weight,
-            fill: false,
-            borderColor: "#000000",
-            backgroundColor: "#000000",
-            borderWidth: 3
-          }
-        ]
-      },
-      options: {
-        responsive: true, // Instruct chart js to respond nicely.
-        maintainAspectRatio: true,
-        scales: {
-          xAxes: [
-            {
-              ticks: {
-                display: false
-              },
-              gridLines: {
-                display: false
-              }
-            }
-          ],
-          yAxes: [
-            {
-              gridLines: {
-                display: false
-              }
-            }
-          ]
+      function showInfo(results) {
+        var data = results.data
+        // data comes through as a simple array since simpleSheet is turned on
+        alert("Successfully loaded " + data.length + " rows of live weight data!")
+        data.forEach(addData);
+        drawChart();
+      }
+      
+      function addData(item, index) {
+        if (item.Weight !== "NaN") {
+          raw[item.Date] = item.Weight;
         }
       }
-    });
+      
+    var myChart0;
+    var labels = [];
+    var weight = [];
+    function drawChart() {
+      var ctx = document.getElementById("myChart0").getContext("2d");
+
+      var backgroundColor = "white";
+      
+      Chart.plugins.register({
+        beforeDraw: function(c) {
+          var ctx = c.chart.ctx;
+          ctx.fillStyle = backgroundColor;
+          ctx.fillRect(0, 0, c.chart.width, c.chart.height);
+        }
+      });
+
+      for (var key in raw) {
+        labels.push(key);
+        weight.push(parseFloat(raw[key]));
+      }
+      
+      function bollinger(values, N, K) {
+        let i = 0;
+        let sum = 0;
+        let sum2 = 0;
+        const bands = K.map(() => new Float64Array(values.length).fill(NaN));
+        for (let n = Math.min(N - 1, values.length); i < n; ++i) {
+          const value = values[i];
+          sum += value, sum2 += value ** 2;
+        }
+        for (let n = values.length, m = bands.length; i < n; ++i) {
+          const value = values[i];
+          sum += value, sum2 += value ** 2;
+          const mean = sum / N;
+          const deviation = Math.sqrt((sum2 - sum ** 2 / N) / (N - 1));
+          for (let j = 0; j < K.length; ++j) {
+            bands[j][i] = mean + deviation * K[j];
+          }
+          const value0 = values[i - N + 1];
+          sum -= value0, sum2 -= value0 ** 2;
+        }
+        return bands;
+      }
+      
+      var bands = bollinger(weight, 7, [-2, -1, 0, +1, +2]);
+      
+      var maxFirstWeek = Math.max.apply(null, weight.slice(1,7));
+      
+      myChart0 = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: "First week of data",
+              data: new Array(7).fill(maxFirstWeek),
+              fill: true,
+              backgroundColor: pattern.draw('ring', 'rgb(255,105,97,0.7)'),
+              borderColor: "rgba(0, 0, 0, 0.0)",
+              borderWidth: 1,
+              pointRadius: 0
+            },
+            {
+              label: "-2\u03C3",
+              data: bands[0],
+              fill: false,
+              backgroundColor: "rgba(55, 173, 221, 0.3)",
+              borderColor: "rgba(55, 173, 221, 0)",
+              borderWidth: 1,
+              pointRadius: 0
+            },
+            {
+              label: "-\u03C3",
+              data: bands[1],
+              fill: "-1",
+              backgroundColor: "rgba(55, 173, 221, 0.3)",
+              borderColor: "rgba(55, 173, 221, 0)",
+              borderWidth: 1,
+              pointRadius: 0
+            },
+            {
+              label: "MA(7)",
+              data: bands[2],
+              fill: "-1",
+              backgroundColor: "rgba(55, 173, 221, 0.6)",
+              borderColor: "rgba(255, 255, 255, 0.6)",
+              borderWidth: 3,
+              pointRadius: 0
+            },
+            {
+              label: "+\u03C3",
+              data: bands[3],
+              fill: "-1",
+              backgroundColor: "rgba(55, 173, 221, 0.6)",
+              borderColor: "rgba(55, 173, 221, 0)",
+              borderWidth: 1,
+              pointRadius: 0
+            },
+            {
+              label: "+2\u03C3",
+              data: bands[4],
+              fill: "-1",
+              backgroundColor: "rgba(55, 173, 221, 0.3)",
+              borderColor: "rgba(55, 173, 221, 0)",
+              borderWidth: 1,
+              pointRadius: 0
+            },
+            {
+              label: "Weight (kg)",
+              data: weight,
+              fill: false,
+              borderColor: "#000000",
+              backgroundColor: "#000000",
+              borderWidth: 3
+            }
+          ]
+        },
+        options: {
+          responsive: true, // Instruct chart js to respond nicely.
+          maintainAspectRatio: true,
+          scales: {
+            xAxes: [
+              {
+                ticks: {
+                  display: false
+                },
+                gridLines: {
+                  display: false
+                }
+              }
+            ],
+            yAxes: [
+              {
+                gridLines: {
+                  display: false
+                }
+              }
+            ]
+          }
+        }
+      });
+    }
   </script>
 
   <script>
