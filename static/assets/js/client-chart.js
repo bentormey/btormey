@@ -6,7 +6,7 @@ var raw = {};
 var key = '2PACX-1vTYv2MZvIEjsa_jqJtxBrgSCdxhk16naCqSxBvExlTrNJS8ZbJi4e5N3F5_mdCnoGGBSSBz39c0DKhz';
 
 function init() {
-  Papa.parse(`https://clients.benjamintormey.com/.netlify/functions/csv?key=${key}`, {
+  Papa.parse(`https://clients.benjamintormey.com/.netlify/functions/getclientdata?key=${key}`, {
     download: true,
     header: true,
     complete: showInfo
