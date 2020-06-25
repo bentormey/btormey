@@ -1,0 +1,15 @@
+{
+  "name": "clients",
+  "version": "1.0.0",
+  "description": "Client facing dashboards and reporting.",
+  "scripts": {
+    "build": "yarn run build:functions",
+    "build:functions": "netlify-lambda build src/lambda"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "netlify-lambda": "^0.2.0",
+  }
+}
