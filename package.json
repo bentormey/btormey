@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Client facing dashboards and reporting.",
   "scripts": {
-    "build": "yarn run build:functions",
-    "build:functions": "netlify-lambda build src/lambda"
+    "prebuild": "cd ./lambda && npm i && cd ../",
+    "build": "netlify-lambda build lambda"
   },
   "keywords": [],
   "author": "",
