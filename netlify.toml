@@ -1,3 +1,3 @@
 [build]
-build     = "npm run"
+command = "npm run"
 functions = "./lambda"
