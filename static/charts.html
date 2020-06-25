@@ -20,10 +20,16 @@
   <!-- Custom styles for this template-->
   <!--<link href="assets/css/sb-admin-2.min.css" rel="stylesheet">-->
   <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+  
+  <script>
+    function getuserdata() {
+      document.getElementById("username").innerHTML = netlifyIdentity.currentUser();;
+    }
+  </script>
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="getuserdata()">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
@@ -304,7 +310,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <span id="username" class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
