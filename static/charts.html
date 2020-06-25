@@ -23,7 +23,8 @@
   
   <script>
     function getuserdata() {
-      document.getElementById("username").innerHTML = netlifyIdentity.currentUser();;
+      document.getElementById("username").innerHTML = netlifyIdentity.currentUser();
+      console.log(netlifyIdentity.currentUser());
     }
   </script>
 
