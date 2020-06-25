@@ -2,10 +2,6 @@
   "name": "clients",
   "version": "1.0.0",
   "description": "Client facing dashboards and reporting.",
-  "scripts": {
-    "prebuild": "cd ./lambda && npm i && cd ../",
-    "build": "netlify-lambda build lambda"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
