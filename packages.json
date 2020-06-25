@@ -8,6 +8,7 @@
     "build": "react-scripts build"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "encoding": "^0.1.12"
   }
 }
