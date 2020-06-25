@@ -1,6 +1,6 @@
 
 [build]
-  command = "cd ./lambda/ && npm install && cd ../ && npm run generate"
+  command = "npm install"
   functions = "lambda"
   publish = "build"
   
