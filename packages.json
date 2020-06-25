@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "buildFunctions": "cd lambda && npm install && cd ../",
-    "build": "npm run buildFunctions"
+    "prebuild": "node ./scripts/installer.js",
+    "build": "react-scripts build"
   },
   "dependencies": {
     "node-fetch": "^2.6.0"
