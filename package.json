@@ -8,7 +8,7 @@
   "scripts": {
     "prebuild" : "cd lambda && npm i && cd ../",
     "build" : "npm build"
-  }
+  },
   "dependencies": {
     "node-fetch": "^2.6.0",
     "netlify-lambda": "^1.6.3"
