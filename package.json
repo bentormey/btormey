@@ -4,7 +4,7 @@
   "description": "Client facing dashboards and reporting.",
   "scripts": {
     "prebuild": "cd ./src/lambda && npm i && cd ../../",
-    "build": "netlify-lambda build lambda"
+    "build": "netlify-lambda build src/lambda"
   },
   "keywords": [],
   "author": "",
