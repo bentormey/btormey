@@ -1,0 +1,14 @@
+{
+  "name": "stackbit-ampersand-theme",
+  "description": "Stackbit Ampersand Theme",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "node ./scripts/installer.js",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "encoding": "^0.1.12"
+  }
+}
