@@ -17,11 +17,11 @@ I try not to predict anything relating to training and nutrition outside of a 7-
 
 Nevertheless, you can go online and find plenty of programs that will tell you exactly what to do 4, 8, 12, and even 16 weeks into the future.
 
-By the way, why is it never 7 weeks?
+*By the way, why is it never 7 weeks?*
 
-The structure of your nutrition and workouts, let's call that the map.
+The structure of your nutrition and workouts, let's call that the **map**.
 
-The state of your biological system evolving over time is the territory.
+The state of your biological system evolving over time is the **territory**.
 
 As the territory changes, the map must change with it or it becomes useless.
 
@@ -49,8 +49,4 @@ Do you need to go quicker or slower?
 
 > ...In that Empire, the Art of Cartography attained such Perfection that the map of a single Province occupied the entirety of a City, and the map of the Empire, the entirety of a Province. In time, those Unconscionable Maps no longer satisfied, and the Cartographers Guilds struck a Map of the Empire whose size was that of the Empire, and which coincided point for point with it. The following Generations, who were not so fond of the Study of Cartography as their Forebears had been, saw that that vast Map was Useless, and not without some Pitilessness was it, that they delivered it up to the Inclemencies of Sun and Winters. In the Deserts of the West, still today, there are Tattered Ruins of that Map, inhabited by Animals and Beggars; in all the Land there is no other Relic of the Disciplines of Geography."
 
-On Exactitude in Science, Jorge Luis Borges, Collected Fictions, translated by Andrew Hurley.
-
-If you're looking for someone to help you understand the territory and not just hand you a map, let's work together:
-
-https://www.benjamintormey.com/apply
+If you're looking for someone to help you understand the territory and not just hand you a map, [let's work together](https://www.benjamintormey.com/apply "Apply for online coaching").
