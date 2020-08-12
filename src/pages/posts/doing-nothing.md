@@ -1,7 +1,7 @@
 ---
 title: Learn the value of doing nothing
 date: 2020-06-23T11:15:24.217Z
-thumb_img_path: /images/ed-robertson-eeSdJfLfx1A-unsplash.jpg
+thumb_img_path: /images/ed-robertson-eeSdJfLfx1A-unsplash-2.jpg
 template: post
 ---
 One of the most important lessons I learned from doing personal training is the value of doing nothing.
