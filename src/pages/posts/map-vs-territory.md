@@ -1,7 +1,7 @@
 ---
 title: Look at the territory, not the map
 date: 2020-06-17T11:15:24.217Z
-thumb_img_path: /images/adolfo-felix-4JL_VAgxwcU-unsplash.jpg
+thumb_img_path: /images/adolfo-felix-4JL_VAgxwcU-unsplash-2.jpg
 template: post
 ---
 
