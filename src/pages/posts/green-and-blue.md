@@ -22,6 +22,8 @@ That's why I decided to travel back to the UK, to get out in the countryside and
 
 Here are some views from the green and blue spaces I've been exploring recently.
 
+![My green and blue spaces.!](/images/uk-green-and-blue.jpg "My green and blue spaces.")
+
 Walking in places like this is often how I discover and refine ideas.
 
 Although pressure produces a good Espresso, when it comes to thinking I prefer percolation.
@@ -43,7 +45,7 @@ It's about recognising what has gone before you and what will come after you.
 I think one of the best ways to do that is by experiencing nature.
 
 D. H. Lawrence wrote:
-"He sat for long hours among the cypress trees of Tuscany. And never had any trees seemed so like ghosts, like soft, strange, pregnant presences. He lay and watched tall cypresses breathing and communicating, faintly moving and as it were walking in the small wind. And his soul seemed to leave him and to go far away, far back, perhaps, to where life was all different and time passed otherwise than time passes now. As in clairvoyance he perceived it: that our life is only a fragment of the shell of life. That there has been and will be life, human life such as we do not begin to conceive. Much that is life has passed away from men, leaving us all mere bits. In the dark, mindful silence and inflection of the cypress trees, lost races, lost language, lost human ways of feeling and of knowing. Men have known as we can no more know, have felt as we can no more feel. Great life-realities gone into the darkness. But the cypresses commemorate." 
--
+
+> He sat for long hours among the cypress trees of Tuscany. And never had any trees seemed so like ghosts, like soft, strange, pregnant presences. He lay and watched tall cypresses breathing and communicating, faintly moving and as it were walking in the small wind. And his soul seemed to leave him and to go far away, far back, perhaps, to where life was all different and time passed otherwise than time passes now. As in clairvoyance he perceived it: that our life is only a fragment of the shell of life. That there has been and will be life, human life such as we do not begin to conceive. Much that is life has passed away from men, leaving us all mere bits. In the dark, mindful silence and inflection of the cypress trees, lost races, lost language, lost human ways of feeling and of knowing. Men have known as we can no more know, have felt as we can no more feel. Great life-realities gone into the darkness. But the cypresses commemorate."
 
 If you have access to green spaces and blue spaces, make sure you get out there and enjoy them.
