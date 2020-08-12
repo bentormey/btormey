@@ -8,7 +8,7 @@ One of the most important lessons I learned from doing personal training is the 
 
 Instead of rushing in to correct a client during a set, I realised it was better to make a calm assessment and provide feedback only if I was absolutely sure it would be beneficial.
 
-Former Chess World Champion and mathematician Emanuel Lasker said "When you see a good move, look for a better one."
+Former Chess World Champion and mathematician Emanuel Lasker said *"When you see a good move, look for a better one."*
 
 Reduce the number of decisions you have to make and you almost always increases the quality of those decisions.
 
@@ -20,7 +20,7 @@ But believing that you can outwit the human body by making arbitrarily precise a
 
 Letting go of the illusion of control is the first step to understanding what is really important and being able to communicate it effectively.
 
-You might call the art of doing nothing **anticoaching**, if you're a fan of Nassim Taleb you may enjoy this passage from "The Black Swan":
+You might call the art of doing nothing **anticoaching**. If you're a fan of Nassim Taleb you may recall this passage from "The Black Swan":
 
 > The writer Umberto Eco belongs to that small class of scholars who are encyclopedic, insightful, and nondull. He is the owner of a large personal library (containing thirty thousand books), and separates visitors into two categories: those who react with “Wow! Signore professore dottore Eco, what a library you have. How many of these books have you read?” and the others—a very small minority—who get the point is that a private library is not an ego-boosting appendages but a research tool. The library should contain as much of what you do not know as your financial means … allow you to put there. You will accumulate more knowledge and more books as you grow older, and the growing number of unread books on the shelves will look at you menacingly. Indeed, the more you know, the larger the rows of unread books. Let us call this collection of unread books an antilibrary.
 
