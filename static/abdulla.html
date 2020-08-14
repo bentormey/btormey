@@ -144,7 +144,7 @@
       
       var bands = bollinger(weight, 7, [-2, -1, 0, +1, +2]);
       
-      var maxFirstWeek = Math.max.apply(null, weight.slice(1,7));
+      var maxFirstWeek = Math.max.apply(null, weight.slice(0,6));
       
       myChart0 = new Chart(ctx, {
         type: "line",
