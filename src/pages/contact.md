@@ -5,9 +5,9 @@ menus:
   main:
     title: Contact
     weight: 6
-template: contact
+template: page
 ---
-You can email me at <mailto:bentormey@gmail.com>.
+You can email me at <mailto:bentormey@gmail.com>. Or if you're interested in online coaching, please take a moment to fill out the form below.
 
 <iframe src="https://www.videoask.com/f668byxtq"
   allow="camera *; microphone *; autoplay *; encrypted-media *;"
