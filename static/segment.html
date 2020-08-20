@@ -114,12 +114,17 @@
         connectParts(context, rightHip, rightKnee);
 
         // Now let's do some basic calculations involving area
+        let bodyArea = 0;
         let torsoArea = 0;
         for (let y = 0; y < 400; y++) {
           for (let x = 0; x < 300; x++) {
-            // torso_front = 12
-            if (segmentation.data[y * 400 + x] === 12) {
-              torsoArea++;
+            const part = partSegmentation.data[y * 400 + x];
+            if (part !=== -1) {
+              bodyArea++;
+              
+              if (part === 12) {
+                torsoArea++;
+              }
             }
           }
         }
