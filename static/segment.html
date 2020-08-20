@@ -156,9 +156,10 @@
             y: y / points.length,
           };
         }
-        
+
         //
-        markPartColoured(context, centroid(torsoPoints), '#ffffff');
+        markPartColoured(context, centroid(bodyPoints), 'red');
+        markPartColoured(context, centroid(torsoPoints), 'green');
 
         context.fillStyle = "#2c2c2c";
         context.font = "20px Arial";
