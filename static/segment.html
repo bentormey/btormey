@@ -8,6 +8,7 @@
 
   <body>
     <img id='person' src='/static/images/front.jpg' crossorigin='anonymous'/>
+    <canvas id='canvas' />
   </body>
   <!-- Place your code in the script tag below. You can also use an external .js file -->
   <script>
@@ -25,6 +26,20 @@
        */
       const segmentation = await net.segmentPerson(img);
       console.log(segmentation);
+      
+      // The mask image is an binary mask image with a 1 where there is a person and
+      // a 0 where there is not.
+      const coloredPartImage = bodyPix.toMask(segmentation);
+      const opacity = 0.7;
+      const flipHorizontal = false;
+      const maskBlurAmount = 0;
+      const canvas = document.getElementById('canvas');
+      // Draw the mask image on top of the original image onto a canvas.
+      // The colored part image will be drawn semi-transparent, with an opacity of
+      // 0.7, allowing for the original image to be visible under.
+      bodyPix.drawMask(
+          canvas, img, coloredPartImage, opacity, maskBlurAmount,
+          flipHorizontal);
     }
     loadAndPredict();
   </script>
