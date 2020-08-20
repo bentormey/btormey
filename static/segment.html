@@ -36,6 +36,39 @@
   <script>
     const img = document.getElementById('person');
 
+    function area(pts) {
+      var area=0;
+      var nPts = pts.length;
+      var j=nPts-1;
+      var p1; var p2;
+
+      for (var i=0;i<nPts;j=i++) {
+          p1=pts[i]; p2=pts[j];
+          area+=p1.x*p2.y;
+          area-=p1.y*p2.x;
+      }
+      area/=2;
+      return area;
+    };
+
+    function centroid(pts) {
+      var nPts = pts.length;
+      var x=0; var y=0;
+      var f;
+      var j=nPts-1;
+      var p1; var p2;
+
+      for (var i=0;i<nPts;j=i++) {
+          p1=pts[i]; p2=pts[j];
+          f=p1.x*p2.y-p2.x*p1.y;
+          x+=(p1.x+p2.x)*f;
+          y+=(p1.y+p2.y)*f;
+      }
+
+      f=area(pts)*6;
+      return [x/f,y/f];
+    };
+
     function connectParts(context, start, finish) {
       context.strokeStyle = '#2c2c2c';
       context.beginPath();
@@ -115,7 +148,9 @@
         connectParts(context, leftHip, leftKnee);
         connectParts(context, rightHip, rightKnee);
 
-        // Now let's do some basic calculations involving area
+        let torsoPoints = [];
+
+        // Now let's do some basic calculations involving area...
         let bodyArea = 0;
         let torsoArea = 0;
         for (let y = 0; y < 400; y++) {
@@ -126,6 +161,10 @@
 
               if (part === 12) {
                 torsoArea++;
+                torsoPoints.push({
+                  x: x,
+                  y: y,
+                });
               }
             }
           }
