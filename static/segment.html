@@ -58,7 +58,7 @@
       const opacity = 0.7;
       const flipHorizontal = false;
       const maskBlurAmount = 0;
-      const pixelCellWidth = 5.0;
+      const pixelCellWidth = 10.0;
       const canvas = document.getElementById('canvas');
       const context = canvas.getContext('2d');
 
@@ -88,6 +88,8 @@
         markPart(context, leftHip);
         markPart(context, rightHip);
         connectParts(context, leftHip, rightHip);
+        connectParts(context, leftShoulder, leftHip);
+        connectParts(context, rightShoulder, rightHip);
 
         const leftElbow = keypoints[7].position;
         const rightElbow = keypoints[8].position;
@@ -131,7 +133,7 @@
 
         console.log(torsoArea / bodyArea);
         context.font = "30px Arial";
-        context.fillText("Torso area: " + (100 * torsoArea / bodyArea).toFixed(2) + "%", 10, 50);
+        context.fillText("Torso area: " + (torsoArea / bodyArea).toFixed(2) + "%", 10, 50);
       }
 
     }
