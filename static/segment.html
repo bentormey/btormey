@@ -58,6 +58,7 @@
     }
 
     async function drawBodyParts(image, canvas) {
+      const imageStart = document.getElementById(image);
       const net = await bodyPix.load();
       const partSegmentation = await net.segmentPersonParts(image);
 
@@ -68,6 +69,7 @@
       const flipHorizontal = false;
       const maskBlurAmount = 0;
       const pixelCellWidth = 10.0;
+      const canvasStart = document.getElementById(canvas);
       const context = canvas.getContext('2d');
 
       bodyPix.drawPixelatedMask(
@@ -171,9 +173,7 @@
 
     }
 
-    const imageStart = document.getElementById('start');
-    const canvasStart = document.getElementById('canvasStart');
-    drawBodyParts(imageStart, canvasStart);
+    drawBodyParts('start', 'canvasStart');
 
   </script>
 </html>
