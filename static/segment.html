@@ -57,8 +57,8 @@
       context.fillRect(part.x, part.y, 10, 10);
     }
 
-    async function drawBodyParts(image, canvas) {
-      const imageStart = document.getElementById(image);
+    async function drawBodyParts(name, canvas) {
+      const image = document.getElementById(name);
       const net = await bodyPix.load();
       const partSegmentation = await net.segmentPersonParts(image);
 
