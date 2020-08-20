@@ -66,8 +66,8 @@
       const coloredPartImage = bodyPix.toColoredPartMask(partSegmentation);
       const opacity = 0.7;
       const flipHorizontal = false;
-      const maskBlurAmount = 0;
-      const pixelCellWidth = 10.0;
+      const maskBlurAmount = 3;
+      const pixelCellWidth = 5.0;
       const context = canvas.getContext('2d');
 
       bodyPix.drawPixelatedMask(
