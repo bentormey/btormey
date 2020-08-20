@@ -81,6 +81,12 @@
         connectParts(context, leftShoulder, leftElbow);
         connectParts(context, rightShoulder, rightElbow);
 
+        const leftWrist = keypoints[9].position;
+        const rightWrist = keypoints[10].position;
+
+        connectParts(context, leftElbow, leftWrist);
+        connectParts(context, rightElbow, rightWrist);
+
         const leftKnee = keypoints[13].position;
         const rightKnee = keypoints[14].position;
 
