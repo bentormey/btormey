@@ -24,21 +24,22 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <img id='person' src='/static/images/front.jpg' crossorigin='anonymous'/>
+          <img id='start' src='/static/images/start.jpg' crossorigin='anonymous'/>
         </div>
         <div class="col">
-          <img id='person' src='/static/images/finish.jpg' crossorigin='anonymous'/>
+          <img id='finish' src='/static/images/finish.jpg' crossorigin='anonymous'/>
         </div>
         <div class="col">
-          <canvas id='canvas' />
+          <canvas id='canvasStart' />
+        </div>
+        <div class="col">
+          <canvas id='canvasFinish' />
         </div>
       </div>
     </div>
   </body>
 
   <script>
-    const img = document.getElementById('person');
-
     function connectParts(context, start, finish) {
       context.strokeStyle = '#2c2c2c';
       context.beginPath();
@@ -56,9 +57,9 @@
       context.fillRect(part.x, part.y, 10, 10);
     }
 
-    async function drawBodyParts() {
+    async function drawBodyParts(image, canvas) {
       const net = await bodyPix.load();
-      const partSegmentation = await net.segmentPersonParts(img);
+      const partSegmentation = await net.segmentPersonParts(image);
 
       console.log(partSegmentation);
 
@@ -67,7 +68,6 @@
       const flipHorizontal = false;
       const maskBlurAmount = 0;
       const pixelCellWidth = 10.0;
-      const canvas = document.getElementById('canvas');
       const context = canvas.getContext('2d');
 
       bodyPix.drawPixelatedMask(
@@ -170,7 +170,10 @@
       }
 
     }
-    drawBodyParts();
+
+    const imageStart = document.getElementById('start');
+    const canvasStart = document.getElementById('canvasStart');
+    drawBodyParts(imageStart, canvasStart);
 
   </script>
 </html>
