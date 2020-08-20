@@ -48,7 +48,7 @@
       const maskBlurAmount = 0;
       const pixelCellWidth = 10.0;
       const canvas = document.getElementById('canvas');
-
+      
       bodyPix.drawPixelatedMask(
           canvas, img, coloredPartImage, opacity, maskBlurAmount,
           flipHorizontal, pixelCellWidth);
@@ -57,9 +57,14 @@
         const keypoints = partSegmentation.allPoses[0].keypoints;
 
         const leftShoulder = keypoints[5];
-        const righthoulder = keypoints[6];
+        const rightShoulder = keypoints[6];
 
         //...
+        const context = canvas.getContext('2d');
+        context.beginPath();
+        context.moveTo(leftShoulder.x, leftShoulder.y);
+        context.lineTo(rightShoulder.x, rightShoulder.y);
+        context.stroke();
       }
 
     }
