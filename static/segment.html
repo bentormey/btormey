@@ -119,7 +119,7 @@
         for (let y = 0; y < 400; y++) {
           for (let x = 0; x < 300; x++) {
             let part = partSegmentation.data[y * 400 + x];
-            if (part !=== -1) {
+            if (part !== -1) {
               bodyArea++;
 
               if (part === 12) {
@@ -128,7 +128,7 @@
             }
           }
         }
-        
+
         console.log(torsoArea / bodyArea);
         context.font = "30px Arial";
         context.fillText("Torso area: " + Math.toString(torsoArea / bodyArea), 10, 50);
