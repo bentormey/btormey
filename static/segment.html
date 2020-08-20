@@ -36,7 +36,12 @@
   <script>
     const img = document.getElementById('person');
     async function loadAndPredict() {
-      const net = await bodyPix.load(/** optional arguments, see below **/);
+      const net = await bodyPix.load({
+        architecture: 'MobileNetV1',
+        outputStride: 16,
+        multiplier: 0.75,
+        quantBytes: 2
+      });
 
       /**
        * One of (see documentation below):
