@@ -71,7 +71,7 @@
       const context = canvas.getContext('2d');
 
       bodyPix.drawPixelatedMask(
-          canvas, img, coloredPartImage, opacity, maskBlurAmount,
+          canvas, image, coloredPartImage, opacity, maskBlurAmount,
           flipHorizontal, pixelCellWidth);
 
       if (partSegmentation.allPoses.length > 0) {
@@ -172,11 +172,11 @@
     }
 
     const imageFinish = document.getElementById('start');
-    const canvasStart = document.getElementById('canvasStart'); 
+    const canvasStart = document.getElementById('canvasStart');
     drawBodyParts(image, canvas);
 
     const imageFinish = document.getElementById('finish');
-    const canvasFinish = document.getElementById('canvasFinish'); 
+    const canvasFinish = document.getElementById('canvasFinish');
     drawBodyParts(image, canvas);
 
   </script>
