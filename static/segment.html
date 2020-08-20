@@ -64,7 +64,7 @@
 
       if (partSegmentation.allPoses.length > 0) {
         const keypoints = partSegmentation.allPoses[0].keypoints;
-        
+
         const leftShoulder = keypoints[5].position;
         const rightShoulder = keypoints[6].position;
 
@@ -74,6 +74,12 @@
         const rightHip = keypoints[12].position;
 
         connectParts(context, leftHip, rightHip);
+
+        const leftElbow = keypoints[7].position;
+        const rightElbow = keypoints[8].position;
+
+        connectParts(context, leftShoulder, leftElbow);
+        connectParts(context, rightShoulder, rightElbow);
       }
 
     }
