@@ -57,19 +57,17 @@
       context.fillRect(part.x, part.y, 10, 10);
     }
 
-    async function drawBodyParts(imageName, canvasName) {
-      const image = document.getElementById(imageName);
+    async function drawBodyParts(image, canvas) {
       const net = await bodyPix.load();
       const partSegmentation = await net.segmentPersonParts(image);
 
-      console.log(partSegmentation);
+      //console.log(partSegmentation);
 
       const coloredPartImage = bodyPix.toColoredPartMask(partSegmentation);
       const opacity = 0.7;
       const flipHorizontal = false;
       const maskBlurAmount = 0;
       const pixelCellWidth = 10.0;
-      const canvas = document.getElementById(canvasName);
       const context = canvas.getContext('2d');
 
       bodyPix.drawPixelatedMask(
@@ -173,8 +171,10 @@
 
     }
 
-    drawBodyParts('start', 'canvasStart');
-    drawBodyParts('finish', 'canvasFinish');
+    const image = document.getElementById('start');
+    const canvas = document.getElementById('canvasStart'); 
+    drawBodyParts(image, canvas);
+    //drawBodyParts('finish', 'canvasFinish');
 
   </script>
 </html>
