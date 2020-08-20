@@ -27,16 +27,19 @@
       const segmentation = await net.segmentPerson(img);
       console.log(segmentation);
       
-      const backgroundBlurAmount = 5;
+      const partSegmentation = await net.segmentMultiPersonParts(img);
+      console.log(partSegmentation);
+      
+      const backgroundBlurAmount = 13;
       const edgeBlurAmount = 3;
       const flipHorizontal = false;
+      const faceBodyPartIdsToBlur = [0, 1];
 
       const canvas = document.getElementById('canvas');
-      // Draw the image with the background blurred onto the canvas. The edge between
-      // the person and blurred background is blurred by 3 pixels.
-      bodyPix.drawBokehEffect(
-          canvas, img, segmentation, backgroundBlurAmount,
-          edgeBlurAmount, flipHorizontal);
+
+      bodyPix.blurBodyPart(
+          canvas, img, partSegmentation, faceBodyPartIdsToBlur,
+          backgroundBlurAmount, edgeBlurAmount, flipHorizontal);
     }
     loadAndPredict();
   </script>
