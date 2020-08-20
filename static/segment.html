@@ -182,7 +182,7 @@
             }
           }
         }
-        console.log(torsoPoints.reduce((a, b) => a.x + b.x, 0));
+        console.log(torsoPoints.reduce((sum, p) => sum + p.x, 0));
         console.log(torsoPoints.length);
 
         // console.log((area(torsoPoints) / area(bodyPoints)).toFixed(2));
