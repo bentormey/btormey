@@ -55,11 +55,11 @@
       // The colored part image is an rgb image with a corresponding color from the
       // rainbow colors for each part at each pixel, and white pixels where there is
       // no part.
-      const coloredPartImage = await bodyPix.toColoredPartMask(partSegmentation);
-      const opacity = 0.7;
+      const coloredPartImage = bodyPix.toColoredPartMask(partSegmentation);
+      const opacity = 0.9;
       const flipHorizontal = false;
-      const maskBlurAmount = 20;
-      const pixelCellWidth = 10.0;
+      const maskBlurAmount = 10;
+      const pixelCellWidth = 5.0;
       const canvas = document.getElementById('canvas');
       // Draw the pixelated colored part image on top of the original image onto a
       // canvas.  Each pixel cell's width will be set to 10 px. The pixelated colored
