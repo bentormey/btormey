@@ -171,10 +171,10 @@
         }
 
         console.log(torsoPoints);
-        console.log(area(torsoPoints));
+        console.log(area(torsoPoints).toFixed(2));
 
         console.log(torsoArea / bodyArea);
-        context.font = "30px Arial";
+        context.font = "20px Arial";
         context.fillText("Torso area: " + (100 * torsoArea / bodyArea).toFixed(2) + "%", 10, 50);
       }
 
