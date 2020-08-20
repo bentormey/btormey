@@ -68,7 +68,7 @@
       
       // The mask image is an binary mask image with a 1 where there is a person and
       // a 0 where there is not.
-      const coloredPartImage = bodyPix.toMask(segmentation);
+      const coloredPartImage1 = bodyPix.toMask(segmentation);
       const opacity = 0.7;
       const maskBlurAmount = 0;
       const canvas2 = document.getElementById('canvas2');
@@ -76,7 +76,7 @@
       // The colored part image will be drawn semi-transparent, with an opacity of
       // 0.7, allowing for the original image to be visible under.
       bodyPix.drawMask(
-          canvas2, img, coloredPartImage, opacity, maskBlurAmount,
+          canvas2, img, coloredPartImage1, opacity, maskBlurAmount,
           flipHorizontal);
       
       const partSegmentation = await net.segmentPersonParts(img);
@@ -85,7 +85,7 @@
       // The colored part image is an rgb image with a corresponding color from the
       // rainbow colors for each part at each pixel, and white pixels where there is
       // no part.
-      coloredPartImage = bodyPix.toColoredPartMask(partSegmentation);
+      const coloredPartImage2 = bodyPix.toColoredPartMask(partSegmentation);
       
       opacity = 0.9;
       flipHorizontal = false;
@@ -98,7 +98,7 @@
       // part image will be drawn semi-transparent, with an opacity of 0.7, allowing
       // for the original image to be visible under.
       bodyPix.drawPixelatedMask(
-          canvas3, img, coloredPartImage, opacity, maskBlurAmount,
+          canvas3, img, coloredPartImage2, opacity, maskBlurAmount,
           flipHorizontal, pixelCellWidth);
     }
     loadAndPredict();
