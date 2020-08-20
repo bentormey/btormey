@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-export const handler = async (request, context, callback) => {
+exports.handler = async (event, context) => {
   const path2 = path.join(process.cwd(), 'image.jpg');
   const jpgBuffer = fs.readFileSync(path2);
 
