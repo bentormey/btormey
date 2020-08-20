@@ -56,8 +56,8 @@
       if (partSegmentation.allPoses.length > 0) {
         const keypoints = partSegmentation.allPoses[0].keypoints;
 
-        const leftShoulder = keypoints[5];
-        const rightShoulder = keypoints[6];
+        const leftShoulder = keypoints[5].position;
+        const rightShoulder = keypoints[6].position;
 
         //...
         console.log("Drawing shoulders...");
