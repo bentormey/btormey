@@ -80,6 +80,12 @@
 
         connectParts(context, leftShoulder, leftElbow);
         connectParts(context, rightShoulder, rightElbow);
+
+        const leftKnee = keypoints[13].position;
+        const rightKnee = keypoints[14].position;
+
+        connectParts(context, leftHip, leftKnee);
+        connectParts(context, rightHip, rightKnee);
       }
 
     }
