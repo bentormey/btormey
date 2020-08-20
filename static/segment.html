@@ -36,6 +36,14 @@
   <script>
     const img = document.getElementById('person');
 
+    function connectParts(context, start, finish) {
+      context.strokeStyle = '#2c2c2c';
+      context.beginPath();
+      context.moveTo(start.x, start.y);
+      context.lineTo(finish.x, finish.y);
+      context.stroke();
+    }
+
     async function drawBodyParts() {
       const net = await bodyPix.load();
       const partSegmentation = await net.segmentPersonParts(img);
@@ -48,25 +56,24 @@
       const maskBlurAmount = 0;
       const pixelCellWidth = 10.0;
       const canvas = document.getElementById('canvas');
-      
+      const context = canvas.getContext('2d');
+
       bodyPix.drawPixelatedMask(
           canvas, img, coloredPartImage, opacity, maskBlurAmount,
           flipHorizontal, pixelCellWidth);
 
       if (partSegmentation.allPoses.length > 0) {
         const keypoints = partSegmentation.allPoses[0].keypoints;
-
+        
         const leftShoulder = keypoints[5].position;
         const rightShoulder = keypoints[6].position;
 
-        //...
-        console.log("Drawing shoulders...");
-        const context = canvas.getContext('2d');
-        context.strokeStyle = '#2c2c2c';
-        context.beginPath();
-        context.moveTo(leftShoulder.x, leftShoulder.y);
-        context.lineTo(rightShoulder.x, rightShoulder.y);
-        context.stroke();
+        connectParts(context, leftShoulder, rightShoulder);
+
+        const leftHip = keypoints[11].position;
+        const rightHip = keypoints[12].position;
+
+        connectParts(context, leftHip, rightHip);
       }
 
     }
