@@ -125,10 +125,12 @@
 
         let bodyPoints = [];
         let torsoPoints = [];
+        let legPoints = [];
 
         // Now let's do some basic calculations involving area...
         let bodyArea = 0;
         let torsoArea = 0;
+        let legArea = 0;
         for (let y = 0; y < 400; y++) {
           for (let x = 0; x < 300; x++) {
             let part = partSegmentation.data[y * 400 + x];
@@ -142,6 +144,15 @@
               if (part === 12) {
                 torsoArea++;
                 torsoPoints.push({
+                  x: x,
+                  y: y,
+                });
+              }
+
+              // Front leg parts...
+              if (part === 14 || part === 16 || part === 18 || part === 20) {
+                legArea++;
+                legPoints.push({
                   x: x,
                   y: y,
                 });
@@ -166,7 +177,8 @@
 
         context.fillStyle = "#2c2c2c";
         context.font = "20px Arial";
-        context.fillText("Torso area: " + (100 * torsoArea / bodyArea).toFixed(2) + "%", 10, 50);
+        context.fillText("Torso: " + (100 * torsoArea / bodyArea).toFixed(2) + "%", 10, 50);
+        context.fillText("Leg: " + (100 * legArea / bodyArea).toFixed(2) + "%", 10, 100);
       }
 
     }
