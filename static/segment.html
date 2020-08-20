@@ -112,6 +112,18 @@
         markPart(context, rightKnee);
         connectParts(context, leftHip, leftKnee);
         connectParts(context, rightHip, rightKnee);
+
+        // Now let's do some basic calculations involving area
+        let torsoArea = 0;
+        for (let y = 0; y < 400; y++) {
+          for (let x = 0; x < 300; x++) {
+            // torso_front = 12
+            if (segmentation.data[y * 400 + x] === 12) {
+              torsoArea++;
+            }
+          }
+        }
+        console.log(torsoArea / (400 * 300));
       }
 
     }
