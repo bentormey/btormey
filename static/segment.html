@@ -59,11 +59,11 @@
       const edgeBlurAmount = 3;
       const flipHorizontal = false;
 
-      const canvas = document.getElementById('canvas1');
+      const canvas1 = document.getElementById('canvas1');
       // Draw the image with the background blurred onto the canvas. The edge between
       // the person and blurred background is blurred by 3 pixels.
       bodyPix.drawBokehEffect(
-          canvas, img, segmentation, backgroundBlurAmount,
+          canvas1, img, segmentation, backgroundBlurAmount,
           edgeBlurAmount, flipHorizontal);
       
       // The mask image is an binary mask image with a 1 where there is a person and
@@ -71,12 +71,12 @@
       const coloredPartImage = bodyPix.toMask(segmentation);
       const opacity = 0.7;
       const maskBlurAmount = 0;
-      canvas = document.getElementById('canvas2');
+      const canvas2 = document.getElementById('canvas2');
       // Draw the mask image on top of the original image onto a canvas.
       // The colored part image will be drawn semi-transparent, with an opacity of
       // 0.7, allowing for the original image to be visible under.
       bodyPix.drawMask(
-          canvas, img, coloredPartImage, opacity, maskBlurAmount,
+          canvas2, img, coloredPartImage, opacity, maskBlurAmount,
           flipHorizontal);
       
       const partSegmentation = await net.segmentPersonParts(img);
@@ -92,13 +92,13 @@
       maskBlurAmount = 10;
       
       const pixelCellWidth = 5.0;
-      canvas = document.getElementById('canvas3');
+      const canvas3 = document.getElementById('canvas3');
       // Draw the pixelated colored part image on top of the original image onto a
       // canvas.  Each pixel cell's width will be set to 10 px. The pixelated colored
       // part image will be drawn semi-transparent, with an opacity of 0.7, allowing
       // for the original image to be visible under.
       bodyPix.drawPixelatedMask(
-          canvas, img, coloredPartImage, opacity, maskBlurAmount,
+          canvas3, img, coloredPartImage, opacity, maskBlurAmount,
           flipHorizontal, pixelCellWidth);
     }
     loadAndPredict();
