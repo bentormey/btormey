@@ -1,5 +1,5 @@
-import * as fs from 'fs'
-import path from 'path'
+const fs = require("fs");
+const path = require("path");
 
 export const handler = async (request, context, callback) => {
   const path2 = path.join(process.cwd(), 'image.jpg')
