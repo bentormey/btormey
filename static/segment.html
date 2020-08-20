@@ -182,12 +182,14 @@
             }
           }
         }
-        console.log((area(torsoPoints) / area(bodyPoints)).toFixed(2));
-        console.log(centroid(torsoPoints));
+        console.log(torsoPoints.reduce((a, b) => a.x + b.x, 0) / torsoPoints.length);
+        
+        // console.log((area(torsoPoints) / area(bodyPoints)).toFixed(2));
+        // console.log(centroid(torsoPoints));
+        // 
+        // markPartColoured(context, centroid(torsoPoints), '#ffffff');
 
-        markPartColoured(context, centroid(torsoPoints), '#ffffff');
-
-        console.log(torsoArea / bodyArea);
+        context.fillStyle = "#2c2c2c";
         context.font = "20px Arial";
         context.fillText("Torso area: " + (100 * torsoArea / bodyArea).toFixed(2) + "%", 10, 50);
       }
