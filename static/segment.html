@@ -182,11 +182,12 @@
             }
           }
         }
-        console.log(torsoPoints.reduce((a, b) => a.x + b.x, 0) / torsoPoints.length);
-        
+        console.log(torsoPoints.reduce((a, b) => a.x + b.x, 0));
+        console.log(torsoPoints.length);
+
         // console.log((area(torsoPoints) / area(bodyPoints)).toFixed(2));
         // console.log(centroid(torsoPoints));
-        // 
+        //
         // markPartColoured(context, centroid(torsoPoints), '#ffffff');
 
         context.fillStyle = "#2c2c2c";
