@@ -78,28 +78,38 @@
         const leftShoulder = keypoints[5].position;
         const rightShoulder = keypoints[6].position;
 
+        markPart(context, leftShoulder);
+        markPart(context, rightShoulder);
         connectParts(context, leftShoulder, rightShoulder);
 
         const leftHip = keypoints[11].position;
         const rightHip = keypoints[12].position;
 
+        markPart(context, leftHip);
+        markPart(context, rightHip);
         connectParts(context, leftHip, rightHip);
 
         const leftElbow = keypoints[7].position;
         const rightElbow = keypoints[8].position;
 
+        markPart(context, leftElbow);
+        markPart(context, rightElbow);
         connectParts(context, leftShoulder, leftElbow);
         connectParts(context, rightShoulder, rightElbow);
 
         const leftWrist = keypoints[9].position;
         const rightWrist = keypoints[10].position;
 
+        markPart(context, leftWrist);
+        markPart(context, rightWrist);
         connectParts(context, leftElbow, leftWrist);
         connectParts(context, rightElbow, rightWrist);
 
         const leftKnee = keypoints[13].position;
         const rightKnee = keypoints[14].position;
 
+        markPart(context, leftKnee);
+        markPart(context, rightKnee);
         connectParts(context, leftHip, leftKnee);
         connectParts(context, rightHip, rightKnee);
       }
