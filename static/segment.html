@@ -44,6 +44,10 @@
       context.stroke();
     }
 
+    function markPart(context, part) {
+      context.fillRect(part.x, part.y, 1, 1);
+    }
+
     async function drawBodyParts() {
       const net = await bodyPix.load();
       const partSegmentation = await net.segmentPersonParts(img);
@@ -64,6 +68,12 @@
 
       if (partSegmentation.allPoses.length > 0) {
         const keypoints = partSegmentation.allPoses[0].keypoints;
+
+        const leftEar = keypoints[1].position;
+        const rightEar = keypoints[2].position;
+
+        markPart(context, leftEar);
+        markPart(context, rightEar);
 
         const leftShoulder = keypoints[5].position;
         const rightShoulder = keypoints[6].position;
