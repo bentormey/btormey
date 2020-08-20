@@ -27,7 +27,13 @@
           <img id='person' src='/static/images/front.jpg' crossorigin='anonymous'/>
         </div>
         <div class="col">
-          <canvas id='canvas' />
+          <canvas id='canvas1' />
+        </div>
+        <div class="col">
+          <canvas id='canvas2' />
+        </div>
+        <div class="col">
+          <canvas id='canvas3' />
         </div>
       </div>
     </div>
@@ -49,18 +55,33 @@
       const segmentation = await net.segmentPerson(img);
       console.log(segmentation);
       
-      const partSegmentation = await net.segmentMultiPersonParts(img);
+      // The mask image is an binary mask image with a 1 where there is a person and
+      // a 0 where there is not.
+      const coloredPartImage = bodyPix.toMask(segmentation);
+      const opacity = 0.7;
+      const flipHorizontal = false;
+      const maskBlurAmount = 0;
+      const canvas = document.getElementById('canvas1');
+      // Draw the mask image on top of the original image onto a canvas.
+      // The colored part image will be drawn semi-transparent, with an opacity of
+      // 0.7, allowing for the original image to be visible under.
+      bodyPix.drawMask(
+          canvas, img, coloredPartImage, opacity, maskBlurAmount,
+          flipHorizontal);
+      
+      const partSegmentation = await net.segmentPersonParts(img);
       console.log(partSegmentation);
       
       // The colored part image is an rgb image with a corresponding color from the
       // rainbow colors for each part at each pixel, and white pixels where there is
       // no part.
-      const coloredPartImage = bodyPix.toColoredPartMask(partSegmentation);
-      const opacity = 0.9;
-      const flipHorizontal = false;
-      const maskBlurAmount = 10;
+      coloredPartImage = bodyPix.toColoredPartMask(partSegmentation);
+      opacity = 0.9;
+      flipHorizontal = false;
+      maskBlurAmount = 10;
+      
       const pixelCellWidth = 5.0;
-      const canvas = document.getElementById('canvas');
+      const canvas = document.getElementById('canvas2');
       // Draw the pixelated colored part image on top of the original image onto a
       // canvas.  Each pixel cell's width will be set to 10 px. The pixelated colored
       // part image will be drawn semi-transparent, with an opacity of 0.7, allowing
