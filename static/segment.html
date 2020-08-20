@@ -3,24 +3,29 @@
     <!-- Load TensorFlow.js -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
     <!-- Load BodyPix -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@1.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0.5/dist/body-pix.min.js"></script>
  </head>
 
   <body>
-    <img id='person' src='/static/images/front.jpg '/>
+    <img id='person' src='/static/images/front.jpg' crossorigin='anonymous'/>
   </body>
   <!-- Place your code in the script tag below. You can also use an external .js file -->
   <script>
-    // arguments for estimating person segmentation.
-    const outputStride = 16;
-    const segmentationThreshold = 0.5;
+    const img = document.getElementById('image');
+    async function loadAndPredict() {
+      const net = await bodyPix.load(/** optional arguments, see below **/);
 
-    var imageElement = document.getElementById('person');
-
-    const net = bodyPix.load().then(function(net) {
-      return net.estimatePersonSegmentation(imageElement, outputStride, segmentationThreshold);
-    }).then(function(segmentation){
+      /**
+       * One of (see documentation below):
+       *   - net.segmentPerson
+       *   - net.segmentPersonParts
+       *   - net.segmentMultiPerson
+       *   - net.segmentMultiPersonParts
+       * See documentation below for details on each method.
+       */
+      const segmentation = await net.segmentPerson(img);
       console.log(segmentation);
-    })
+    }
+    loadAndPredict();
   </script>
 </html>
