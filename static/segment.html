@@ -126,11 +126,13 @@
         let bodyPoints = [];
         let torsoPoints = [];
         let legPoints = [];
+        let armPoints = [];
 
         // Now let's do some basic calculations involving area...
         let bodyArea = 0;
         let torsoArea = 0;
         let legArea = 0;
+        let armArea = 0;
         for (let y = 0; y < 800; y++) { // 633 297
           for (let x = 0; x < 368; x++) {
             let part = partSegmentation.data[y * 400 + x];
@@ -157,6 +159,15 @@
                   y: y,
                 });
               }
+              
+              // Front arm parts...
+              if (part === 2 || part === 4 || part === 6 || part === 8) {
+                armArea++;
+                armPoints.push({
+                  x: x,
+                  y: y,
+                });
+              }
             }
           }
         }
@@ -179,6 +190,7 @@
         context.font = "20px Arial";
         context.fillText("Torso: " + (100 * torsoArea / bodyArea).toFixed(2) + "%", 10, 50);
         context.fillText("Leg: " + (100 * legArea / bodyArea).toFixed(2) + "%", 10, 100);
+        context.fillText("Arm: " + (100 * armArea / bodyArea).toFixed(2) + "%", 10, 100);
       }
 
     }
