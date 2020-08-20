@@ -1,5 +1,7 @@
 <html>
   <head>
+    <!-- Load Bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Load TensorFlow.js -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
     <!-- Load BodyPix -->
@@ -7,10 +9,28 @@
  </head>
 
   <body>
-    <img id='person' src='/static/images/front.jpg' crossorigin='anonymous'/>
-    <canvas id='canvas' />
+    <nav class="navbar navbar-light bg-white">
+      <a class="navbar-brand" href="#">
+        <img src="/static/images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Abdulla
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://www.benjamintormey.com">BenjaminTormey.com <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="row justify-content-center">
+      <div class="col">
+        <img id='person' src='/static/images/front.jpg' crossorigin='anonymous'/>
+      </div>
+      <div class="col">
+        <canvas id='canvas' />
+      </div>
+    </div>
   </body>
-  <!-- Place your code in the script tag below. You can also use an external .js file -->
+  
   <script>
     const img = document.getElementById('person');
     async function loadAndPredict() {
