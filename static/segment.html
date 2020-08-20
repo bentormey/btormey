@@ -121,14 +121,14 @@
             const part = partSegmentation.data[y * 400 + x];
             if (part !=== -1) {
               bodyArea++;
-              
+
               if (part === 12) {
                 torsoArea++;
               }
             }
           }
         }
-        console.log(torsoArea / (400 * 300));
+        console.log(torsoArea / bodyArea);
       }
 
     }
