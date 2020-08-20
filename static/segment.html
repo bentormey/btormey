@@ -85,7 +85,7 @@
       // The colored part image is an rgb image with a corresponding color from the
       // rainbow colors for each part at each pixel, and white pixels where there is
       // no part.
-      const coloredPartImage = bodyPix.toColoredPartMask(partSegmentation);
+      coloredPartImage = bodyPix.toColoredPartMask(partSegmentation);
       
       opacity = 0.9;
       flipHorizontal = false;
