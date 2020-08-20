@@ -67,7 +67,7 @@
       const opacity = 0.7;
       const flipHorizontal = false;
       const maskBlurAmount = 0;
-      const pixelCellWidth = 5.0;
+      const pixelCellWidth = 10.0;
       const context = canvas.getContext('2d');
 
       bodyPix.drawPixelatedMask(
@@ -131,8 +131,8 @@
         let bodyArea = 0;
         let torsoArea = 0;
         let legArea = 0;
-        for (let y = 0; y < 400; y++) {
-          for (let x = 0; x < 300; x++) {
+        for (let y = 0; y < 633; y++) {
+          for (let x = 0; x < 297; x++) {
             let part = partSegmentation.data[y * 400 + x];
             if (part !== -1) {
               bodyArea++;
