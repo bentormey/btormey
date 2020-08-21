@@ -147,7 +147,7 @@
         let faceArea = 0;
         for (let y = 0; y < 907; y++) { // 633 297, 800 368
           for (let x = 0; x < 453; x++) {
-            let part = partSegmentation.data[y * 907 + x];
+            let part = partSegmentation.data[y * 453 + x];
             if (part !== -1) {
               bodyArea++;
               bodyPoints.push({
