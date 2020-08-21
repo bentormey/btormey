@@ -81,6 +81,8 @@
         const leftEar = keypoints[1].position;
         const rightEar = keypoints[2].position;
 
+        markPart(context, nose);
+
         const radius = 0.5 * Math.sqrt(Math.pow(leftEar.x - rightEar.x, 2) + Math.pow(leftEar.y - rightEar.y, 2));
 
         context.beginPath();
