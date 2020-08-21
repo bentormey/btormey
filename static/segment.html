@@ -53,8 +53,10 @@
     }
 
     function markPartColoured(context, part, colour) {
+      const width = 10;
+      
       context.fillStyle = colour;
-      context.fillRect(part.x, part.y, 10, 10);
+      context.fillRect(part.x - width/2, part.y - width/2, width, width);
     }
 
     async function drawBodyParts(image, canvas) {
