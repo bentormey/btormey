@@ -78,8 +78,8 @@
         const keypoints = partSegmentation.allPoses[0].keypoints;
 
         const nose = keypoints[0].position;
-        const leftEar = keypoints[1].position;
-        const rightEar = keypoints[2].position;
+        const leftEar = keypoints[3].position;
+        const rightEar = keypoints[4].position;
 
         markPart(context, nose);
 
