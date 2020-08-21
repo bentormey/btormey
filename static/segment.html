@@ -24,16 +24,16 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-3">
-          <img id='start' src='/static/images/up1.jpg' crossorigin='anonymous'/>
+          <img id='start' src='/static/images/up1.jpg' style='display:none' crossorigin='anonymous'/>
         </div>
         <div class="col-3">
-          <img id='finish' src='/static/images/up2.jpg' crossorigin='anonymous'/>
+          <img id='finish' src='/static/images/up2.jpg' style='display:none' crossorigin='anonymous'/>
         </div>
         <div class="col-3">
-          <canvas id='canvasStart' />
-        </div>
-        <div class="col-3">
-          <canvas id='canvasFinish' />
+          <canvas id='canvasStart' style='position:absolute;left:0px;top:0px;z-index: 1' />
+        <!--</div>
+        <div class="col-3">-->
+          <canvas id='canvasFinish' style='position:absolute;left:0px;top:0px;z-index: 2' />
         </div>
       </div>
     </div>
