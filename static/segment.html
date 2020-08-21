@@ -77,8 +77,15 @@
       if (partSegmentation.allPoses.length > 0) {
         const keypoints = partSegmentation.allPoses[0].keypoints;
 
+        const nose = keypoints[0].position;
         const leftEar = keypoints[1].position;
         const rightEar = keypoints[2].position;
+
+        const radius = 0.5 * Math.sqrt(Math.pow(leftEar.x - rightEar.x, 2) + Math.pow(leftEar.y - rightEar.y, 2));
+
+        context.beginPath();
+        context.arc(nose.x, nose.y, radius, 0, 2 * Math.PI, false);
+        context.stroke();
 
         markPart(context, leftEar);
         markPart(context, rightEar);
