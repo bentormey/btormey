@@ -17,7 +17,7 @@
                     xaxis: {title: 'Date'},
                     yaxis: {title: 'Weight'}
                 }
-    new_df = df.set_index({ key: "Date" })
+    new_df = df.set_index({ key: "date" })
    new_df.plot("plot_div").line({ columns: ["weight"], layout: layout
 })
             }).catch(err => {
