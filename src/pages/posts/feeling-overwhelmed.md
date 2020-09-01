@@ -30,7 +30,7 @@ I realised that this kind of hike goes through phases:
 - Where it's relatively easy and relaxed;
 - Where you are rewarded for the hard work with incredible scenery.
 
-I was feeling exhausted before we got there, but I kept pushing because I knew that after a certain point things couldn't feel much worse than they already did.
+I was feeling exhausted before we got to the summit, but I kept pushing because I knew that after a certain point things couldn't feel much worse than they already did.
 
 At some point it becomes a question of accepting that it will be hard and you have to tune out the thoughts that are telling you to quit.
 
