@@ -47,7 +47,8 @@ It struck me that there's a lot in common with this experience and the experienc
 - Delayed gratification.
 - Frontloading the hard work (like skill acquisition and resource gathering).
 - Overcoming the urge to quit.
-- While everyone is trying to sell you the easy solution to dieting or making six-figures online, I encourage you to embrace the climb.
+
+While everyone is trying to sell you the easy solution to dieting or making six-figures online, I encourage you to embrace the climb.
 
 Recognise that the journey will often feel impossibly hard and unrewarding, but it will pay off just beyond the point where your mind wants you to go.
 
