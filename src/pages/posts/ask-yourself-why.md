@@ -1,6 +1,6 @@
 ---
 title: Ask yourself "why"
-date: 2020-06-23T11:15:24.217Z
+date: 2020-10-1T11:15:24.217Z
 thumb_img_path: /images/simone-secci-49uySSA678U-unsplash-2.jpg
 template: post
 ---
