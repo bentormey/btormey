@@ -1,10 +1,10 @@
 ---
-title: Ask yourself "why"
+title: Ask yourself why
 date: 2020-10-1T11:15:24.217Z
 thumb_img_path: /images/simone-secci-49uySSA678U-unsplash-2.jpg
 template: post
 ---
-How often do you ask yourself why?
+How often do you ask yourself *why*?
 
 "Why" covers a lot of territory in the English language, but in Russian there are two words for why.
 
@@ -22,9 +22,9 @@ At this level you are talking about the superficial reasons for doing what you'r
 
 Examples of this are statements like:
 
-- "'I'll start taking my health and fitness seriously by joining a gym."
-- "I'll lose weight by cutting out carbs."
-- "I'm going to build muscle by getting stronger at compound lifts."
+- *"'I'll start taking my health and fitness seriously by joining a gym."*
+- *"I'll lose weight by cutting out carbs."*
+- *"I'm going to build muscle by getting stronger at compound lifts."*
 
 Here you're describing implementation, rather than understanding your own motivation.
 
@@ -40,9 +40,9 @@ Now you're describing what you want to achieve in relation to something else, po
 
 Examples of this are statements like:
 
-- "I felt so much better before I gained weight during lockdown, so I want to lose weight and get back to feeling like that again."
-- "I'm not happy with how I've stopped prioritising my health and fitness, I want to spend more time looking after my own needs."
-- "I don't feel confident in my clothes, I really need to change how I look to get that confidence back."
+- *"I felt so much better before I gained weight during lockdown, so I want to lose weight and get back to feeling like that again."*
+- *"I'm not happy with how I've stopped prioritising my health and fitness, I want to spend more time looking after my own needs."*
+- *"I don't feel confident in my clothes, I really need to change how I look to get that confidence back."*
 
 Here you're getting closer to your deepest motivation and starting to understand what it is you really want to change.
 
@@ -58,9 +58,9 @@ Finally you strip away the cause and effect, you look at the concept of what you
 
 This could be completely abstract of emotional, for example:
 
-- "I want other people to find me attractive."
-- "I don't want to feel like I've lost control of my life."
-- "I'm worried about the future and I need to do something about my health now."
+- *"I want other people to find me attractive."*
+- *"I don't want to feel like I've lost control of my life."*
+- *"I'm worried about the future and I need to do something about my health now."*
 
 When you get down to this level, it probably won't feel comfortable.
 
