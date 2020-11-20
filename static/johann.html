@@ -156,8 +156,8 @@
       
       var loss = (bands[2][7] - bands[2][bands[2].length-1]);
       
-      document.getElementById("loss").innerHTML = loss;
-      document.getElementById("average").innerHTML = (loss/bands[2][7]) ** (1/ (bands[2].length / 7));
+      document.getElementById("loss").innerHTML = loss.toFixed(2);;
+      document.getElementById("average").innerHTML = ((loss/bands[2][7]) ** (1/ (bands[2].length / 7))).toFixed(2);;
       
       myChart0 = new Chart(ctx, {
         type: "line",
