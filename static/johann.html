@@ -146,6 +146,10 @@
       
       var maxFirstWeek = Math.max.apply(null, weight.slice(0,6));
       
+      var loss = (bands[2][0]-bands[2][bands[2].length-1])/2;
+      
+      alert("Total lost " + loss);
+      
       myChart0 = new Chart(ctx, {
         type: "line",
         data: {
