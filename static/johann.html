@@ -43,6 +43,14 @@
         </div>
       </div>
     </div>
+    
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col">
+        <p>Total weight loss (kg): </p><p id="loss"></p>
+        <p>Average weight loss (kg): </p><p id="average"></p>
+      </div>
+    </div>
 
     <div class="row justify-content-center pt-2">
       <div class="col">
@@ -146,9 +154,10 @@
       
       var maxFirstWeek = Math.max.apply(null, weight.slice(0,6));
       
-      var loss = (bands[2][0]-bands[2][bands[2].length-1])/2;
+      var loss = (bands[2][7] - bands[2][bands[2].length-1]);
       
-      alert("Total lost " + bands[2][7] + ", " + bands[2][bands[2].length-1]);
+      document.getElementById("loss").innerHTML = loss;
+      document.getElementById("average").innerHTML = loss ** (bands[2].length / 7);
       
       myChart0 = new Chart(ctx, {
         type: "line",
