@@ -27,6 +27,7 @@
       </li>
     </ul>
   </nav>
+
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col">
@@ -40,6 +41,14 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col">
+        <p><strong>Moving average change (kg): </strong><span id="loss"></span></p>
+        <p><strong>Average weekly change (%): </strong><span id="average"></span></p>
       </div>
     </div>
 
@@ -71,7 +80,7 @@
   
     <script type="text/javascript">
       var raw = {};
-      var key = '2PACX-1vTYv2MZvIEjsa_jqJtxBrgSCdxhk16naCqSxBvExlTrNJS8ZbJi4e5N3F5_mdCnoGGBSSBz39c0DKhz';
+      var key = '2PACX-1vSlD_UxW4hBpdprjNiMqVzV6kAgZq9fGI1WDOqjcaeyLDYDQ77mmSgJ8S6dripwMP3_alLoXGjinpNv';
       
       function init() {
         Papa.parse(`https://clients.benjamintormey.com/.netlify/functions/getclientdata?key=${key}`, {
@@ -143,7 +152,13 @@
       
       var bands = bollinger(weight, 7, [-2, -1, 0, +1, +2]);
       
-      var maxFirstWeek = Math.max.apply(null, weight.slice(1,7));
+      var maxFirstWeek = Math.max.apply(null, weight.slice(0,6));
+      
+      var loss = (bands[2][7] - bands[2][bands[2].length-1]);
+      var averageLoss = (loss / bands[2][7]) ** (1 / (bands[2].length / 7 + 1));
+      
+      document.getElementById("loss").innerHTML = loss.toFixed(2);
+      document.getElementById("average").innerHTML = averageLoss.toFixed(2);
       
       myChart0 = new Chart(ctx, {
         type: "line",
