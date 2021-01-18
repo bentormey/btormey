@@ -105,11 +105,23 @@ Assets with lower volatility get a higher weighting in the portfolio. Bonds were
 
 Historical returns and ETFs that allow you to recplicate the All Weather strategy can be found [here](http://www.lazyportfolioetf.com/allocation/ray-dalio-all-weather/).
 
-Note relatively mild drawdowns, which is an especially important feature if you're trying to preserve or grow wealth over longer time horizons.
+Make a note of the relatively mild drawdowns, this is an especially important feature if you're trying to preserve or grow wealth over longer time horizons: a loss of 10% and subsequent gain of 10%, leave you down 1% from where you started.
 
-Let's assume you decide to follow this strategy, 
+### Implementation
 
-### Rebalancing Premium
+1. Set up a brokerage account and provide a source of funds
+
+2. Decide on your strategy (e.g. "60/40" or "All Weather")
+
+3. Pick the ETFs that express your positions with the lowest management fees
+
+4. Take your starting capital and buy shares of each ETF in proportion they appear in your strategy
+
+5. Reinvest dividends and provide additional funds according to a schedule based on your income and expenses
+
+6. Rebalance periodically
+
+### Harvesting the Rebalancing Premium
 
 Shannon's demon, correlation, rebalancing volatility.
 
