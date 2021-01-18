@@ -125,21 +125,25 @@ That last part is surprisingly important.
 
 ### The Rebalancing Premium
 
-When your portfolio drifts away from your target allocation, in this case fixed percentages, you eventually have to rebalance.
+When your portfolio drifts away from your target allocation, in this case fixed percentages, you eventually have to _rebalance_.
 
-Let's say you're following the All Weather strategy and equities have been performing really well, now making up 50% of your portfolio. You need to sell some to get back to 30%. Likewise if gold has been underperforming and is now 5% of your portfolio, you need to buy a little bit more to get back to 7.5%.
+Let's say you're following the All Weather strategy and equities have been performing really well, now making up 50% of your portfolio. You need to sell some to get back down to 30%. Likewise if gold has been underperforming and is now 5% of your portfolio, you need to buy a little bit more to get back to 7.5%.
 
 Most articles on passive investing advise that you should rebalance yearly, but this is an error. If you only rebalance once a year, you're missing out on a *rebalancing premium* that can be harvested.
 
+The rebalancing premium is also known as Shannon's demon, named after mathematician Claude Shannon. Shannon was the father of information theory and coined the term "bit" to describe a unit of digital information.
 
+His idea was simple, but not intuitive: if you have a diverse collection of volatile assets which are not correlated with one another, you can profit from rebalancing between them.
 
-Shannon's demon, correlation, rebalancing volatility.
+In other words if they move independently and don't all go up and down together, rebalancing will generate a positive return regardless of whether or not the individual assets do.
+
+There's research to suggest that 
 
 Exposure to risk, unique types of risk, risk premium and correlation
 
 
-
 Risk parity [find out more](https://investresolve.com/maximizing-the-rebalancing-premium-why-risk-parity-portfolios-are-much-greater-than-the-sum-of-their-parts-lp/)
+
 
 Portfolio mix [here](https://breakingthemarket.com/welcome/)
 
