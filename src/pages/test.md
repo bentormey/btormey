@@ -121,7 +121,17 @@ Make a note of the relatively mild drawdowns, this is an especially important fe
 
 6. Rebalance periodically
 
-### Harvesting the Rebalancing Premium
+That last part is surprisingly important.
+
+### The Rebalancing Premium
+
+When your portfolio drifts away from your target allocation, in this case fixed percentages, you eventually have to rebalance.
+
+Let's say you're following the All Weather strategy and equities have been performing really well, now making up 50% of your portfolio. You need to sell some to get back to 30%. Likewise if gold has been underperforming and is now 5% of your portfolio, you need to buy a little bit more to get back to 7.5%.
+
+Most articles on passive investing advise that you should rebalance yearly, but this is an error. If you only rebalance once a year, you're missing out on a *rebalancing premium* that can be harvested.
+
+
 
 Shannon's demon, correlation, rebalancing volatility.
 
