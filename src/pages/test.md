@@ -4,6 +4,12 @@ subtitle: ''
 img_path: ''
 template: page
 ---
+---
+title: Investing
+date: 2021-1-18T11:15:24.217Z
+thumb_img_path: /images/sharon-mccutcheon-8lnbXtxFGZw-unsplash.jpg.jpg
+template: post
+---
 
 ### Introduction
 
@@ -86,9 +92,9 @@ It looks like this:
 - 7.5% gold
 - 7.5% commodities
 
-<iframe height="300" width="500" src="https://benjamintormey.com/allweather.html" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe height="100%" width="500" src="https://benjamintormey.com/allweather.html" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-Each component is selected on it's ability to weather:
+Each component is selected on it's ability to _weather_ one of the possible economic _seasons_:
 
 - Rising economic growth
 - Declining economic growth
@@ -97,11 +103,11 @@ Each component is selected on it's ability to weather:
 
 Assets with lower volatility get a higher weighting in the portfolio. Bonds were the best performing asset over the last few decades and remarkably had the lowest volatility, so they get the highest weighting.
 
-Historical returns and ... http://www.lazyportfolioetf.com/allocation/ray-dalio-all-weather/
+Historical returns and ETFs that allow you to recplicate the All Weather strategy can be found [here](http://www.lazyportfolioetf.com/allocation/ray-dalio-all-weather/).
 
-The nice features are relatively low drawdowns...
+Note relatively mild drawdowns, which is an especially important feature if you're trying to preserve or grow wealth over longer time horizons.
 
-Lead in to...
+Let's assume you decide to follow this strategy, 
 
 ### Rebalancing Premium
 
@@ -109,10 +115,10 @@ Shannon's demon, correlation, rebalancing volatility.
 
 Exposure to risk, unique types of risk, risk premium and correlation
 
-Risk parity
 
-https://breakingthemarket.com/welcome/
 
-https://investresolve.com/maximizing-the-rebalancing-premium-why-risk-parity-portfolios-are-much-greater-than-the-sum-of-their-parts-lp/
+Risk parity [find out more](https://investresolve.com/maximizing-the-rebalancing-premium-why-risk-parity-portfolios-are-much-greater-than-the-sum-of-their-parts-lp/)
+
+Portfolio mix [here](https://breakingthemarket.com/welcome/)
 
 
