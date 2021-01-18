@@ -92,7 +92,7 @@ It looks like this:
 - 7.5% gold
 - 7.5% commodities
 
-<iframe height="100%" width="500" src="https://benjamintormey.com/allweather.html" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe height="300" width="500" src="https://benjamintormey.com/allweather.html" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 Each component is selected on it's ability to _weather_ one of the possible economic _seasons_:
 
