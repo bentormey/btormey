@@ -5,7 +5,10 @@
 </head>
 
 <body>
-	<canvas id="pie-chart"></canvas>
+  <div class="chart-container" style="position: relative; height:100vh; width:100vw">
+    <canvas id="pie-chart"></canvas>
+  </div>
+	
 	<script>
     var ctx = document.getElementById("pie-chart").getContext("2d");
 	  //Chart.defaults.global.maintainAspectRatio = false;
@@ -38,7 +41,7 @@
                 },
                 responsive: true,
                 legend: {
-                  display: false,
+                  display: true,
                 },
                 title: {
                   display: false,
