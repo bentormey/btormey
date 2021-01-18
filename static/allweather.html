@@ -4,55 +4,59 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 <canvas id="pie-chart"></canvas>
 
-<script>
-function showPieChart(){
-    var config = {
-      type: 'doughnut',
-      data: {
-        datasets: [{
-          data: [40,30,15,7.5,7.5],
-          backgroundColor: ['#3f51b5','#f44336','#586ace','#ffeb3b','#ffff54'],
-          label: 'Dataset 1'
-        }],
-        labels: ['Long-term Bonds','Equities','Intermediate-term Bonds','Gold','Commodities']
-      },
-      options: {
-        tooltipTemplate: "<%= value %>",
-        showTooltips: true,
-				showAllTooltips: true,
-        onAnimationComplete: function() {
-          this.showTooltip(this.datasets[0].points, true);
-        },
-        tooltipEvents: [],
-        cutoutPercentage: 50,
-        layout: {
-          padding: {
-            left: 0,
-            right: 0,
-            top: 0,
-            bottom: 0
-          }
-        },
-        responsive: true,
-        legend: {
-          display: false,
-        },
-        title: {
-          display: false,
-        },
-        animation: {
-          animateRotate: true,
-          duration: 1000,
-          animateScale: true,
-          animationSteps: 15
-        }
-      }
-    };
-    var ctx = $("#pie-chart").get(0).getContext("2d");
-    Chart.defaults.global.maintainAspectRatio = false;
-    window.myDoughnut = new Chart(ctx, config);
-  }
-  showPieChart();
-</script>
-
+<body>
+	
+	<script>
+	function showPieChart(){
+	    var config = {
+	      type: 'doughnut',
+	      data: {
+		datasets: [{
+		  data: [40,30,15,7.5,7.5],
+		  backgroundColor: ['#3f51b5','#f44336','#586ace','#ffeb3b','#ffff54'],
+		  label: 'Dataset 1'
+		}],
+		labels: ['Long-term Bonds','Equities','Intermediate-term Bonds','Gold','Commodities']
+	      },
+	      options: {
+		tooltipTemplate: "<%= value %>",
+		showTooltips: true,
+					showAllTooltips: true,
+		onAnimationComplete: function() {
+		  this.showTooltip(this.datasets[0].points, true);
+		},
+		tooltipEvents: [],
+		cutoutPercentage: 50,
+		layout: {
+		  padding: {
+		    left: 0,
+		    right: 0,
+		    top: 0,
+		    bottom: 0
+		  }
+		},
+		responsive: true,
+		legend: {
+		  display: false,
+		},
+		title: {
+		  display: false,
+		},
+		animation: {
+		  animateRotate: true,
+		  duration: 1000,
+		  animateScale: true,
+		  animationSteps: 15
+		}
+	      }
+	    };
+	    var ctx = $("#pie-chart").get(0).getContext("2d");
+	    Chart.defaults.global.maintainAspectRatio = false;
+	    window.myDoughnut = new Chart(ctx, config);
+	  }
+	  showPieChart();
+	</script>
+	
+</body>
+	
 </html>
