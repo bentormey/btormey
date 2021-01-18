@@ -5,13 +5,6 @@ img_path: ''
 template: page
 ---
 
----
-title: Investing
-date: 2021-1-18T11:15:24.217Z
-thumb_img_path: /images/sharon-mccutcheon-8lnbXtxFGZw-unsplash.jpg.jpg
-template: post
----
-
 ### Introduction
 
 I was never interested in finance when I was younger, I had no desire to make a lot of money or spend my time doing anything other than mathematics.
@@ -93,7 +86,7 @@ It looks like this:
 - 7.5% gold
 - 7.5% commodities
 
-<iframe width="100%" height="300" src="https://benjamintormey.com/allweather.html" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="100%" src="https://benjamintormey.com/allweather.html" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 Each component is selected on it's ability to weather:
 
