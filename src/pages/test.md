@@ -86,7 +86,7 @@ It looks like this:
 - 7.5% gold
 - 7.5% commodities
 
-<iframe width="100%" height="100%" src="https://benjamintormey.com/allweather.html" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe height="100%" width="300" src="https://benjamintormey.com/allweather.html" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 Each component is selected on it's ability to weather:
 
