@@ -60,7 +60,7 @@ If you own property, you're already exposed to real estate. If you have a mortga
 
 Cryptocurrencies like Bitcoin aren't readily available in exchange-traded form (but there is one Euro-denominated product by VanEck which tracks the price of Bitcoin).
 
-The classic "60/40" portfolio allocates 60% to stocks and 40% to bonds. The idea is that stocks are more volatile than bonds, essentially they move up and down in price more, and since bonds aren't perfectly correlated with stocks a mix of the two provides a more stable return than either one on it's own.
+The classic "60/40" portfolio allocates 60% to stocks and 40% to bonds. The idea is that stocks are more _volatile_ than bonds, essentially they move up and down in price more, and since bonds aren't perfectly correlated with stocks a mix of the two provides a more stable return than either one on it's own.
 
 In recent history this kind of portfolio has performed well, you can explore the returns [here](http://www.lazyportfolioetf.com/allocation/stocks-bonds-60-40/).
 
