@@ -162,7 +162,7 @@ With that concept fixed in your mind, let's finally look at cryptocurrency.
 
 It turns out that if you take a standard 60/40 portfolio and allocate 1-5% to Bitcoin, with quarterly rebalancing, you [outperform](https://s3.amazonaws.com/static.bitwiseinvestments.com/Research/Bitwise-The-Case-For-Crypto-In-An-Institutional-Portfolio.pdf) a vanilla 60/40 portfolio without Bitcoin.
 
-In other words, if you take 95% of your portfolio and allocate 60% to stocks and 40% to bonds with the remaining 5% in Bitcoin, rebalancing every quarter, you would've grown your portfolio _more_ than just holding stocks and bonds.
+In other words, if you had taken 95% of your portfolio and allocated 60% of that to stocks and 40% to bonds, putting the remaining 5% in Bitcoin and rebalancing every quarter, you would've grown your portfolio _more_ than just holding stocks and bonds over the last few years.
 
 That's because the volatility of cryptocurrencies like Bitcoin provides a source of volatility and therefore rebalancing premium, since Bitcoin has historically been both uncorrelated with stocks and bonds.
 
