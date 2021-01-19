@@ -35,7 +35,7 @@ Focusing on what you do best and generating cashflow to deploy in a _passive str
 
 Investing in exchange-traded funds (ETFs) allows you to track the performance of major stock market indicies, like the S&P 500 or FTSE 100. For example, if large-cap US companies perform, an S&P 500 index tracking ETF will perform too. You don't need to guess which component companies will contribute to that performance.
 
-Buying shares of a stock ETF is like buying a big basket of stocks. For example, if Apple represents 5% of the index then for every $100 you invest in the ETF, $5 goes towards buying Apple shares.
+Buying shares of an ETF is like buying a big basket of stocks. For example, if Apple represents 5% of the index then for every $100 you invest in the ETF, $5 goes towards buying Apple shares.
 
 But stocks aren't the only thing you can invest in.
 
