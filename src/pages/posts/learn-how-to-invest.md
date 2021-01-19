@@ -29,7 +29,7 @@ When most people think about investing they think about buying shares of individ
 
 It's possible to make money that way, but typically picking stocks, actively trading, and using complex financial products like options is a losing proposition.
 
-You probably shouldn't devote your time to becoming a day trader when you could refine and monetise your existing skillset through a traditional career or business. Not only that, but unless you have a serious amount of starting capital, you will not make a living from trading.
+You probably shouldn't devote your time to becoming a day trader when you could refine and monetise your existing skillset through a traditional career or business. Not only that, but unless you have a serious amount of starting capital, you will probably not be able to make a living from trading.
 
 Focusing on what you do best and generating cashflow to deploy in a _passive strategy_ is almost always better than spending time and effort researching stocks, learning how to construct a portfolio around them, and managing all your trades.
 
