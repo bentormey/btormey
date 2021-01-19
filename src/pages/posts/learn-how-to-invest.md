@@ -149,7 +149,7 @@ It turns out that if you take a standard 60/40 portfolio and allocate 1-5% to Bi
 
 In other words, if you had taken 95% of your portfolio and allocated 60% of that to stocks and 40% to bonds, putting the remaining 5% in Bitcoin and rebalancing every quarter, you would've grown your portfolio _more_ than by just holding stocks and bonds over the last few years.
 
-That's because cryptocurrencies like Bitcoin provides a source of volatility and therefore rebalancing premium. Since Bitcoin has historically been both uncorrelated with stocks and bonds, it works on the same principle as Shannon's demon.
+That's because cryptocurrencies like Bitcoin provide a source of volatility and therefore rebalancing premium. Since Bitcoin has historically been both uncorrelated with stocks and bonds, it works on the same principle as Shannon's demon.
 
 Although there are many cryptocurrencies, Bitcoin and to a lesser extent Ethereum are the only serious candidates for investment. If you have to pick one, go with Bitcoin because it has the largest market cap, the widest adoption, and the most attention from serious allocators of capital (like pension funds, hedge funds, and family offices).
 
