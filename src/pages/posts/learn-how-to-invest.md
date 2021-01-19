@@ -139,6 +139,8 @@ Let's imagine an asset which stays essentially the same, but moves up and down s
 
 There's research to suggest that rebalancing between three uncorrelated assets can produce a positive return from rebalancing alone. That means without _any_ growth in the assets you're holding, you could achieve compound growth by rebalancing between them. You can [read more](https://investresolve.com/maximizing-the-rebalancing-premium-why-risk-parity-portfolios-are-much-greater-than-the-sum-of-their-parts-lp/) about that research if you're interested in the context.
 
+That doesn't mean you should try to balance your portfolio daily, like with Shannon's demon, but monthly or even quarterly rebalancing would be superior to yearly.
+
 With that concept fixed in your mind, let's finally look at cryptocurrency.
 
 ### Adding Bitcoin to the Mix
