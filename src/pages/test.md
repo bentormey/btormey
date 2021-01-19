@@ -33,44 +33,38 @@ Return as an expat, savings/self-employed
 
 When most people think about investing they think about buying shares of individual companies like Apple or Tesla.
 
-It's possible to make money that way, but for most people picking stocks, actively trading, and using complex financial products like options is a losing proposition.
+It's possible to make money that way, but typically picking stocks, actively trading, and using complex financial products like options is a losing proposition.
 
 The ROI on learning how to become a successful trader is low compared to monetising your existing skillset through a career or business.
 
 Focusing on what you do best and generating cashflow to deploy in a _passive strategy_ is almost always better than spending time and effort researching stocks, learning how to construct a portfolio around them, and staying on top of your profits and losses.
 
-Investing in exchange-traded funds (ETFs) allows you to track major stock market indicies, like the S&P 500 or FTSE 100, and match the returns of stocks on the whole. For example, if large-cap US companies perform well, an S&P 500 index tracking ETF will perform well too. You don't need to know which component companies will contribute to that performance.
+Investing in exchange-traded funds (ETFs) allows you to track the performance of major stock market indicies, like the S&P 500 or FTSE 100. For example, if large-cap US companies perform, an S&P 500 index tracking ETF will perform too. You don't need to guess which component companies will contribute to that performance.
 
-The way it works is that if Apple represents 5% of the index then for every $100 you invest in the ETF, $5 goes towards buying Apple shares.
+Buying shares of a stock ETF is like buying a big basket of stocks. For example, if Apple represents 5% of the index then for every $100 you invest in the ETF, $5 goes towards buying Apple shares.
+
+There are other kinds of ETFs too.
 
 ### Asset Classes
 
-Restrict the universe of things you can invest in to asset classes, broadly speaking the ... ones I look at are:
+The universe of things you can invest can be divided into asset classes, I mostly look at:
 
 - Stocks
 - Bonds
 - Gold
 - Cash
 
-There are others, including real estate, commodities (like oil), and cryptocurrency (like Bitcoin).
+There are others, including real estate, commodities (like oil), and cryptocurrency (like Bitcoin). You don't need exposure to all of them, you only need a mix of assets which are not highly _correlated_ with each other. Correlation is a statistical property, but in simple terms if two assets are correlated it means they tend to go up and down with each other.
 
-You don't need exposure to all of them, you only need a mix of assets which are not highly _correlated_ with each other. Correlation is a statistical property, but in simple terms if two assets are correlated it means they tend to go up and down with each other.
+If you own property, you're already exposed to real estate. If you have a mortgage then you have _leveraged_ exposure to real estate. 
 
-If you own property, you're already exposed to real estate. If you have a mortgage then you have _leveraged_ exposure to real estate.
+Bond ETFs hold a basket of bonds, which are issued by a government or corporation as a form of debt. They provide a yield, which you can think of as compensation to the bond holder for lending to the bond issuer.
 
-
-
-
-
-https://investor.vanguard.com/etf/profile/VTI
-
-Bond ETFs hold a basket of bonds, which don't trade like stocks because 
-
-Gold ETFs typically purchase gold in physical form, held via a custodian such as a bullion bank.
+Gold ETFs typically purchase gold in physical form, held via a custodian such as a bullion bank. Gold doesn't provide any kind of yield, but is...
 
 There are even real estate ETFs.
 
-Cryptocurrencies like Bitcoin aren't readily available in exchange-traded form (there's one Euro-denominated product by VanEck).
+Cryptocurrencies like Bitcoin aren't readily available in exchange-traded form, but there is one Euro-denominated product by VanEck which tracks the price of Bitcoin.
 
 
 60:40
