@@ -21,24 +21,8 @@
       return avg;
     }
     
-    var portfolio = new Array(50).fill(1.0);
-    
-    var assetOne = [];
-    //var portfolio = [];
-
-    assetOne[1] = 1.0;
-    for (var i = 2; i < 50; i++) {
-      var price = assetOne[i-1];
-      if (Math.random() > 0.5) {
-        price = price * 2.0; 
-      } else {
-        price = price * 0.5; 
-      }
-      
-      assetOne.push(price);
-    }
-    
-    console.log(assetOne);
+    var portfolio = new Array(50).fill(1.0);    
+    var assetOne = Array(50).fill().map(() => Math.round(Math.random() * 10))
 
     var myChart0 = new Chart(ctx, {
       type: "line",
