@@ -21,11 +21,13 @@ But I always saved money consistently, I even had a share ISA set up that gave m
 
 When 2008 hit and people were queuing up to withdraw cash from their banks, I found that I had less money in that ISA than when I started.
 
-That soured me on investing in the stock market and I didn't think about it again for a long time.
+That soured me on the stock market and I didn't think about it again for a long time.
 
-_Return as an expat, savings/self-employed_
+Having spent a long time building my own businesses and accumulating savings, I returned to the idea of investing and spent a lot of time trying to understand it.
 
-Lead in...
+Before you read any further, remember that nothing here constitutes investment advice. I'm distilling some of my own research into an accessible form as a starting point for you to carry out your own investigations.
+
+With that understood, let's continue.
 
 ### Understanding Passive Investing
 
@@ -33,44 +35,48 @@ When most people think about investing they think about buying shares of individ
 
 It's possible to make money that way, but typically picking stocks, actively trading, and using complex financial products like options is a losing proposition.
 
-The ROI on learning how to become a successful trader is low compared to monetising your existing skillset through a career or business.
+You probably shouldn't devote your time to becoming a day trader when you could refine and monetise your existing skillset through a traditional career or business. Not only that, but unless you have a serious amount of starting capital, you will not make a living from trading.
 
-Focusing on what you do best and generating cashflow to deploy in a _passive strategy_ is almost always better than spending time and effort researching stocks, learning how to construct a portfolio around them, and staying on top of your profits and losses.
+Focusing on what you do best and generating cashflow to deploy in a _passive strategy_ is almost always better than spending time and effort researching stocks, learning how to construct a portfolio around them, and managing all your trades.
 
 Investing in exchange-traded funds (ETFs) allows you to track the performance of major stock market indicies, like the S&P 500 or FTSE 100. For example, if large-cap US companies perform, an S&P 500 index tracking ETF will perform too. You don't need to guess which component companies will contribute to that performance.
 
 Buying shares of a stock ETF is like buying a big basket of stocks. For example, if Apple represents 5% of the index then for every $100 you invest in the ETF, $5 goes towards buying Apple shares.
 
-There are other kinds of ETFs too.
+But stocks aren't the only thing you can invest in.
 
 ### Exploring Other Assets
 
-The universe of things you can invest can be divided into asset classes, I mostly look at:
+The universe of things you can invest can be divided into _asset classes_, I typically look at:
 
 - Stocks
 - Bonds
 - Gold
-- Cash
+- Cash (or cash equivalents)
 
-There are others, including real estate, commodities (like oil), and cryptocurrency (like Bitcoin). You don't need exposure to all of them, you only need a mix of assets which are not highly _correlated_ with each other. Correlation is a statistical property, but in simple terms if two assets are correlated it means they tend to go up and down with each other.
+There are others, including real estate, commodities (like oil), and cryptocurrency (like Bitcoin). You don't need exposure to all of them, you only need a mix of assets which are not highly _correlated_ with each other.
 
-If you own property, you're already exposed to real estate. If you have a mortgage then you have _leveraged_ exposure to real estate. 
+Correlation is a statistical property, but in simple terms if two assets are correlated it means they tend to go up and down with each other.
 
-Bond ETFs hold a basket of bonds, which are issued by a government or corporation as a form of debt. They provide a yield, which you can think of as compensation to the bond holder for lending to the bond issuer.
+Bond ETFs hold a basket of bonds, which represent debt issued by a government or corporation. They have a fixed duration and provide a yield, which you can think of as compensation to the bond holder for taking the risk of lending to the bond issuer.
 
-Gold ETFs typically purchase gold in physical form, held via a custodian such as a bullion bank. Gold doesn't provide any kind of yield, but is...
+Gold ETFs typically purchase gold in physical form, held via a custodian such as a bullion bank. Gold doesn't provide any kind of yield like a stock, bond, or real estate, but is held as protection against inflation and as a form of liquidity. 
 
-There are even real estate ETFs.
+If you own property, you're already exposed to real estate. If you have a mortgage then you have _leveraged_ exposure to real estate. But in any case there are real estate ETFs too, they track the performance of investable real estate.
 
-Cryptocurrencies like Bitcoin aren't readily available in exchange-traded form, but there is one Euro-denominated product by VanEck which tracks the price of Bitcoin.
+Cryptocurrencies like Bitcoin aren't readily available in exchange-traded form (but there is one Euro-denominated product by VanEck which tracks the price of Bitcoin).
 
-Classic 60/40 portfolio is 60% stocks and 40% bonds.
+The classic "60/40" portfolio allocates 60% to stocks and 40% to bonds. The idea is that stocks are more volatile than bonds, essentially they move up and down in price more, and since bonds aren't perfectly correlated with stocks a mix of the two provides a more stable return than either one on it's own.
 
-Over last 10 years
+In recent history this kind of portfolio has performed well, you can explore the returns [here](http://www.lazyportfolioetf.com/allocation/stocks-bonds-60-40/).
 
-Lead in to...
+But that mix may not continue to perform like that in the future, which is why other strategies attempt to protect against scenarios where both stocks and bonds would suffer.
 
-Ray Dalio's Bridgewater Associates...
+Ray Dalio's Bridgewater Associates, one of the largest hedge funds in the world, introduced the "All Weather" fund based on a concept called _risk parity_.
+
+You don't need to know the details of risk parity, except that it tries to balance assets according to how volatile they are.
+
+Ray Dalio presented a simplified version of this strategy that you can implement.
 
 ### Example: The 'All Weather' Portfolio
 
