@@ -131,7 +131,7 @@ Let's say you're following the All Weather strategy and equities have been perfo
 
 Most articles on passive investing advise that you should rebalance yearly, but this is an error. If you only rebalance once a year, you're missing out on a *rebalancing premium* that can be harvested.
 
-The rebalancing premium is also known as Shannon's demon, named after mathematician Claude Shannon. Shannon was the father of information theory and coined the term "bit" to describe a unit of digital information.
+The rebalancing premium is also known as _Shannon's demon_, named after mathematician Claude Shannon. He is best known as the father of information theory and coined the term "bit" to describe a unit of digital information.
 
 His idea was simple, but not intuitive: if you have a diverse collection of volatile assets which are not correlated with one another, you can profit from selling assets with gains to purchase assets with losses.
 
@@ -140,6 +140,12 @@ In other words if they move independently and don't all go up and down together,
 There's research to suggest that rebalancing between three uncorrelated assets produces a return of 0.8% from rebalancing alone. That means without any growth in the assets you're holding, you could compound at 0.8% by rebalancing between them.
 
 Exposure to risk, unique types of risk, risk premium and correlation
+
+### Wait, what about Bitcoin?
+
+1-5%
+
+#### Further Reading
 
 
 Risk parity [find out more](https://investresolve.com/maximizing-the-rebalancing-premium-why-risk-parity-portfolios-are-much-greater-than-the-sum-of-their-parts-lp/)
