@@ -145,6 +145,12 @@ Exposure to risk, unique types of risk, risk premium and correlation
 
 1-5%
 
+Bitcoin with quarterly rebalancing
+
+https://s3.amazonaws.com/static.bitwiseinvestments.com/Research/Bitwise-The-Case-For-Crypto-In-An-Institutional-Portfolio.pdf
+
+The point is the volatility
+
 #### Further Reading
 
 
