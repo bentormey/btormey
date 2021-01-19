@@ -11,8 +11,6 @@ thumb_img_path: /images/sharon-mccutcheon-8lnbXtxFGZw-unsplash.jpg.jpg
 template: post
 ---
 
-### Introduction
-
 I was never interested in finance when I was younger, I had no desire to make a lot of money or spend my time doing anything other than mathematics.
 
 Financial mathematics was a passing curiosity, I read a couple of books on stochastic calculus and pricing options, but I never considered putting that knowledge into practise.
@@ -25,11 +23,11 @@ When 2008 hit and people were queuing up to withdraw cash from their banks, I fo
 
 That soured me on investing in the stock market and I didn't think about it again for a long time.
 
-Return as an expat, savings/self-employed
+_Return as an expat, savings/self-employed_
 
+Lead in...
 
-
-### Passive vs. Active
+### Understanding Passive Investing
 
 When most people think about investing they think about buying shares of individual companies like Apple or Tesla.
 
@@ -45,7 +43,7 @@ Buying shares of a stock ETF is like buying a big basket of stocks. For example,
 
 There are other kinds of ETFs too.
 
-### Asset Classes
+### Exploring Other Assets
 
 The universe of things you can invest can be divided into asset classes, I mostly look at:
 
@@ -66,9 +64,6 @@ There are even real estate ETFs.
 
 Cryptocurrencies like Bitcoin aren't readily available in exchange-traded form, but there is one Euro-denominated product by VanEck which tracks the price of Bitcoin.
 
-
-60:40
-
 Classic 60/40 portfolio is 60% stocks and 40% bonds.
 
 Over last 10 years
@@ -77,7 +72,7 @@ Lead in to...
 
 Ray Dalio's Bridgewater Associates...
 
-### The 'All Weather' Portfolio
+### Example: The 'All Weather' Portfolio
 
 The All Weather portfolio is built on the assumption that you can't know what kind of market regime will occur in the future, but you can allocate to assets that will perform well under each different regime.
 
@@ -106,9 +101,9 @@ Make a note of the relatively mild drawdowns, this is an especially important fe
 
 Now how do you put this together?
 
-### Implementation
+### Implementing Your Strategy
 
-
+Steps:
 
 1. Set up a brokerage account and provide a source of funds.
 
@@ -124,7 +119,7 @@ Now how do you put this together?
 
 That last part is surprisingly important.
 
-### The Rebalancing Premium
+### Understanding The Rebalancing Premium
 
 When your portfolio drifts away from your target allocation, in this case fixed percentages, you eventually have to _rebalance_.
 
@@ -148,7 +143,7 @@ There's research to suggest that rebalancing between three uncorrelated assets c
 
 With that concept fixed in your mind, let's finally look at cryptocurrency.
 
-### Bitcoin
+### Adding Bitcoin to the Mix
 
 It turns out that if you take a standard 60/40 portfolio and allocate 1-5% to Bitcoin, with quarterly rebalancing, you [outperform](https://s3.amazonaws.com/static.bitwiseinvestments.com/Research/Bitwise-The-Case-For-Crypto-In-An-Institutional-Portfolio.pdf) a vanilla 60/40 portfolio without Bitcoin.
 
