@@ -27,11 +27,11 @@ That soured me on investing in the stock market and I didn't think about it agai
 
 Return as an expat, savings/self-employed
 
-Before you read any further...
+Before you read any further, please note the following.
 
-Nothing presented here constitutes investment advice, consider it a starting point for your own investigations.
-
-Always do your own research before investing in any financial products.
+> Nothing presented here constitutes investment advice, consider it a starting point for your own investigations.
+> 
+> Always do your own research before investing in any financial products.
 
 ### Passive vs. Active
 
@@ -47,7 +47,7 @@ You could spend a lot of time and effort doing research on stocks, learning how 
 
 ### Asset Classes
 
-Restrict the universe of things we can invest in to asset classes, broadly speaking the ... ones I look at are:
+Restrict the universe of things you can invest in to asset classes, broadly speaking the ... ones I look at are:
 
 - Stocks
 - Bonds
@@ -58,9 +58,9 @@ There are others, including real estate, commodities (like oil), and cryptocurre
 
 You don't need exposure to all of them, you only need a mix of assets which are not highly correlated with each other.
 
-If you own property, you're already exposed to real estate. If you have a mortgage then you have leveraged exposure to real estate.
+If you own property, you're already exposed to real estate. If you have a mortgage then you have _leveraged_ exposure to real estate.
 
-Exchange-traded funds (ETFs) are vehicles for getting exposure to these broad asset classes.
+Exchange-traded funds (ETFs) are useful vehicles for getting exposure to these broad asset classes.
 
 Stock ETFs track major indicies, like the S&P 500 or FTSE 100, and allow you to achieve the same returns as the market on the whole...
 
@@ -72,13 +72,24 @@ If Apple represents 5% of the index then for every $100 you invest in the ETF, $
 
 https://investor.vanguard.com/etf/profile/VTI
 
-Bond ETFs hold a basket of bonds, which don't trade like stocks...
+Bond ETFs hold a basket of bonds, which don't trade like stocks because 
 
-Gold ETFs typically purchase physical gold...
+Gold ETFs typically purchase gold in physical form, held via a custodian such as a bullion bank.
 
-Bitcoin
+There are even real estate ETFs.
+
+Cryptocurrencies like Bitcoin aren't readily available in exchange-traded form (there's one Euro-denominated product by VanEck).
+
+
+60:40
+
+Classic 60/40 portfolio is 60% stocks and 40% bonds.
+
+Over last 10 years
 
 Lead in to...
+
+Ray Dalio's Bridgewater Associates...
 
 ### The 'All Weather' Portfolio
 
@@ -107,19 +118,23 @@ Historical returns and ETFs that allow you to recplicate the All Weather strateg
 
 Make a note of the relatively mild drawdowns, this is an especially important feature if you're trying to preserve or grow wealth over longer time horizons: a loss of 10% and subsequent gain of 10%, leave you down 1% from where you started.
 
+Now how do you put this together?
+
 ### Implementation
 
-1. Set up a brokerage account and provide a source of funds
 
-2. Decide on your strategy (e.g. "60/40" or "All Weather")
 
-3. Pick the ETFs that express your positions with the lowest management fees
+1. Set up a brokerage account and provide a source of funds.
 
-4. Take your starting capital and buy shares of each ETF in proportion they appear in your strategy
+2. Decide on your strategy (e.g. "60/40" or "All Weather").
 
-5. Reinvest dividends and provide additional funds according to a schedule based on your income and expenses
+3. Pick the ETFs that express your positions with the lowest management fees.
 
-6. Rebalance periodically
+4. Take your starting capital and buy shares of each ETF in proportion they appear in your strategy.
+
+5. Reinvest dividends and provide additional funds according to a schedule based on your income and expenses.
+
+6. Rebalance periodically.
 
 That last part is surprisingly important.
 
@@ -141,7 +156,11 @@ There's research to suggest that rebalancing between three uncorrelated assets p
 
 Exposure to risk, unique types of risk, risk premium and correlation
 
-### Wait, what about Bitcoin?
+With that concept fixed in your mind, let's finally talk about cryptocurrency.
+
+### Bitcoin
+
+
 
 1-5%
 
@@ -149,7 +168,9 @@ Bitcoin with quarterly rebalancing
 
 https://s3.amazonaws.com/static.bitwiseinvestments.com/Research/Bitwise-The-Case-For-Crypto-In-An-Institutional-Portfolio.pdf
 
-The point is the volatility
+The point is that the volatility of cryptocurrencies like Bitcoin provides a source of rebalancing premium. Bitcoin has historically been uncorrelated with stocks, meaning that 
+
+### Past vs. Future
 
 #### Further Reading
 
