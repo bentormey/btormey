@@ -17,7 +17,7 @@ When 2008 hit and people were queuing up to withdraw cash from their banks, I fo
 
 That soured me on the stock market and I didn't think about it again for a long time.
 
-Having spent a long time building my own businesses and accumulating savings, I returned to the idea of investing and spent a lot of time trying to understand it.
+After working for years building my own businesses and accumulating savings, I returned to the idea of investing and spent a lot of time trying to understand it.
 
 Before you read any further, remember that nothing here constitutes investment advice. I'm distilling some of my own research into an accessible form as a starting point for you to carry out your own investigations.
 
