@@ -31,15 +31,17 @@ Return as an expat, savings/self-employed
 
 ### Passive vs. Active
 
-When most people think about investing in stocks, they imagine buying shares of individual companies like Apple or Tesla.
+When most people think about investing they think about buying shares of individual companies like Apple or Tesla.
 
-Picking stocks, actively trading, using leverage...
+It's possible to make money that way, but for most people picking stocks, actively trading, and using complex financial products like options is a losing proposition.
 
-The ROI on learning how to become a successful trader is low for most people.
+The ROI on learning how to become a successful trader is low compared to monetising your existing skillset through a career or business.
 
-Monetising your existing skillset through a job or your own business, generating cashflow to deploy in a passive strategy, is almost always better.
+Focusing on what you do best and generating cashflow to deploy in a _passive strategy_ is almost always better than spending time and effort researching stocks, learning how to construct a portfolio around them, and staying on top of your profits and losses.
 
-You could spend a lot of time and effort doing research on stocks, learning how to construct a portfolio around them, and managing your positions...
+Investing in exchange-traded funds (ETFs) allows you to track major stock market indicies, like the S&P 500 or FTSE 100, and match the returns of stocks on the whole. For example, if large-cap US companies perform well, an S&P 500 index tracking ETF will perform well too. You don't need to know which component companies will contribute to that performance.
+
+The way it works is that if Apple represents 5% of the index then for every $100 you invest in the ETF, $5 goes towards buying Apple shares.
 
 ### Asset Classes
 
@@ -52,17 +54,11 @@ Restrict the universe of things you can invest in to asset classes, broadly spea
 
 There are others, including real estate, commodities (like oil), and cryptocurrency (like Bitcoin).
 
-You don't need exposure to all of them, you only need a mix of assets which are not highly correlated with each other.
+You don't need exposure to all of them, you only need a mix of assets which are not highly _correlated_ with each other. Correlation is a statistical property, but in simple terms if two assets are correlated it means they tend to go up and down with each other.
 
 If you own property, you're already exposed to real estate. If you have a mortgage then you have _leveraged_ exposure to real estate.
 
-Exchange-traded funds (ETFs) are useful vehicles for getting exposure to these broad asset classes.
 
-Stock ETFs track major indicies, like the S&P 500 or FTSE 100, and allow you to achieve the same returns as the market on the whole...
-
-If large-cap US companies perform well, your S&P 500 index tracking ETF performs well...
-
-If Apple represents 5% of the index then for every $100 you invest in the ETF, $5 goes towards buying Apple shares.
 
 
 
