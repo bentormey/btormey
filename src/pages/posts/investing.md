@@ -1,7 +1,7 @@
 ---
 title: Learn how to invest
 date: 2021-1-18T11:15:24.217Z
-thumb_img_path: /images/sharon-mccutcheon-8lnbXtxFGZw-unsplash.jpg.jpg
+thumb_img_path: /images/sharon-mccutcheon-8lnbXtxFGZw-unsplash.jpg
 template: post
 ---
 
