@@ -22,7 +22,16 @@
     }
     
     var portfolio = new Array(50).fill(1.0);    
-    var assetOne = Array(50).fill().map(() => Math.round(Math.random() * 10))
+    var assetOne = Array(50).fill(1.0);
+    
+    for(let i = 1; i < 50; i++) {
+      if (Math.random() > 0.5) {
+        let change = 2.0;
+      } else {
+        let change = 0.5;
+      }
+      assetOne[i] = assetOne[i-1] * change;
+    }
 
     var myChart0 = new Chart(ctx, {
       type: "line",
