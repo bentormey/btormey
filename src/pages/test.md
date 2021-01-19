@@ -133,11 +133,11 @@ Most articles on passive investing advise that you should rebalance yearly, but 
 
 The rebalancing premium is also known as Shannon's demon, named after mathematician Claude Shannon. Shannon was the father of information theory and coined the term "bit" to describe a unit of digital information.
 
-His idea was simple, but not intuitive: if you have a diverse collection of volatile assets which are not correlated with one another, you can profit from rebalancing between them.
+His idea was simple, but not intuitive: if you have a diverse collection of volatile assets which are not correlated with one another, you can profit from selling assets with gains to purchase assets with losses.
 
 In other words if they move independently and don't all go up and down together, rebalancing will generate a positive return regardless of whether or not the individual assets do.
 
-There's research to suggest that 
+There's research to suggest that rebalancing between three uncorrelated assets produces a return of 0.8% from rebalancing alone. That means without any growth in the assets you're holding, you could compound at 0.8% by rebalancing between them.
 
 Exposure to risk, unique types of risk, risk premium and correlation
 
