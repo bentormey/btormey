@@ -21,13 +21,12 @@
       return avg;
     }
     
-    //var padding = new Array(48).fill(null);
+    var portfolio = new Array(50).fill(1.0);
     
     var assetOne = [];
-    var portfolio = [];
+    //var portfolio = [];
 
     assetOne[1] = 1.0;
-    portfolio[1] = 1.0;
     for (var i = 2; i < 50; i++) {
       var price = assetOne[i-1];
       if (Math.random() > 0.5) {
@@ -37,7 +36,6 @@
       }
       
       assetOne.push(price);
-      portfolio.push(1.0);
     }
     
     console.log(assetOne);
