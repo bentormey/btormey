@@ -33,15 +33,15 @@ You probably shouldn't devote your time to becoming a day trader when you could 
 
 Focusing on what you do best and generating cashflow to deploy in a _passive strategy_ is almost always better than spending time and effort researching stocks, learning how to construct a portfolio around them, and managing all your trades.
 
-Investing in exchange-traded funds (ETFs) allows you to track the performance of major stock market indicies, like the S&P 500 or FTSE 100. For example, if large-cap US companies perform, an S&P 500 index tracking ETF will perform too. You don't need to guess which component companies will contribute to that performance.
+Investing in exchange-traded funds (ETFs) allows you to track the performance of major stock market indicies, like the S&P 500 or FTSE 100. For example, if large-cap US companies perform well, an S&P 500 index tracking ETF will perform well too. You don't need to guess which component companies will contribute to that performance.
 
 Buying shares of an ETF is like buying a big basket of stocks. For example, if Apple represents 5% of the index then for every $100 you invest in the ETF, $5 goes towards buying Apple shares.
 
-But stocks aren't the only thing you can invest in.
+But stocks aren't the only way to invest.
 
 ### Exploring Other Assets
 
-The universe of things you can invest can be divided into _asset classes_, I typically look at:
+The universe of things you can invest in can be divided into _asset classes_, I typically look at:
 
 - Stocks
 - Bonds
@@ -54,7 +54,9 @@ Correlation is a statistical property, but in simple terms if two assets are cor
 
 Bond ETFs hold a basket of bonds, which represent debt issued by a government or corporation. They have a fixed duration and provide a yield, which you can think of as compensation to the bond holder for taking the risk of lending to the bond issuer.
 
-Gold ETFs typically purchase gold in physical form, held via a custodian such as a bullion bank. Gold doesn't provide any kind of yield like a stock, bond, or real estate, but is typically held as protection against inflation (when the cost of consumer goods and services go up) and as a form of liquidity. 
+Stock can ETFs also generate a yield, which is the cashflow returned to you by companies in the form of dividends.
+
+Gold ETFs typically purchase gold in physical form, held via a custodian such as a bullion bank. Gold doesn't provide any kind of yield like a stock, bond, or real estate (if you generate rental income), but is typically held as protection against inflation (when the cost of consumer goods and services go up) and as a form of liquidity. 
 
 If you own property, you're already exposed to real estate. If you have a mortgage then you have _leveraged_ exposure to real estate. But in any case there are real estate ETFs too, they track the performance of investable real estate.
 
