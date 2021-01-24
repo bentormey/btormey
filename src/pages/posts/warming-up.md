@@ -32,7 +32,7 @@ Jumping straight into to your working sets is like throwing an awkward, unexpect
 
 But you don't want to spend too much time warming up, because that would be like rambling on without getting to the point.
 
-Sometimes this process is slower or faster depending on how well recovered you are, how much sleep you got, and how much caffeine you perked your nervous system up.
+Sometimes this process is slower or faster depending on how well recovered you are, how much sleep you got, and how much caffeine you perked your nervous system up with.
 
 Most importantly, you have to take ownership of this process:
 
