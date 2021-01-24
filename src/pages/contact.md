@@ -7,7 +7,7 @@ menus:
     weight: 6
 template: page
 ---
-You can email me at <mailto:bentormey@gmail.com> or tweet [@BenTormey](https://twitter.com/BenTormey). Or if you're interested in online coaching, please take a moment to fill out the form below.
+You can email me at <mailto:bentormey@gmail.com> or tweet [@BenTormey](https://benjamintormey.com/twitter). Or if you're interested in online coaching, please take a moment to fill out the form below.
 
 <iframe src="https://www.videoask.com/f668byxtq"
   allow="camera *; microphone *; autoplay *; encrypted-media *;"
