@@ -18,7 +18,7 @@ I was discussing warmups on a Zoom call with a client recently and I hit on a me
 
 A good warmup is like a conversation between you and your body.
 
-You have to listen to your body and understand what it's prepared to give you - both the ranges of motion it will allow you to access and force it's ready to produce.
+You have to listen to your body and understand what it's prepared to give you - both the ranges of motion it will allow you to access and the amount of force it's ready to produce.
 
 At the same time, it's your task to set the topic and tell your body what you expect it to do.
 
