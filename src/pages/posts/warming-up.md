@@ -10,7 +10,7 @@ Worst of all, I used to get my clients doing it too.
 
 What a waste of time.
 
-I haven't done any of that stuff in years and I still manage to get injured less often than the people who do all this ritualistic nonsense.
+I haven't done any of that stuff in years and I _still_ manage to get injured less often than the people who do all this ritualistic nonsense.
 
 Why is that?
 
@@ -35,9 +35,11 @@ But you don't want to spend too much time warming up, because that would be like
 Sometimes this process is slower or faster depending on how well recovered you are, how much sleep you got, and how much caffeine you perked your nervous system up.
 
 Most importantly, you have to take ownership of this process:
-Only you can know the feedback your body is giving you, others can only infer what's going on.
-There is no single "correct" way to warmup, a good warmup for you might be a bad warmup for someone else.
-You are the custodian of your own body, protecting yourself from insult and injury is about w
+
+- Only you can know the feedback your body is giving you, others can only infer what's going on.
+- There is no single "correct" way to warmup, a good warmup for you might be a bad warmup for someone else.
+- You are the custodian of your own body, protecting yourself from insult and injury is about how you interact with it.
+
 When you start that process, think about paring it down to the minimum required to get you feeling ready to do a productive workout.
 
 Don't waste time on mobilisations unless they help you achieve a range of motion that is absolutely necessary to perform an exercise safely and effectively.
@@ -46,4 +48,4 @@ Most of the time you are better off focusing your range of motion on what your b
 
 Don't feel like you have to torture yourself with a foam roller either, only go after trigger points when you can diagnose a clear issue that is detracting from your quality of life or your workout performance.
 
-And please, do not pay attention to people on YouTube and Instagram who give you checklists and absolute rules to follow like the "BEST" warmup or things you should "NEVER" do without reference to specific conditions that may relate to you and your body.
+And please, do not pay attention to people on YouTube and Instagram who give you checklists and absolute rules to follow like the _"BEST"_ warmup or things you should _"NEVER"_ do without reference to _specific_ conditions that may relate to you and your body.
