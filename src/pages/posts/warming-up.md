@@ -20,7 +20,7 @@ A good warmup is like a conversation between you and your body.
 
 You have to listen to your body and understand what it's prepared to give you - both the ranges of motion it will allow you to access and the amount of force it's ready to produce.
 
-At the same time, it's your task to set the topic and tell your body what you expect it to do.
+At the same time, it's your task to set the topic and tell your body what you expect from it.
 
 Tightness and pain are sometimes hasty reactions which fade as your nervous system figures out what you're asking it to do.
 
