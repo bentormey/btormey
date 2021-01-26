@@ -3,7 +3,6 @@ Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,Bli
 Chart.defaults.global.defaultFontColor = '#858796';
 
 var raw = {};
-var key = '2PACX-1vTYv2MZvIEjsa_jqJtxBrgSCdxhk16naCqSxBvExlTrNJS8ZbJi4e5N3F5_mdCnoGGBSSBz39c0DKhz';
 
 function init() {
   Papa.parse(`https://clients.benjamintormey.com/.netlify/functions/getclientdata?key=${key}`, {
