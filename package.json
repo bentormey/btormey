@@ -10,6 +10,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "babel-runtime": "^7.13.10",
     "gatsby-image": "^2.2.36",
     "gatsby-transformer-sharp": "^2.3.9",
     "gatsby-remark-responsive-iframe": "^2.9.0",
@@ -34,7 +35,6 @@
     "react-html-parser": "^2.0.2",
     "react-script-tag": "^1.1.2",
     "rehype-react": "^3.0.2",
-    "sprintf-js": "^1.1.2",
-    "babel-runtime": "^7.13.10"
+    "sprintf-js": "^1.1.2"
   }
 }
