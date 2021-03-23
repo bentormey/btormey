@@ -1,5 +1,5 @@
 ---
-title: How to change your habits
+title: Want to change your habits?
 date: 2021-3-23T11:15:24.217Z
 thumb_img_path: /images/pexels-kerde-severin-5961216-2-2.jpg
 template: post
