@@ -10,7 +10,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "babel-runtime": "^7.13.10",
+    "babel-runtime": "^6.26.0",
     "gatsby-image": "^2.2.36",
     "gatsby-transformer-sharp": "^2.3.9",
     "gatsby-remark-responsive-iframe": "^2.9.0",
